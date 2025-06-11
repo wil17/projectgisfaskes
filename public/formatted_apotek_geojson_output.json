@@ -1,0 +1,6066 @@
+
+{
+    "type": "FeatureCollection",
+    "features": [
+
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek K24 Banua Anyar",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. PANGERAN HIDAYATULLAH NO. 4 RT. 015",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. CEMPAKA RAYA ",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5680904, 
+                    -3.3266301
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "KOMPLEK PEMBANGUNAN I NO.09 RT.30 RW.02",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK SAHABAT SEHAT",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Sutoyo S No. 52 RT.11 RW. 001",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5750222383249, 
+                    -3.3223181386524
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. MANGGIS GG. DELIMA V NO.89 A RT.020 RW.002",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK AZHAR FARMA",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. SULTAN ADAM NO.56 RT.36 RW.3 SAMPING KOMP.TAEKWONDO",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTIK",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. SEOTOYO S. KOMPLEK WILDAN NO.043 RT.003 RW.001",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Kimia Farma 733 Pramuka ",
+                "Fasilitas": "Apotek",
+                "Alamat": "JALAN PRAMUKA NOMOR 10 RT 30 RW 001",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Kimia Farma 547 Zahri Saleh",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Sultan Adam Nomor 12, RT. 22, RW. 02",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "jl melati indah pramuka no 61",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Kimia Farma 383 S.Parman",
+                "Fasilitas": "Apotek",
+                "Alamat": "Apotek Kimia Farma 383 S.Parman - Jalan Letjen S.Parman Nomor 161 RT.01 RW.01",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Kimia Farma 546 Sutoyo",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Sutoyo S Nomor 238, Banjarmasin, Kalimantan Selatan",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang dan Obat Farmasi Untuk Manusia di Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Mantuil Raya Komplek Aldi Citra Persada Blok H No. 157C, Rt. 026, Rw. 001",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik Kinibalu",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Kinibalu No.35",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5844294, 
+                    -3.3186141
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik Barakat",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Mesjid Jami SImpang Malkon Temon, RT. 001, RW. 001",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK KIMIA FARMA 120",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan A. Yani KM 3.5 Nomor 149",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotek ",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Jenderal Achmad Yani KM 5,5 NO.15A",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6231808343052, 
+                    -3.34686705
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotek jelita",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Jenderal Achmad Yani km 5,5 no.15A",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6231808343052, 
+                    -3.34686705
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Kimia Farma 217",
+                "Fasilitas": "Apotek",
+                "Alamat": "JALAN A. YANI KM. 2 NOMOR 136 BANJARMASIN",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan SMAN 8 Komplek Suryanata 1 Blok Mawar nomor 28 RT.026 RW.002",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.57038274739867, 
+                    -3.2752520499999997
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK KIMIA FARMA SULTAN ADAM 2",
+                "Fasilitas": "Apotek",
+                "Alamat": "APOTEK KIMIA FARMA SULTAN ADAM 2 - JALAN SULTAN ADAM NOMOR 10",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Telkomedika Banjarmasin",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Djok Mentaya No.108, Kel. Mawar, Kec. Banjarmasin Tengah, Kota Banjarmasin, Kalimantan Selatan 70231",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Perdagangan Komp. HKSN Permai Blok 11A No. 586 RT. 30 RW. 02",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK YURI FARMA",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Adhyaksa No. 16D",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5940097, 
+                    -3.2988476
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK SAHABAT",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Brigjend H. Hasan Basry",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5848703, 
+                    -3.3012399
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTIK "KAHAYAN FARMA"",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. SULTAN ADAM NO.126 RT.016 RW.002",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik AL - KURBA NUR",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Rantauan Darat No. 9 RT. 13 ",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK TANJUNG",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. TANJUNG RAYA N0.27 RT. 20",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5966787, 
+                    -3.2909288
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek K-24 Sultan Adam",
+                "Fasilitas": "Apotek",
+                "Alamat": "SULTAN ADAM ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Toko Obat/Apotek K-24 Sungai Andai Barito",
+                "Fasilitas": "Apotek",
+                "Alamat": "Padat Karya RT.003 RW.000",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Tanjung Berkat nomor 03",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Antasan Kecil Barat Nomor 34",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Dunia Sehat",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. S. PARMAN NO. 4/7. Pasar Lama. Banjarmasin Tengah. Kota Banjarmasin. Kalimantan Selatan",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl Prona 1 RT 14 RW 1",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl Prona 1 RT 14 RW 1",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotek sakura",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. DAHLIA KEBUN SAYUR NO. 11",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotik Sumber Bahagia",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Niaga Utara RT 13",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTIK BARAKAT",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Mesjid Jami, Simpang Malkon Temon, RT. 001, RW. 001",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Melia",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. HKSN RT. 19 RW. 002",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek SJ Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Cemara Raya No. 6 Rt 31 ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Lestari",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl.RANTAUAN DARAT NO.3 RT.23",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5887179, 
+                    -3.3317025
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik, Apotek dan Laboratorium Asy-Syaafi Banjarmasin",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Soetoyo S No.56, RT.038, RW.003",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik Cahaya Medika",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Cempaka Raya RT.42 RW.3",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek SEDERHANA",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Kelayan  B tengah RT.018 Jembatan 3 Banjarmasin",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Faeyza Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. AMD Toko No. 1 ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5784169, 
+                    -3.27816
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Andrio",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Pahlawan rt. 08 rw. 02 no. 45/89",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotek borneo",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. A. Yani km 5.5 RT 12 001/RW 01 No.2  Banjarmasin ",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Rahmat 2",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Padat Karya No. 19 Rt. 03",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Halwa Health",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Cempaka Raya Wildan Sari III no. 45 C",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5680904, 
+                    -3.3266301
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK IBUNDA",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Perdagangan Raya No. 11 RT. 24 RW. 02",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5826467, 
+                    -3.2855566
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Gerilya No 27 Kampung Baru RT 14 RW 02 Kelurahan Tanjung Pagar Kecamatan Banjarmasin Selatan Kota Banjarmasin",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PERDAGANGAN ECERAN BARANG DAN OBAT FARMASI UNTUK MANUSIA DI APOTIK",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Dharma Bakti IV No. 14, RT. 018, RW. 002",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Anugerah",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Grilya Paradapan No.82 RT.031 RW.002",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Sultan Adam No 79-80 Rt 16 Rw 02",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Kecantikan Estestika, Apotek, Salon dan Spa",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Sultan Adam No 79-80 Rt 16 Rw 02",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK PIALA BARU",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL CEMPAKA BESAR NO 73C",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Asy-Syaafi Banjarmasin",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Soetoyo S No.56, RT.038, RW.003",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5783251, 
+                    -3.3202618
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Smartcare",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl veteran Rt 23 (samping mesjid al-ikhwan)",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Aasiyah Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Gerilya No. 28 Kampung Baru RT. 14 RW. 02",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK SAHABAT SEHAT",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. SUTOYO S. NO. 52 RT. 011 RW. 001",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Al Fath2",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Bakti No.29, Rt.32 Rw.04",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Al-Jihad 1",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. SUTOYO S NO.01 RT. 18",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Mulia Medika",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Bali No. 9",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.58669750296887, 
+                    -3.3142722139934677
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Manggis Raya NO.18 RT.012 RW.001",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik Asy-Syaafi",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Soetoyo S No.56, RT.038, RW.003",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek anugerah",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan gerilya peradapan no 82",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Sabar",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan HKSN RT. 10 RW. 001",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.57794520516634, 
+                    -3.27794823026091
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "CV. RAKYAT / Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. BANK RAKYAT NO.14 RT.010 RW.002",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5925828, 
+                    -3.3187496
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Kelayan B Tengah Jembatan 3 RT. 018 Banjarmasin",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK MITRA",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. LETJEN S.PARMAN NO.48 BANJARMASIN",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Arrahman",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Melati Indah RT. 006 RW. 001",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik Al Fath",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Veteran KM 6 No. 17 RT. 05 RW. 01",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik LANGKAR SEHAT RZ",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Ratu Zalecha",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.60572699336454, 
+                    -3.3282924250676413
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek LIA",
+                "Fasilitas": "Apotek",
+                "Alamat": "jalan tembus mantuil tengah  no.48 rt.021",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5466382, 
+                    -3.3511548
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotek alfath",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl Veteran Km 5,5 RT. 004 RW. 001 No. 24",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -, 
+                    -
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK BERKAH SEHAT FARMA",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Sutoyo S Rt. 018 Rw. 001, Kelurahan Pelambuan, Banjamasin Barat",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Nikmat Sehat",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Brig Jend Katamso Ruko Nomor 01",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK AL FIRDAUS MANGGIS RAYA",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL.MANGGIS NO 18 RT 012 RW 001",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Langkar Sehat",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Ratu Zaleha No. 6 RT.10/5 RT.010 RW.05",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Cahaya Medika",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. Mantuil Raya RT.22 ",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PT. FAJAR TERBIT BERSINAR / PERDAGANGAN BARANG DAN OBAT FARMASI UNTUK MANUSIA DI APOTIK",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. PASAR BARU NO.43A RT.014 ",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Bakti No. 29 Rt. 32 Rw. 04",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTIK",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. PERDAGANGAN RT.024",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK PHARMIX",
+                "Fasilitas": "Apotek",
+                "Alamat": " Komplek Pelangi",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6285736849144, 
+                    -3.332696628117346
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Sofia Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Tembus Lingkar Selatan Dalam RT 32 Banjarmasin",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Apotek " RAWASARI " Jalan Rawasari Rt.054 Rw.005",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Arwana",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Pangeran Hidayatullah No.38 RT. 16 ",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK PERDANA",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Jenderal Achmad Yani",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.61014881315587, 
+                    -3.3291560350899574
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Haryono MT No.125 Rt.005 Rw.001",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PERDAGANGAN ECERAN BARANG DAN OBAT FARMASI DI APOTIK",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. RAWASARI RAYA RT. 054/RW.005",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Galuh",
+                "Fasilitas": "Apotek",
+                "Alamat": "jl.Gatot Subroto No.4 / 2 C banjarmasin",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Brigjend H.Hasan Basri No. 9 - 11 Banjarmasin ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Mayjend. Sutoyo S No. 2D",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Annur",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl.Jahri Saleh. No.162. RT.020. RW.002. KEL. SURGI MUFTI. B.UTARA BANJARAMISN.",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Apotek " Azzil "  Jalan Sultan Adam No.010 Rt.025",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan S. Parman No. 4/7 RT. 22 RW. 001  Kelurahan: Pasar Lama Kecamatan: Banjarmasin Tengah Kab/Kota: Kota Banjarmasin Provinsi: Kalimantan Selatan",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Brigjend H. Hasan Basri No. 123-124",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik Lambung Mangkurat Medical Center",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Brigjen H. Hasan Basri, ULM Banjarmasin",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK AL JIHAD",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. SUTOYO S. NO, 01 RT. 18",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Borneo",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. A. Yani KM 5,5 RT 001/RW 001 No. 2 ",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Nuri",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. HKSN RUKO NO.03 RT. 10 BANJARMASIN",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK AL JIHAD 1",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. SUTOYO S RT 15 RW 1",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. TELUK DALAM NO. 01 RT. 018",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. MANTUIL PERMAI TELUK LANGGAR NO.08 RT.23 ",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik pendidikan sari mulia",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL.PRAMUKA NO.02 RT.019 RW.002",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PERDAGANGAN ECERAN BARANG DAN OBAT FARMASI UNTUK MANUSIA DI APOTIK",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Brigjen H. Hasan Basri Komplek Pondok Metro Indah No. A2",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. K.S. TUBUN NO.5 RT.4",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotek SJ Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "jln cemara raya no 6 kelurahan sungai miai banjarmasin utara ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK PENDIDIKAN SARI MULIA",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL.PRAMUKA NO.02 RT.019 RW.002",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTIK SAKURA",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL DAHLIA KEBUN SAYUR NO 11 RT 22 RW 009",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTIK",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. GATOT SUBROTO NO. 3 A",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Alesha",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Lingkar Dalam Selatan Perumahan Grand Batuah Mahatama No 23. ",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Aasiyah Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Gerilya Kampung Baru No. 28 RT. 14 RW. 02",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59823982109361, 
+                    -3.3601227262944127
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Andin",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Komplek agraria 2 no 44",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Mulia Sehat",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Dahlia Raya No 10 RT. 013  Mawar Banjarmasin Tengah",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Bumi Mas Raya No 3 Rt 008 Rw 001",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "jl telul tiram nomor  58 ",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Ali",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Kolonel Sugiono No. 26 RT. 3",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Pratama dan Apotek Sabar",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl HKSN RT 10/001 Alalak Utara Kec. Banjarmasin Utara Kota Banjarmasin",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK ANDRIO",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan pahlawan No. 45/89 Rt. 008 Rw. 002",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek "DM Clinic Beauty Salon & Spa"",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Sultan Adam",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6000284, 
+                    -3.2932047
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK DUA DARA MEDIKA",
+                "Fasilitas": "Apotek",
+                "Alamat": "APOTEK DUA DARA MEDIKA
+JL. SULAWESI RT. 20",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59178802366999, 
+                    -3.310509322653252
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK AMANDA",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. BELITUNG LAUT NO.6 RT.06  BANJARMASIN",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -, 
+                    -
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Niaga Timur No 10 A ",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotik dan klinik",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Jenderal Achmad Yani",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6231808343052, 
+                    -3.34686705
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek dr. Dellis JF",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Sutoyo S No.338",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Nuur Muhammad",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Gerilya No 200",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Se-jati",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. A. YANI KM. 4,5 KOMP. AMANDA PERMAI NO. 41",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Praktek Umum dan Apotik Aji Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Zapri Zam-Zam No. 10 RT 031 RW 003",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Veteran Km 5,5 Rt.01 Rw.01 No.29 A",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Aji Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jafri Zam - Zam no.10 rt.31",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. Melati Indah Simpang Limau Komp. Pondok Melati Al Banjari No.F15",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK "AISYAH MEDIKA"",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Hikmah Banua Komplek Anugerah Persada Residence No.02 RT.03",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.63876282773084, 
+                    -3.339354347579599
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik ",
+                "Fasilitas": "Apotek",
+                "Alamat": "KOMP. GRAND BATUAH NO.23 JL. LINGKAR DALAM SELATAN",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. RAYA BERUNTUNG JAYA NO.48 RT.45",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Anisyah Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Gerilya Komplek Mahatama Regency Blok C5/19",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Sultan Adam No.34 RT.03 RW.02 Kelurahan Surgi Mufti Kecamatan Banjarmasin Utara",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59951617585996, 
+                    -3.307456412995716
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. A. Yani, KM. 5,5, Banjar Indah Permai, Komplek Hayati Residence.",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK YUMNA",
+                "Fasilitas": "Apotek",
+                "Alamat": "JLN GERILYA RT. 18 KELURAHAN TANJUNG PAGAR KEC. BANJARMASIN SELATAN KOTA BANJARMASIN",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Firdaus AG",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. Kelayan B RT.12",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek DARPLASTIC",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL PS Hidayatullah  Komp Husada Permai No 2 Sei Jingah RT.14 RW 02 Banjarmasin Utara,",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Lingkar",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Lingkar Dalam Selatan",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.60758379155345, 
+                    -3.338115511615936
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek DARPLASTIC",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL PS HIDAYATULLAH NO:2",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Pramuka Nomor 26",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK ABDI FARMA",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. PERDAGANGAN NO. 31 RT.22",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTIK YUNITA",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Cempaka IX No. 20 RT.003 RW.001",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Fitri Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Sei Andai No 2A, Kota Banjarmasin,
+Kalimantan Selatan",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Nayla Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Sungai Andai Padat Karya Komp. Herlina Perkasa Blok. Bawang Merah Banjarmasin",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Kelayan B",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "jl kelayan B gg setia rahman",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Al-Hijrah Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. SUNGAI ANDAI RT 1 NO 35",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Arjuna",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Sudimampir No. 17",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Veteran KM 5,5 No 4 RT 04",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Tirta Medical Centre Banjarmasin",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Gatot Subroto 39-40",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6164444, 
+                    -3.3295145
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Perdagangan No.2 Rt23",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PERDAGANGAN ECERAN BARANG DAN OBAT FARMASI UNTUK MANUSIA DI APOTIK",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Gerilya No. 194, RT. 019, RW. 002",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl Kol Sugiono No. 14 ",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek amandit farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl melayu darat no 10 ",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Veteran KM.3 Nomor 60 RT 026 RW 002",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Raya Nakula No.51 RT.24 Komplek Bumi Pemurus Permai",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek dan Toko alat kesehatan",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Pramuka, No. 22 C, RT. 030",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6267941, 
+                    -3.3482098
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Jahri Saleh Komp. Pandan Arum Blok D No. 10 RT 015/RW001  ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotek shakila 1",
+                "Fasilitas": "Apotek",
+                "Alamat": "JALAN HKSN RT 36 BANJARMASIN ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik Almira",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. perdagangan no 586 Komplek HKSN permai blok 11 ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK LALLYSA FARMA",
+                "Fasilitas": "Apotek",
+                "Alamat": "APOTEK LALLYSA FARMA, Jl. Mesjid Jami Rt. 05 Rw. 02 Kel Antasan Kecil Timur, Kec Banjarmasin Utara, Kota Banjarmasin",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59439217813326, 
+                    -3.3075892659734105
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Veteran Km. 5,5 Sungai Lulut",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.62580767013159, 
+                    -3.3195162386086015
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Nurhidayah",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Raya Yudistira No.22 RT.22",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6186072, 
+                    -3.3518937
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Rahmat",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Zafri Zam Zam No. 11 RT/RW. 023/002",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5785996827845, 
+                    -3.3120693864226456
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. BIMA II NO.14 RT.19 KOMP. BPP ",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6186072, 
+                    -3.3518937
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Azhar Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl.Sultan Adam samping komplek Taekwondo No.36 ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6007651, 
+                    -3.308992
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK AASIYAH FARMA",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Gerilya",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59789185304548, 
+                    -3.3544687501836608
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK KIMIA FARMA GATOT SUBROTO",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Gatot Subroto",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Aloevera",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. PRAMUKA MELATI INDAH RT.6",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6292072, 
+                    -3.320308
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Azka",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Padat Karya",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.61419620834002, 
+                    -3.2918741895537362
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK SAHABAT FARMA",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Gerilya Kampung Baru RT.16 RW. 002 NO 54 BANJARMASIN",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59806734475504, 
+                    -3.359813969059274
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK SUKSES SEHAT ",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. AMD KOMP. ABDI PERSADA I NO. 41",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5925828, 
+                    -3.3187496
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK MEDIKA PRATAMA",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Gerilya Kampung Baru",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59939557744828, 
+                    -3.3648494098079524
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK AHS MAKMUR BERSAMA",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Brigadir Jenderal Hasan Basri",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.589496, 
+                    -3.2922292
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Ibnu Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Raya Banjar Indah Permai No. 3 ",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5925828, 
+                    -3.3187496
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK KAYUH BAIMBAI",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Raya Mantuil RT 07",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.54748731369864, 
+                    -3.34939975
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK PERDANA KELAYAN DALAM",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl Kelayan A no 4 RT.16 / RW.06",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5969671, 
+                    -3.332853
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL HKSN KOMPLEK KEBUN JERUK PERMAI RT 16 NO 25 JALUR II ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5716095, 
+                    -3.2923577
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK KIMIA FARMA 246 CEMPAKA",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Cempaka Besar Nomor 18",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl.Ks Tubun No.92b",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Empat Saudara",
+                "Fasilitas": "Apotek",
+                "Alamat": "nan",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5711867826892, 
+                    -3.329060876839281
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Arjuna",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Sudimampir no. 17 Rt. 16",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.58891333901943, 
+                    -3.3184043
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK ",
+                "Fasilitas": "Apotek",
+                "Alamat": " Komplek Andai Raya Permai",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6082735, 
+                    -3.3009273
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK K-24 PERDAGANGAN",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Perdagangan",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5716095, 
+                    -3.2923577
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Safira Al-Farhan",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Bhakti No. 8 RT. 32",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6186072, 
+                    -3.3518937
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "KOMP. BUMI PEMURUS PERMAI BERUNTUNG JAYA, JL. BIMA 2 NO.19 RT.19 ",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.61864935272469, 
+                    -3.3520202909385546
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Rafif",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. TEMBUS MANTUIL RT.22 RW.02 KEC. BANJARMASIN SELATAN KOTA BANJARMASIN",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5866138, 
+                    -3.3374693
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek AM Farma 2",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Simpang Sungai Bilu RT. 17 No. 04 ",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.606774, 
+                    -3.3184956
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Rafif Mandiri",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Laksana Intan",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.586789, 
+                    -3.3376485
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Bumi Mas Komp. Handayani 11 No. 35 RT 03 RW 01 ",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    110.42082865507275, 
+                    -7.799858780978659
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. PEKAPURAN B",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5985228, 
+                    -3.325717
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Sungai Miai Dalam",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59411715, 
+                    -3.2985183
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Cinta Sehat ",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Antasan Kecil Timur No. 2 RT 11 ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5932697, 
+                    -3.3056073
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotik bunga kalimantan",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl.BRIGJEND H.HASAN BASRI KAYUTANGI NO.4D RT.14",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5784169, 
+                    -3.27816
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK APPO FARMA",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan K.S. Tubun",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59257750447546, 
+                    -3.3299389703249735
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Perintis",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Sultan Adam Ruko 10 No 1 Rt 41",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5932697, 
+                    -3.3056073
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK AZZIL",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Sultan Adam RT. 28 NO. 10",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6007651, 
+                    -3.308992
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK PURI SEHAT",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Jenderal Ahmad Yani Kilometer 1 nomor 31",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6014391, 
+                    -3.3240728
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK ANISYAH",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. GERILYA KOMP. GRAHA MAHATAMA REGENCY BLOK I NO. 3",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5994347, 
+                    -3.3655308
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek setia rahman",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Kelayan B",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5948984, 
+                    -3.3367129
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik ",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Hasan Basri, RT. 014",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5848703, 
+                    -3.3012399
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Shopi",
+                "Fasilitas": "Apotek",
+                "Alamat": "jl. lingkar dalam selatan rt. 27, Pekapuran Raya",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Sinar Sehat",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Padat Karya Jl. Anggrek No.19, Sungai Jingah, Kec. Banjarmasin Utara, Kota Banjarmasin, Kalimantan Selatan 70122",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5925828, 
+                    -3.3187496
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK SUMBER SEHAT",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. AES Nasution No.11",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5941655, 
+                    -3.3180146
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Pharmacare ISFI",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Perdagangan (Ruko 7 Icon) No.1",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5848703, 
+                    -3.3012399
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Formula",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. KS Tubun No 98 B RT 5 RW 01",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5940261, 
+                    -3.330909
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Revayah",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Beruntung Jaya No. 63A",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6186072, 
+                    -3.3518937
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK PRAMUKA ",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Pramuka Komplek Green Pramuka Jalur Legolas No. 2 RT 039 RW 002",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6292072, 
+                    -3.320308
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek K-24 Sungai Andai",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Padat Karya RT 03",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6104962, 
+                    -3.2928772
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Sumber Sehat",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. AES Nasution No.11",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5941655, 
+                    -3.3180146
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK SUKMA SARI",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. IR. PHM. NOOR RT.030 RW.003",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.57056344139681, 
+                    -3.301819663265032
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK REZEKI BAROKAH",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Bumi Mas",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6116707508539, 
+                    -3.341063226805669
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek puruk cahu",
+                "Fasilitas": "Apotek",
+                "Alamat": " Sultan Adam",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5993675, 
+                    -3.307256
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. VETERAN GG. SEMPATI NO. 32",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59881865662541, 
+                    -3.319853228119742
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik 79 Makmur",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Brigjend Katamso NO. 31",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5897774, 
+                    -3.3253354
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK ALJIHAD 2",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Antasan Kecil Timur RT. 07",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5932697, 
+                    -3.3056073
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JALAN SULTAN ADAM KOMPLEK KADAR PERMAI 2 NO. 43 RT. 17 / RW 02",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59776510352154, 
+                    -3.292649243615598
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. A. Yani km 3,5",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6052784386353, 
+                    -3.3298472972851796
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Kimia Farma 336 Antasari",
+                "Fasilitas": "Apotek",
+                "Alamat": "Apotek Kimia Farma 336 Antasari - Jalan Pangeran Antasari No. 91.",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Kimia Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "Apotek Kimia Farma 188 S.Parman - Jalan S.Parman No.42",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Basirih Sehat",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Gubernur Soebardjo",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.57431195895825, 
+                    -3.3496757580755867
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTIK CAHAYA MEDIKA/PERDAGANGAN",
+                "Fasilitas": "Apotek",
+                "Alamat": " JL. MANTUIL PERMAI RT.01 RW.01",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.54748731369864, 
+                    -3.34939975
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Sofia",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. VETERAN KM 5,5 KOMPLEK GARDU MEKAR INDAH NO 4 RT 14",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.62694455076797, 
+                    -3.3207632244542644
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik ",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan A. Yani Km. 2 No.083 ",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.597187, 
+                    -3.3226872
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Istiqomah",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Pasar Baru",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59384160795948, 
+                    -3.3265871106890086
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": " Sultan Adam",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6019029, 
+                    -3.3051331
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK AL JIHAD 2",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jl. Antasan Kecil Timur No.17 RT. 7",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5932697, 
+                    -3.3056073
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik ",
+                "Fasilitas": "Apotek",
+                "Alamat": "jalan paramuka",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    115.3700718, 
+                    -2.9285686
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK TALITHA FARMA",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Pekapuran  B Laut",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.598904, 
+                    -3.3250646
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK 79 MAKMUR",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Brigadir Jenderal Katamso No. 31, RT. 009, RW.002",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59247955716943, 
+                    -3.3260524024915785
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. PRAMUKA KOMP. RAHAYU PEMBINA 4 NO.5 RT.23",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6292072, 
+                    -3.320308
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Rawasari Raya No 15",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5738166, 
+                    -3.3155971
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK ZAHRA MEDIKA",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Kinibalu No.7 RT 37",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5844809699381, 
+                    -3.3197549121492806
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Sinar Mas",
+                "Fasilitas": "Apotek",
+                "Alamat": "NIAGA NO. 4 RT. 17 A",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59365060080944, 
+                    -3.3264928170889068
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Sukma Sari",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Ir. PHM Noor RT. 30 RW. 03",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.57078199493809, 
+                    -3.3012263472777517
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Tasya Mukarramah",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Zafri Zam Zam",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5784491, 
+                    -3.3113389
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Dr L",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Gatot Subroto",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.61753161521771, 
+                    -3.325551819064681
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Raya Banjar Indah No.16E RT.009 RW.001  ",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.61864935272469, 
+                    -3.3520202909385546
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Pekapuran Raya Komp. Yatera No. 29 RT. 15 RW. 04",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6018872, 
+                    -3.3334945
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTIK CAHAYA SEHAT",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL ANTASAN SEGERA",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.56011, 
+                    -3.348173
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK WIGAS FARMA",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. DHARMAWANGSA NO. 35",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6186072, 
+                    -3.3518937
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Sutoyo S Gang ST No. 61, RT.001 RW.001",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5639789, 
+                    -3.3246155
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik Sofia Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl Sultan Adam RT 20 No 60",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5998826, 
+                    -3.3067242
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Kimia Farma No. 51B",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. VETERAN NO 51B BANJARMASIN",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK RN",
+                "Fasilitas": "Apotek",
+                "Alamat": "Gatot Subroto JL.Mahat Kasan NO.09 RT.35",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6223401, 
+                    -3.3274947
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Gatot Subroto 7",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.61659367362135, 
+                    -3.328071970297409
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek An-Nabawi",
+                "Fasilitas": "Apotek",
+                "Alamat": "jalan teluk tiram samping gang keluarga RT.14",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.580662, 
+                    -3.3385203
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTIK",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. BRIG.JEN H. BASRI RT. 40",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5784169, 
+                    -3.27816
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "CV. VISUAL YOSI YARMAN / Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. A. YANI KM.6,9 KOMPLEK PERUMAHAN CITRA GARDEN",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5925828, 
+                    -3.3187496
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Bio Medika",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Cempaka IV No. 21",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59260160145571, 
+                    -3.3187461410414447
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK ALMEERA",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. RAYA BANJAR INDAH NO. 16 E RT. 09 RW. 01",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6186072, 
+                    -3.3518937
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Tembus Mantuil, No. 44, RT. 022, RW. 002",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.57053206497326, 
+                    -3.345100955009538
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Pramuka kilometer 6 Jalan Melati Indah Komplek Bumi Melati Indah Ray 3 Nomor 5 RT.010 RW.002002",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6292072, 
+                    -3.320308
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Saka Agung I nomor 9 RT.001",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6157338, 
+                    -3.3464488
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "jln banyiur luar no54 rt 13",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.57054500000001, 
+                    -3.3418522
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Alalak Tengah Komplek Suryanata 1 Blok Cempaka nomor 26 RT.026 RW.002",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5691767, 
+                    -3.2749815
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Cempaka IX No. 20 RT.003 RW.001",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5820057, 
+                    -3.3259044
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Pekapuran Raya ",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6038094, 
+                    -3.3349014
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Al-Firdaus Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Belitung Darat",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5772904, 
+                    -3.30851
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK DUA DARA MEDIKA",
+                "Fasilitas": "Apotek",
+                "Alamat": "APOTEK DUA DARA MEDIKA, Jalan Sulawesi RT 20",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59194699270654, 
+                    -3.310418060081284
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK AL-FAZZA",
+                "Fasilitas": "Apotek",
+                "Alamat": "JALAN GRILYA  NO.175 RT.19 KELURAHAN TANJUNG RAGAR KECAMATAN BANJARMASIN SELATAN",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5994347, 
+                    -3.3655308
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": " Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Gerilya No. 50",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5907524, 
+                    -3.3441688
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Arrahman",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Melati Indah  RT 6 RW 1 ",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.630484, 
+                    -3.3443
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Hana Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Sultan Adam No. 11",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6007651, 
+                    -3.308992
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Lala",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL AMD KOMP PEMPROV LIMAU 3 PERUM BANJAR JAYA ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.60144255075566, 
+                    -3.296741522012954
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PERDAGANGAN ECERAN BARANG DAN OBAT FARMASI UNTUK MANUSIA DI 
+APOTIK",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Pramuka Komplek Green Pramuka Jalur Legolas No. 2, RT. 039, RW. 002",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.625352, 
+                    -3.3255481
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK REZEKI BAROKAH",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. Bumi Mas Raya No. 2A RT. 9, Pemurus Baru, Banjarmasin Selatan, Kota Banjarmasin",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.61276836988596, 
+                    -3.3402949998533034
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik ",
+                "Fasilitas": "Apotek",
+                "Alamat": "Melati Indah 1 Jalur 2 No. 10",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6292072, 
+                    -3.320308
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Belitung Darat Gang Emas Urai No. 59",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5925828, 
+                    -3.3187496
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Veteran",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.606698, 
+                    -3.3201473
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotek AM.farma",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Cemara Raya No.41 RT.41",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59031855, 
+                    -3.29208095
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Setia Rahman",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Kelayan B",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59503142635796, 
+                    -3.3356877984148756
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. HKSN Komplek AMD Permai No. 295",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5745183966468, 
+                    -3.281268308418231
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Belitung Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": " Komplek Grawiratama",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.57717356428022, 
+                    -3.308212588126432
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Insinyur Pangeran Haji Muhammad Noor Nomor 1 RT.030 RW.003",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.57079165917212, 
+                    -3.3012336841688126
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. SIMPANG KURIPAN NO.04 RT.07",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.62615813445105, 
+                    -3.3269165000000003
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Kolonel Sugiono",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5979005333865, 
+                    -3.327291147361548
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik ",
+                "Fasilitas": "Apotek",
+                "Alamat": "KOMP. BUMI PEMURUS PERMAI BERUNTUNG JAYA, JL. BIMA 2 NO.19 RT.19",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6186072, 
+                    -3.3518937
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Sungai Andai Komplek Pesona Persada Blok A jalur 2 RT.006 RW.001",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6130277, 
+                    -3.2941475
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK KHAIRUN SYIFA",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. TELUK TIRAM DARAT RT. 031 KELURAHAN TELUK TIRAM",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5830557, 
+                    -3.3357053
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTIK PERINTIS KAYUTANGI",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Brigjend H. Hasan Basri No. 123-124",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5784169, 
+                    -3.27816
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JALAN TELUK TIRAM DARAT NOMOR 12",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5798419, 
+                    -3.3367437
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. AMPERA NO. 3 RT. 028 RW.002",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.580662, 
+                    -3.3385203
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTIK",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. BELITUNG LAUT NO.13 RT.03 ( APOTIK BELITUNG FARMA )",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5772904, 
+                    -3.30851
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Perintis Kayu Tangi",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Brigjend H. Hasan Basri No. 123-124 ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.57832042941885, 
+                    -3.278125761789432
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK PERINTIS KAYU TANGI",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Brigjend H. Hasan Basri No. 123-124",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.58951094640003, 
+                    -3.2810299948234682
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Gerilya Raya Jl. Graha Mahatama 1 No.1, Tj. Pagar",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59711134932338, 
+                    -3.352581180483374
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. BRIGJEND HASAN BASRI NO.123-124",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5784169, 
+                    -3.27816
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK PERINTIS KAYU TANGI",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Brigjend Hasan Basri No.123-124",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.589511302179, 
+                    -3.2810444712714717
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik Intan",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Jenderal Achmad Yani",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.61061675811581, 
+                    -3.3294725205129443
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Ampera Raya Rt.45 Rw.003",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.57657084624618, 
+                    -3.3365992865768357
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik ",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Cendrawasih",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.57922307350503, 
+                    -3.3092736637944293
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK KIMIA FARMA ANTASARI",
+                "Fasilitas": "Apotek",
+                "Alamat": "JALAN PANGERAN ANTASARI NO 91",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK KIMIA FARMA NO 217",
+                "Fasilitas": "Apotek",
+                "Alamat": "JALAN A.YANI KM. 2 NO. 136 ",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK KIMIA FARMA 188 S. PARMAN",
+                "Fasilitas": "Apotek",
+                "Alamat": "JALAN S. PARMAN NO 42",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK KIMIA FARMA 61 VETERAN",
+                "Fasilitas": "Apotek",
+                "Alamat": "JALAN VETERAN NO 51",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Sutoyo S, Gang Serumpun, Rt. 057 Rw. 017.",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5670202, 
+                    -3.3239464
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan S. Parman No 221",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5877106773796, 
+                    -3.3060995
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK  7 MEKAR",
+                "Fasilitas": "Apotek",
+                "Alamat": ""APOTEK 7 MEKAR" Jl. Mahligai ",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.630484, 
+                    -3.3443
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK MEDIKA PRATAMA",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Gerilya Kampung Baru RT.16 RW.002 No. 53 Banjarmasin",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59940970726515, 
+                    -3.3648999692923276
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. K. S. Tubun No. 92 B/56 Rt. 10 Rw. 04 ",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5940261, 
+                    -3.330909
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK BANJAR INDAH SEHAT",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Raya Banjar Indah Permai 1",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6199207, 
+                    -3.3474265
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek SS",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan K.S. Tubun",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59102737206224, 
+                    -3.3302581698588756
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK YURI FARMA",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Adhiyaksa Nomer 16D",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59197422872052, 
+                    -3.289401319171851
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Watsons Duta Mall Banjarmasin ",
+                "Fasilitas": "Apotek",
+                "Alamat": "Duta Mall Banjarmasin Lt.1 Unit D8, D9, D10 Jl. A Yani No.98,",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Perdagangan No. 31 RT. 022 RW. 002",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5848703, 
+                    -3.3012399
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Mandiri Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Raya Banjar Indah No.24  ",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59736945, 
+                    -3.3246845
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTIK CALLISTA FARMA",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. AMD KOM. TATAH BANUA INDAH I NO,101 RT. 19",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5994347, 
+                    -3.3655308
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK PERDANA",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Jenderal Achmad Yani KM 3,5 NO.65 A",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6061188, 
+                    -3.3297683
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik ",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Beruntung Jaya Ruko No.7-8 RT.045 RW.004",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6186072, 
+                    -3.3518937
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Mutiara No. 63",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.58792254182568, 
+                    -3.3346000363470063
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK K-24 VETERAN",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Veteran No. 63A RT. 11",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6006391, 
+                    -3.3171899
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTIK",
+                "Fasilitas": "Apotek",
+                "Alamat": ""APOTEK MANDIRI FARMA"
+JL. RAYA BANJAR INDAH NO.24 RT.30",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6186072, 
+                    -3.3518937
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Komplek AMD I Nomor 41 RT.018 RW.002",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5784169, 
+                    -3.27816
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek BIOMEDIKA",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. CEMPAKA IV No.21",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.58891333901943, 
+                    -3.3184043
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTIK",
+                "Fasilitas": "Apotek",
+                "Alamat": ""APOTEK TUNAS TUNGGAL"
+JL. BANJAR INDAH PERMAI RAYA NO.003 RT.057",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6186072, 
+                    -3.3518937
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl Pramuka",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.62910183466516, 
+                    -3.3432162923387367
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JALAN HAJI BASRI KOMPLEK KAYU TANGI 2 JALUR 2",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.58841176803193, 
+                    -3.294288134024309
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK KITA SEHAT",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL CEMPAKA RAYA",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.56887159565518, 
+                    -3.3296913589929176
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTIK YAFI",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. MELATI INDAH KOMP. BUMI MELATI PERMAI RAY 3 JLR 2 BLOK",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6367141, 
+                    -3.3399428
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK AI CARE",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. BALI NO. 10",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.58709530594047, 
+                    -3.314295670955474
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Manunggal",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. A.Yani Km 4,5 Komp. Bina Brata Manunggal 2 No 17",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6192095, 
+                    -3.3354328
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Kimia Farma Sultan Adam 2",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Sultan Adam Nomor 10",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, 
+                    null
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Mubarak",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Hksn komp. Amd Permai Blok A.9 Rt. 25",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5731148, 
+                    -3.2802599
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Raya Beruntung Jaya No. 48, RT. 045, RW. 004",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6224835, 
+                    -3.3522133
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Sutoyo S Gg.Bina Bahari, Rt.005/Rw.001",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5682788, 
+                    -3.3211834
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Aasiyah Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Gerilya Kampung Baru No. 28 RT. 14 RW.02",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.59824387799235, 
+                    -3.360124594055557
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JALAN PANGERAN HIDAYATULLAH RUKO 56 KAV 6N RT.014 RW.002",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6118955, 
+                    -3.3088565
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Pangeran Hidayatullah Ruko 56 Kav 6N RT.014 RW.002",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6118955, 
+                    -3.3088565
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Pangeran Hidayatullah Ruko 56 Kav 6N RT.014 RW.002",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6118955, 
+                    -3.3088565
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Amanah Premier Clinic",
+                "Fasilitas": "Apotek",
+                "Alamat": " Jalan Dahlia",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5833148809931, 
+                    -3.3287647833756275
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik Sederhana",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Kelayan B Tengah No. 18, Kelayan Tengah, Kec. Banjarmasin Selatan, Kota Banjarmasin",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.594802, 
+                    -3.336665
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTIK",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. GERILYA PERADABAN RT.031 RW.002 ",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5972976, 
+                    -3.3530364
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. BRIGJEN H. HASAN BASRI PONDOK METRO INDAH RT.39 RW.03",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -, 
+                    -
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL MELATI INDAH, RT 006 RW  001, KECAMATAN BANJARMASIN TIMUR, KELURAHAN PEMURUS LUAR, KOTA BANJARMASIN",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                     114.63459051080034, 
+                    -3.3419146192814537
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "jl harmoni II, pekapuran raya , banjarmasin timur ,banjarmasin, kalimantan selatan",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.33517 114.60759, 
+                    -3.33517 114.60759
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik Inayah",
+                "Fasilitas": "Apotek",
+                "Alamat": "“APOTEK INAYAH”
+JL. NIAGA NO.10",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -, 
+                    -
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. PADAT KARYA KOMP. PURNAMA PERMAI I JL. 9 NO. 141, RT. 009, RW. 001",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6P8PPJ44+QF, 
+                    PJ45+C5V
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Sultan Adam No. 108, RT 016 / RW 002",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.599410, 
+                    -3.292769
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Kampung Melayu Darat No.30",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.60119527166817, 
+                    -3.316785183032881
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang dan Obat Farmasi Untuk Manusia di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Tatah Belayung, RT.012, RW.002",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                     114.608585, 
+                    -3.362522
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Hanan",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jalan Gerilya RT.28",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.596.283, 
+                    -3.349.194
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Gerilya Komp. Mahatama Taman Mahatama Raya No.102",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5994347, 
+                    -3.3655308
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "APOTEK",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. HKSN",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.574155, 
+                    -3.288303
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl Kinibalu No. 08",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.584604, 
+                    -3.319517
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl.Mutiara No.63, RT.001/RW.001",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.58783407521051, 
+                    -3.3344502531899605 
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": ""APOTEK NASYA FARMA"
+JL. HKSN NO.12 RT.19 ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -, 
+                    -
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik ",
+                "Fasilitas": "Apotek",
+                "Alamat": "Jl. Sultan Adam Gg. Mika V No. 17, RT. 012, RW. 02",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6059563, 
+                    -3.3062829
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik",
+                "Fasilitas": "Apotek",
+                "Alamat": ""APOTEK PENDIDIKAN SARI MULIA"
+JL. PRAMUKA KM.6 NO.02 RT.19 RW.02",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -, 
+                    -
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotek Herlina anjipa",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL KELAYAN A GG PGA NO 101",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5969072, 
+                    -3.3334691
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "apotek yulya budiarti",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL TEMBUS PERUMNAS KOMP SARI MEKAR NO 28",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.5930061, 
+                    -3.2795482
+                ]
+            }
+        },
+    
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Apotek Azali Farma",
+                "Fasilitas": "Apotek",
+                "Alamat": "JL. SULTAN ADAM NO.106",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null, null
+                ]
+            }
+        },
+    
+    ]
+}

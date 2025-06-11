@@ -1,0 +1,4696 @@
+{
+    "type": "FeatureCollection",
+    "name": "persebaranfaskes",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Dr. L",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl Gatot Subroto no 88",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6051612",
+                    "-3.3227983"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK GIGI MY DENTIST VETERAN",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl.veteran No.77 Rt.11 Rw.002",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1145290009,
+                    -33222592
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. SOETOYO S. KOMPLEK WILDAN NO.043 RT.003 RW.001",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": "KOMP. BUMIMAS ASRI BLOK D NO. 02 RT. 35 RW. 02",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6038094",
+                    "-3.3349014"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Kecantikan",
+                "Fasilitas": "Klinik",
+                "Alamat": "Devanka Aesthetic Clinic Jalur Utama Jalan Pangeran Hidayatulla Komp. Triwijaya Residence Bangunan Pertama",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.61522020897559",
+                    "-3.31012765"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Mitra Medika",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL PRAMUKA KM 6 RUKO MITRA MAS NO 11L",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.62891296509126",
+                    "-3.3203452097251938"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas klinik swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Jenderal Achmad Yani KM. 2 NO. 83",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.59822715501599",
+                    "-3.3223220421033797"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "MATTA SPECIALIST",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. P. HIDAYATULLAH BANUA ANYAR",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "aktivitas",
+                "Fasilitas": "Klinik",
+                "Alamat": "jalan gerilya komplek Mahatama 1 No.017 Rt.025",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Utama Amanda",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. BELITUNG LAUT NO. 6 RT. 6/10 BANJARMASIN.",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5798895",
+                    "-3.3040181"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Natasha Skin Clinic Center",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. A. Yani KM. 5.8",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "CV. CENTURY RAYA 7",
+                "Fasilitas": "Klinik",
+                "Alamat": "Cv. CENTURY RAYA 7, JL. PANGERAN SAMUDRA NO. 1 A ",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Manggis No.19A Rt.17 RW.02",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.610258",
+                    "-3.3224155"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Sinta Medika",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Pramuka Melati Indah No 82",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.630484",
+                    "-3.3443"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Rafisa Sungai Andai",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Padat Karya Komp. Purnama I No.2 Sungai Andai  Kota Banjarmasin",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6104962",
+                    "-3.2928772"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK GIGI MY DENTIST SUTOYO",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL.Sutoyo S No,128 RT.008",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK DERMASTER",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Achmad Yani KM 3.5 No 127 ",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK YUNITA",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Cempaka 9",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.58120273608803",
+                    "-3.323772215360429"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PERDAGANGAN",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Pramuka Komp. Semanda 1 No 4",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Gloskin Aesthetic Clinic Banjarmasin",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Pangeran Antasari No. 68 C , RT/RW: 009/001 ",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5985228",
+                    "-3.325717"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "klinik pendidikan sari mulia",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL.PRAMUKA NO.02 RT.019 RW.002",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK PRATAMA UNISKS",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. ADHYAKSA NO.002 RT.032",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5925828",
+                    "-3.3187496"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "CV BANJAR BAHARI",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. PANGLIMA BATUR NO.20",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Yayasan Ihsan Salsabila Firdaus",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Dahlia gang Budaya Blok II No 49 RT 28 ",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK GIGI MY DENTIST SULTAN ADAM",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL PINUS RAYA NO.10 RT.19 RW.006 ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Konstruksi ",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Perdagangan Komplek Graha Citra Asri No. 075 Rt. 022 Rw. 002",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Ekle's Clinic Banjarmasin",
+                "Fasilitas": "Klinik",
+                "Alamat": "Duta Mall LD. B5, B6, D8, D9, Jl. A. Yani, Sungai Baru",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Tirta Medical Centre Banjarmasin ",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Gatot Subroto No, 39 - 40",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Laboratorium Kesehatan",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl Kol Sugiono No. 14 ",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Mitra Medika",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL PRAMUKA KM 6 RUKO MITRA MAS NO 11L",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.62891296509126",
+                    "-3.3203452097251938"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Pangeran Hidayatullah",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.61809498247746",
+                    "-3.3153597139061146"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Junjung Buih Beauty",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl.Pangeran Antasari",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK BUNDA RUTH A.S",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. SUTOYO S. NO. 1F RT 01 RW 01",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Pendidikan",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Rantauan Timur I/16",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Toko Alat Pemadam Kebakaran",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. PERINTIS KEMERDEKAAN NO.31 RT.021 RW.001",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. Achmad Yani Km. 4,5 Komplek Bina Brata Blok N NO. 009 ",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "yayasan",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl Sutoyo S gg Arrahman No 60",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Poliklinik Gigi drg.Rahma Medikawaty",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Pangeran Hidayatullah ",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK PRATAMA SINARALAM MEDIKA",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. TEPIAN KALI BARITO RT.036",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL.Cemara Raya No.005 Rt.036",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Lingkar Dalam Selatan no.008 Rt.30 Rw.02",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Kimia Farma 217 Ulin Banjarmasin",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. A. Yani KM. 2 No. 136",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. KS. TUBUN NO.168/5 RT.004 RW.001",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Amanda Estetika",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Kolonel Sugiono No.52",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.598631910749",
+                    "-3.3257597096122007"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "CV. MURAH SEHAT BERSEMI",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. SOETOYO S NO. 02 RT. 21",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PT.",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. DHARMA PRAJA III NO. 55 RT. 017 RW. 002",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Kimia Farma 547 Jahri Saleh",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Sultan Adam No. 12, RT. 22",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "LBC BANJARMASIN",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl S. Parman No 8",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "CV VISUAL ARIF HITAM",
+                "Fasilitas": "Klinik",
+                "Alamat": "Komplek Perumahan Citra Garden Blok d1 Nomor 2 Jalan A. Yani KM. 6.8",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Pelayanan Radiologi",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. A. YANI KM 5,5 NO. 98 ",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Praktek Mandiri Bidan",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Gerilya Graha Mahatama I Rt.25 Rw.02",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK NUPUS",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL SULTAN ADAM GG PERMATA",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. H. HASAN BASRI NO. 083 RT. 004 RW. 001",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "CV. ZIEN LIMA SEMBILAN",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. H HASAN BASRI SIMPANG TANGGA KOMP. PLN NO.041 RT.037",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5908631",
+                    "-3.2862574"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "cv",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. H HASAN BASRI SIMPANG TANGGA KOMP. PLN NO.041 RT.037",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "klinik kesehatan",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Manunggal II Gg. III",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PT BUDI ASIA JAYA",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Gatot Subroto Raya No. 10 ",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "CV BERKAT JAYA GEMILANG",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. GATOT SUBROTO RAYA NO. 10-16",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK ASY-SYIFA",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Pramuka No. 65",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "perdagangan",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. KOMPLEK MANTUIL RAYA BLOK P NO.019 RT. 021",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan",
+                "Fasilitas": "Klinik",
+                "Alamat": "JALAN SIMPANG GATOT SUBROTO VI NO. 021 RT. 033",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "CV",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. TEMBUS MANTUIL GG MEKAR SARI NO. 47 RT. 004",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Kimia Farma 733 Pramuka",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Pramuka No. 10, RT/RW. 30/02",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Pratama Gatot Subroto",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Gatot Subroto No 51",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. KAMPUNG MELAYU DARAT RT.8 RW.1 NO.51A",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "klinik",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Haryono MT No.125 Rt.005 Rw.001",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "CV HUWAN NUUR",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. BELITUNG DARAT RT.035 RW.003",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "BERKAT ABADI PHARMINDO",
+                "Fasilitas": "Klinik",
+                "Alamat": "Gatot Subroto XI Jl. Arthaloka No. 17/41",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Tumbuh Kembang Anak dan Remaja Boo Bee",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Pahlawan No. 77",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Barito Medika",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Mayjend. Sutoyo S No. 2D",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. Veteran Samping Koramil Timur Sebelum Lampu Merah Gatot",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Naufal",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Pulau Laut No.45 Rt. Rt.003 Rw.01",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Dsabiq",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Pramuka nomor 26",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "perdagangan dan jasa",
+                "Fasilitas": "Klinik",
+                "Alamat": "KOMP.BUNYAMIN PERMAI III RAY XI RT.007 RW.001",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas ",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL.SULTAN ADAM NO.018 RT. 031 RW. 002",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6007651",
+                    "-3.308992"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan ",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Agatis II Rt. 041 Rw. 001",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Ib",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Sultan Adam Komplek Pondok Kelapa 1 No.61 RT.13",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Pratama Benings Banjarmasin",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Ahmad Yani Km. 5,5 Nomor 444, RT/RW 017/002",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "kLINIK DARPLASTIC",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Pangeran Hidayatullah",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6083141",
+                    "-3.3009765"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PERDAGANGAN ECERAN BARANG DAN OBAT FARMASI",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. AMD KOMPLEK ABDI PERSADA I NO. 17",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Yayasan Harapan Insan Permata",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. KS TUBUN NO 165",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.58873",
+                    "-3.3313421"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Mahardhika",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. Pangeran Hidayatullah Komplek Ruko No.07 banjarmasin",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan ",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. PERDAGANGAN NO.088 RT.023 RW.002",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Mitra Barito Sehat",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Sultan Adam RT.02 Ruko 4-5",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Mitra Barito Sehat",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Sultan Adam RT.02 Ruko 4-5",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Kimia Farma 061 Veteran ",
+                "Fasilitas": "Klinik",
+                "Alamat": "Klinik Kimia Farma 061 Veteran, Jl. Veteran No. 51 B",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "dr.FARHANI AESTHETIC CLINIK",
+                "Fasilitas": "Klinik",
+                "Alamat": "jl. pangeran hidayattulah kav 6 rt. 14 rw.02",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "CV. GENAZA MANDIRI",
+                "Fasilitas": "Klinik",
+                "Alamat": "JALAN VETERAN NO. 11 B RT.034",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Kesehatan",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. GATOT SUBROTO NO. 3 A",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Agneskin Aesthetic Clinic",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. GATOT SOEBROTO NO. 4D",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6152061",
+                    "-3.3309773"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "DEVANKA AESTHETIC CLINIC",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Pangeran Hidayatullah Komp. Triwijaya Residence, RT.019/RW.002",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Bumi Mas Raya No 3 Rt 008 Rw 001",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "cv",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. GUNUNG SARI UJUNG RT. 013 RW. 001",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "klinik pratama",
+                "Fasilitas": "Klinik",
+                "Alamat": "jalan jahri saleh no 162",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Kecantikan \"DM Clinic Beauty Salon & Spa\"",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Sultan Adam",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6000284",
+                    "-3.2932047"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik dr Dellis JF",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Sutoyo S No.338",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5695354",
+                    "-3.323403"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "praktek dokter gigi",
+                "Fasilitas": "Klinik",
+                "Alamat": "jl ramin 1 no.19 komplek banjar indah permai",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK ALMETA MEDIKA",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Padat Karya",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6112758079067",
+                    "-3.29262445046122"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "CV",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. DAHLIA NO. 18 RT. 010",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "DUA RANA PUTRI",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. CEMPAKA 13",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. IR. PHM. NOOR NO. 147 RT. 024 RW. 002",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. DAHLIA RAYA NO. 04 RT. 010 RW. 002",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PERDAGANGAN",
+                "Fasilitas": "Klinik",
+                "Alamat": "JALAN KARTA JAYA NOMOR 9 KOMP. BERUNTUNG JAYA",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Gigi Vidental",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Benua Anyar RT 5 No 6",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. AMD XII PEMURUS INDAH RT. 27 KOMPLEK GRAND MAHANTAS NO. F. 25",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Gigi Al-Khair",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. BANYIUR LUAR NO.58 RT.13 RW.01",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.57332116928477, -3.339734439915889
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Kimia Farma 188 S. Parman",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Letj. Jend.  S. Parman  NO. 42",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.58983928824728, -3.313043013327867
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Jasa Pengobatan",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Pramuka RT. 30, Pemurus Luar Kota Banjarmasin",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.6289025457031, -3.3348097077830356
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "MANAHAN MEDICAL CENTRE",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. AHMAD YANI KM3,5 NO149 BANJARMASIN 70234",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.60952499798925, -3.3281962123495816
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK SWASTA",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Pramuka KM. 6 NO. 33 RT/RW 002/001",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "klinik pelayanan kesehatan",
+                "Fasilitas": "Klinik",
+                "Alamat": "jln. gerilya komp graha mahatama no.01",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Pratama",
+                "Fasilitas": "Klinik",
+                "Alamat": "jalan jahri saleh no 162",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PERDAGANGAN",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. AIS NASUTION GG. GOTONG ROYONG NO.40",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PT SUKSES BERSAMA ARIFIN",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL TELUK TIRAM DARAT",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK YUNITA",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Cempaka IX No. 20 RT.003 RW.001",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Sehat Abadi Farma",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Perdagangan No 2 Rt 23",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5716095",
+                    "-3.2923577"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Adhyaksa II No. 105",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Pemerintah",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Adhyaksa II No. 105",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "NAZAR GROUP",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl.Manggis No.19A RT/RW;17/02 Kel.Kuripan Kec.Banjarmasin Timur Kota Banjarmasin 70234",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Dr. Naz Aesthetic clinic",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Manggis No. 19 A  RT 17 RW 02",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Rumah Komplementer Sahlah",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Veteran Komp. A Yani II No. 19\nRt. 032/002",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Pratama Rawat Jalan Abdi Persada",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Sutoyo S No. 365",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Lov's Apothecary",
+                "Fasilitas": "Klinik",
+                "Alamat": "JALAN SULTAN ADAM NOMOR 2",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PERDAGANGAN ECERAN BARANG DAN OBAT FARMASI",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. SULTAN ADAM KOMP. MANDIRI PERMAI",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Veteran KM.3 Nomor 60 RT 026 RW 002",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Pramuka No. 22 C, RT. 030, RW. 002",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "GM",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. PEMBANGUNAN II GG. SUKA DAMAI NO. 9",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "GM",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. PEMBANGUNAN II GG. SUKA DAMAI NO. 1 A",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Advent",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Mayjend Sutoyo S No. 03 RT 49",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PENGADAAN DAN JASA KONSTRUKSI",
+                "Fasilitas": "Klinik",
+                "Alamat": "jl. Komplek Bunyamin Permai II Ray 5 No. 39",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Veteran No. 29 A",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. PEMBANGUNAN II GG SUKADAMAI NO. 9 RT 49",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "My Skin Aesthetic Clinic",
+                "Fasilitas": "Klinik",
+                "Alamat": "JALAN SKIP LAMA Gg II NO. 55A ",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "perdagangan eceran",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Perdagangan Komplek HKSN permai Blok 6d Nomor 54",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5794099",
+                    "-3.2797906"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "ZAP Clinic Duta Mall Banjarmasin",
+                "Fasilitas": "Klinik",
+                "Alamat": "Duta Mall Banjarmasin, Lantai Dasar unit A.010&C.015",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Sultan Adam Komp.Family Permai No.19 Rt.20",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6007651",
+                    "-3.308992"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "CV RESTU ORANG TUHA",
+                "Fasilitas": "Klinik",
+                "Alamat": "JALAN KELAYAN A GANG H.ARIF/ 12 RT.019",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5969671",
+                    "-3.332853"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Kecantikan EFDE",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Pramuka No. 114",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.62840145232794",
+                    "-3.3333633184566276"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Utama Prodia Banjarmasin",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Jend. Achmad Yani Km 3,5 No. 131 - 133",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan ",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. KP. TANDEAN NO. 059 RT. 001 RW. 001",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.597187",
+                    "-3.3226872"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK GIGI MY DENTIST SULTAN ADAM",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. PINUS RAYA NO.10 RT.019 RW.006 ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5940097",
+                    "-3.2988476"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Afiat Insani",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. Teluk Tiram Darat No. 38 Rt. 018 Rw. 02",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5799069",
+                    "-3.3296545"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas ",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Cemara Raya No. 037 Rt. 036",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5940097",
+                    "-3.2988476"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "BUKAN HANYA SEKEDAR",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. HKSN KOMP. AMD PERMAI BLOK D8 NO. 215",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5691767",
+                    "-3.2749815"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "drg. GUSTI M. PERDANA PUTERA",
+                "Fasilitas": "Klinik",
+                "Alamat": " Sultan Adam",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6008108",
+                    "-3.3062893"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Jenderal Ahmad Yani Kilometer 1 nomor 37",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5925828",
+                    "-3.3187496"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta ",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. DAHLIA RAYA NO. 43 RT. 18 RW. 00",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.57987199655062",
+                    "-3.329807947481695"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan ",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Japri Zam Zam Komplek LLASDP 2 Rt.051  ",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5772904",
+                    "-3.30851"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Sutoyo S No.22",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5783251",
+                    "-3.3202618"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Sutoyo S No.22",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5783251",
+                    "-3.3202618"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PRAKTEK MANDIRI PERAWAT AHMAD JIMLI A, AMK",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. MANTUIL PERMAI KOMP. ERABANGUN BLOK A NO. 18 RT. 001 RW. 001",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5466382",
+                    "-3.3511548"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "klinik Bunga Kalimantan",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl.BRIGJEND H.HASAN BASRI KAYUTANGI NO.4D RT.14",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5784169",
+                    "-3.27816"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "AP KAYUH BAIMBAI",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Tembusan Mantuil",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.585644549228",
+                    "-3.3444510999999997"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Pratama Telkomedika Banjarmasin",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Djok Mentaya No. 108",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan ",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. HASAN BASRI KOMP. KAYU TANGI II NO. 147",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5848703",
+                    "-3.3012399"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Pangeran No.009 Rt.023 Rw.002",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5848703",
+                    "-3.3012399"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Soetoyo S No.56, RT.038, RW.003 ",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5783251",
+                    "-3.3202618"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Zafri Zam-Zam",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5707995",
+                    "-3.3071803"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. PEKAPURAN B LAUT RT. 06 RW. 01",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5985228",
+                    "-3.325717"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK YSF",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. KAMPUNG MELAYU DARAT  NO. 51B",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6006391",
+                    "-3.3171899"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK MATA SEROJA",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Belitung Laut",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5873729",
+                    "-3.3097092"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. BRIGJEND HAJI HASAN BASRI  ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5848703",
+                    "-3.3012399"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. RAMIN I NO.19 RT.014 RW.002",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.61864935272469",
+                    "-3.3520202909385546"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK UTAMA RAWAT JALAN GARUDA ESTETIKA",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Veteran",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.59683360808202",
+                    "-3.3201396499999998"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Pratama Lambung Mangkurat Medical Center (LMMC)",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Brigadir Jenderal Hasan Basri Komplek Universitas Lambung Mangkurat Gedung Klinik LMMC",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.58610332962428",
+                    "-3.29649415"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "GARUDA ESTETIKA",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Veteran No. 53A",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6006391",
+                    "-3.3171899"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "GARUDA ESTETIKA",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Veteran No. 53A",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6006391",
+                    "-3.3171899"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. PERINTIS KEMERDEKAAN NO. 19 A RT. 21 RW. 01",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5902535",
+                    "-3.3087778"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "family care",
+                "Fasilitas": "Klinik",
+                "Alamat": "jl dharma budi i no 62",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.62615813445105",
+                    "-3.3269165000000003"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Sungai Andai Komplek Andai Jaya Persada Blok F Rt.035",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6104962",
+                    "-3.2928772"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "CV ARTA MASNA WIJAYA",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Siswondo Parman Gang Haji Kaderi No. 49",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.57754017586656",
+                    "-3.3090183429347446"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "White Dental Care Banjarmasin",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl.  Sultan Adam RT 17 No. 7",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5947516",
+                    "-3.2945321"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "ERHA ULTIMATE BANJARMASIN",
+                "Fasilitas": "Klinik",
+                "Alamat": "Duta Mall Banjarmasin Jl. A Yani KM. 2 RT 24 RW 017",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "DR DE Aesthetic Clinic",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Aes Nasution No. 9 Rt. 15",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5941655",
+                    "-3.3180146"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "HRVI DENTAL KLINIK",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. kinibalu No.38 Rw.03,Kel Teluk Dalam Banjarmasin",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5844294",
+                    "-3.3186141"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": "GATOT SUBROTO III NO.4/141",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6108194",
+                    "-3.3262793"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Pangeran Hidayatullah No. 34",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6079865",
+                    "-3.3009437"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PT HALWA PUTRI MANDIRI",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Cempaka Raya Wildan Sari III",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.56743102599278",
+                    "-3.3303549242646633"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl Simpang Limau",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6292072",
+                    "-3.320308"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Pramuka",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.61784736195897",
+                    "-3.316965101971565"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Veteran RT. 23",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6094447",
+                    "-3.3167172"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. HKSN No. 8 RT. 19",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5716095",
+                    "-3.2923577"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "JALAN S. PARMAN KOMPLEK RUMAH SAKIT ISLAM BANJARMASIN",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5902535",
+                    "-3.3087778"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Bidan Rusmilawati",
+                "Fasilitas": "Klinik",
+                "Alamat": "Komp. Rahayu Pembina 3 No. 06 Rt. 023 Rw. 002",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.62615813445105",
+                    "-3.3269165000000003"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Pangeran Antasari No. 1A  ",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6038094",
+                    "-3.3349014"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK DUA DARA MEDIKA",
+                "Fasilitas": "Klinik",
+                "Alamat": "KLINIK DUA DARA MEDIKA, Jl. Sulawesi, Gang Bandaneira, RT 20",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.59175569492143",
+                    "-3.3105029917982707"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KELINIK",
+                "Fasilitas": "Klinik",
+                "Alamat": "TELAGA BIRU",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5680904",
+                    "-3.3266301"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Praktek Dokter Gigi Perawatan Jalan ",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Gatot Subroto I Kel. Kebun Bunga Kec. Banjarmasin Timur",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6156610092745",
+                    "-3.328891966488842"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "klinik",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Pangeran Antasari no.139",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.60503268523462",
+                    "-3.3273658"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Sehat Sabilal Muhtadin",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Letnan Jenderal R. Suprapto",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5908586",
+                    "-3.3191593"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. PANGERAN HIDAYATULLAH KOMP. RUKO 56 KAV. 6 BANUA ANYAR RT.014",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6058238",
+                    "-3.3145026"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Gigi My Dentist Veteran",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Veteran",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6004644",
+                    "-3.3202449"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Gigi My Dentist Sutoyo",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Sutoyo S",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5872764",
+                    "-3.3196436"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "JALAN PRAMUKA SATELIT PERMAI BLOK B/30 RT. 19 RW. 02",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6292072",
+                    "-3.320308"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK WIGAS FARMA",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. DHARMAWANGSA NO. 35",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6186072",
+                    "-3.3518937"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "MAHAPURI NUSANTARA ENERGY",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Pekapuran Raya Komplek Yatera No. 27",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6038094",
+                    "-3.3349014"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "CV ALDIKA FARMA",
+                "Fasilitas": "Klinik",
+                "Alamat": "JALAN MULAWARMAN NOMOR 1 RT. 033 RW.003",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5783251",
+                    "-3.3202618"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Garuda Dental Aesthetic",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Brigjen H Hasan Basri Jl. Komplek Kayu Tangi No. 9 ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5947516",
+                    "-3.2945321"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "JALAN DAHLIA RAYA NOMOR 9 RT. 034",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5799069",
+                    "-3.3296545"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK SEHAT SABILAL MUHTADIN",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. JENDRAL SUDIRMAN NO. 1",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5888729",
+                    "-3.313682"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "SOFIA BERKAH SEHAT",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Sultan Adam No. 60",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6007651",
+                    "-3.308992"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Amanah Premier",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Dahlia",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5833148809931",
+                    "-3.3287647833756275"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Amanah Premier",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Dahlia",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5833148809931",
+                    "-3.3287647833756275"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Toko Obat",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl Kelayan A II Gg Indonesia Indah No 45",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5947063",
+                    "-3.3415614999999996"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": "Komp. Banjar Indah Permai, Km. 5,7., Jl. Ramin Raya No 47",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.622994",
+                    "-3.3456864"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "TOKO OBAT SEHAT",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL TATAH PAMANGKIH LAUT DEPAN KOMPLEK BUMI WAHYU UTAMA 14",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6186072",
+                    "-3.3518937"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Kinibalu No.35",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5844294",
+                    "-3.3186141"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "KOMPLEK BANJAR INDAH PERMAI KM.5,7 JL. MAHONI RT.012 RW.002",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6186072",
+                    "-3.3518937"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Azhari",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl AMD Besar No 26",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.61045752306443",
+                    "-3.331163039178057"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Mulawarman No. 1",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5783251",
+                    "-3.3202618"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Suaka Ananda",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. DHARMA BUDI II KOMPLEK BUNYAMIN ASRI RT.19",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.630484",
+                    "-3.3443"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Pratama Harapan Sehat",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl Komp Kesehatan No. 7  ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.60136655837766",
+                    "-3.2931641000000003"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Amin Syifa",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Perintis Kemerdekaan No. 15 RT 21",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5902535",
+                    "-3.3087778"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK DOKITA PRAKTIK DOKTER UMUM DAN DOKTER GIGI ",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. S. Parman",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5892845",
+                    "-3.3106336"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta ",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. CENDRAWASIH ",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5772904",
+                    "-3.30851"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "klinik bersalin",
+                "Fasilitas": "Klinik",
+                "Alamat": "jl Sutoyo Gg 20",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5925828",
+                    "-3.3187496"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Hasan Basri No. 9-15",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5848703",
+                    "-3.3012399"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "NL Beauty Care",
+                "Fasilitas": "Klinik",
+                "Alamat": "jl.Sungai Andai Komplek.Herlina Perkasa Blok.AB No.52",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6142562",
+                    "-3.2954369999999997"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "WIGAS ANUGERAH UTAMA",
+                "Fasilitas": "Klinik",
+                "Alamat": "Beruntung Jaya Jln. Dharmawangsa No. 35",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6186072",
+                    "-3.3518937"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "WIGAS ANUGERAH UTAMA",
+                "Fasilitas": "Klinik",
+                "Alamat": "Beruntung Jaya Jln. Dharmawangsa No. 35",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6186072",
+                    "-3.3518937"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "CV PANCAR DHOHA",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. Seberang Mesjid GG. Hidayatul Khair No. 20",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5958095568176",
+                    "-3.311262551328262"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Penjualan obat farmasi",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Sungai Andai No.69 RT.01",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6092323350836",
+                    "-3.2968475533470003"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Amerta Dental",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Manggis No.1D",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.61128706230087",
+                    "-3.3266693226408672"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Belitung Darat Komp Darma Bhakti/12",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.580331",
+                    "-3.3063426"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Alesha Klinik",
+                "Fasilitas": "Klinik",
+                "Alamat": "\u201cALESHA KLINIK\u201d \nJL. LINGKAR DALAM SELATAN PERUMAHAN GRAND BATUAH MAHATAMA NO.22 RT.21 RW.02",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.59957504372795",
+                    "-3.365491578255578"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "AKTIVITAS KLINIK SWASTA",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Pramuka Komplek Green Pramuka Jalur Legolas No. 2, RT. 039, RW. 002",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.625352",
+                    "-3.3255481"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PT MULIA DAMAI SEJATI MEDIKA",
+                "Fasilitas": "Klinik",
+                "Alamat": "JALAN HIKMAH BANUA KOMPLEK SEJAHTERA LESTARI 2 NO.10 RT.027 RW.002",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6292072",
+                    "-3.320308"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PT MULIA DAMAI SEJATI MEDIKA",
+                "Fasilitas": "Klinik",
+                "Alamat": "JALAN HIKMAH BANUA KOMPLEK SEJAHTERA LESTARI 2 NO.10 RT.027 RW.002",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6292072",
+                    "-3.320308"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. A. Yani KM 2 No. 72-73",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.597187",
+                    "-3.3226872"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Rumah Ratu Slimming And Antiaging Clinic",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Lingkar Dalam Selatan No. 8",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6038094",
+                    "-3.3349014"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PT. CITRA SEHAT UTAMA",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Pramuka KM. 6 NO. 33 RT/RW 002/001",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.630484",
+                    "-3.3443"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "perdagangan",
+                "Fasilitas": "Klinik",
+                "Alamat": "jl pramuka komplek rahayu pembina iv ujung",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6292072",
+                    "-3.320308"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "klinik",
+                "Fasilitas": "Klinik",
+                "Alamat": "jl pramuka komplek rahayu pembina iv ujung",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6292072",
+                    "-3.320308"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "BSADIQ",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Pramuka Nomor 26",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6182424",
+                    "-3.315381"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Guardian Duta Mall Banjarmasin",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan  Ahmad Yani KM 02",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "INSANI MULIA MEDIKA",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Pramuka No. 29, RT.007, RW.001",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.630484",
+                    "-3.3443"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Drg Roy K Tonny",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. KS. Tubun Gg. II Damai",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.59364389043783",
+                    "-3.331709161729933"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "ARWANA FARMA INDONESIA",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Pangeran Hidayatullah No.5, RT.016, RW.001",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.65250564189863",
+                    "-3.3042636041565254"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "perdagangan eceran",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan HKSN",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.57801732962618",
+                    "-3.2776976058833744"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Utama Rafisa Dahlia",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Dahlia Raya No 41",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5828322",
+                    "-3.3276498"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PT ALEA BERKAH BERJAYA",
+                "Fasilitas": "Klinik",
+                "Alamat": "BANJAR INDAH PERMAI PERUM HAYATI RESIDENCE NOMOR C2, RT 50/RW 02",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.622994",
+                    "-3.3456864"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "PT ALEA BERKAH BERJAYA",
+                "Fasilitas": "Klinik",
+                "Alamat": "BANJAR INDAH PERMAI PERUM HAYATI RESIDENCE NOMOR C2, RT 50/RW 02",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.622994",
+                    "-3.3456864"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Sutoyo S Gg.20 Ampera RT.14 No.10",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.59750526571096",
+                    "-3.3247398500000003"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "GHINA BEAUTY",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Bumi Mas Raya No.3",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.61315080341987",
+                    "-3.339829663689185"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "toko obat zhillan",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl Belitung Darat",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5774319",
+                    "-3.303975"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "perdagangan eceran",
+                "Fasilitas": "Klinik",
+                "Alamat": "jalan gatot subroto",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6108194",
+                    "-3.3262793"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK SARI MULIA SABAR",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan HKSN",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.57806933459896",
+                    "-3.2775068878378284"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Kayu Tangi I Jalur II No.099 Rt.002 Rw.001",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5940097",
+                    "-3.2988476"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KESUMA TALENTA FARMA",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Ahmad Yani Km. 3,5 Nomor 227 D",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6108194",
+                    "-3.3262793"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Dokter L",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl Gatot Subroto no 88",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6051612",
+                    "-3.3227983"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Raya Pramuka No. 88, Banjarmasin",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.630484",
+                    "-3.3443"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "JALAN LAKSTARDA PERUMAHAN VILLA SAKURA MAHATAMA BLOK SAKURA 7 KAVLING 106",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6104962",
+                    "-3.2928772"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik kecantikan dmr gatot subroto",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl Merpati No.75 RT 32",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.61872860019922",
+                    "-3.325638037276808"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "RIRIN ANDRIANI",
+                "Fasilitas": "Klinik",
+                "Alamat": "KOMP BERINGIN IV NO 58",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6079303",
+                    "-3.329632"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Jasa",
+                "Fasilitas": "Klinik",
+                "Alamat": "Klinik Darplastic\nJl .Pangeran Syarif Hidayatullah No 5 RT 14 RW 02 ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6058238",
+                    "-3.3145027"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK WIGAS",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Intan Raya Komp. Mahantas Modern Land No. J1",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6186072",
+                    "-3.3518937"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Praktek Dokter Umum Dr. Irma Nurniyati",
+                "Fasilitas": "Klinik",
+                "Alamat": "jalan bandarmasih Komplek DPR Gg .01 no.2 ",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.57782369057642",
+                    "-3.3121339131304426"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "LASYIM NEO MEDICA",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Simpang Gatot Subroto VIII Gang Serai No 65",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.62052986583002",
+                    "-3.329589861540198"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": "jl pangeran hidayatullah komplek Banyu Anyar jalur 2B no 115",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.61426314974989",
+                    "-3.312273735226406"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Perdagangan No. 31 RT. 022 RW. 002",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5848703",
+                    "-3.3012399"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Grand Eye Klinik",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Anang Adenansi no 02 A",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.58891333901943",
+                    "-3.3184043"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Pramuka Komplek Satelit Permai Blok B No.20",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.62412069140451",
+                    "-3.3225614480283063"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "WHITEZONE",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Brigadir Jenderal Hasan Basri",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.58880366156424",
+                    "-3.30335214202192"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "TOKO OBAT",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL KELAYAN A DALAM GG DAMAI",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.59776269999999",
+                    "-3.3347987999999997"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK UTAMA INTIBIOS LAB, KLINIK & FARMASI",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jalan Gatot Subroto, Nomor 4 dan Nomor 3",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK PRATAMA POLRESTA BANJARMASIN",
+                "Fasilitas": "Klinik",
+                "Alamat": "JLN S PARMAN NO 16 BANJARMASIN",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.59750526571096",
+                    "-3.3247398500000003"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Jual Obat",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL KELAYAN A NO 315",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.59702029999998",
+                    "-3.3411627"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Gigi",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Masjid Jami No.6",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5932697",
+                    "-3.3056073"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Toko obat dian",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Re. Martadinata Gg. Proklamasi rt. 021 rw. 003",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "115.3985935105042",
+                    "-2.922283432937639"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Kecantikan",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Kaca piring III No. 15",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5897774",
+                    "-3.3253354"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. YOS SUDARSO NO.018 RT.034 RW.010",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.56786939166845",
+                    "-3.3266454374869556"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta ",
+                "Fasilitas": "Klinik",
+                "Alamat": " Komplek Taekwondo, Jalan Sultan Adam Jalur I Nomor 21",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6020617",
+                    "-3.3003135"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta ",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Perdagangan No. 2",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5784169",
+                    "-3.27816"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "klinik maxima",
+                "Fasilitas": "Klinik",
+                "Alamat": " Jalan Jenderal Achmad Yani KM 3, No 138",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Pratama Rawat Jalan LBC Banjarmasin",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. S. Parman / Taman Sari No. 8",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "doremi dental care",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. Perdagangan no 47 RT 22 RW 08",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.586716",
+                    "-3.2880858"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": "JALAN PANGERAN HIDAYATULLAH RUKO 56 KAV 6N RT.014 RW.002",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6118955",
+                    "-3.3088565"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": "Pangeran Hidayatullah Ruko 56 Kav 6N RT.014 RW.002",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6118955",
+                    "-3.3088565"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": "Pangeran Hidayatullah Ruko 56 Kav 6N RT.014 RW.002",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6118955",
+                    "-3.3088565"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "JL.BENUA ANYAR",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL.BENUA ANYAR",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "-1456824",
+                    "-315124"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Bumi Mas Raya No. 3",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6132047",
+                    "-3.339794"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Bumi Mas Raya No. 3",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.6132047",
+                    "-3.339794"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "TSANIA FARMA",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. BUMI MAS RAYA NO. 36 RT. 004 RW.001",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.611782",
+                    "-3.340559"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. SUTOYO S NO. 02",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "MHHP+XM Tlk. Dalam, Kota Banjarmasin, Kalimantan Selatan",
+                    "MHHP+XM Tlk. Dalam, Kota Banjarmasin, Kalimantan Selatan"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. ADHYAKSA NO.002 RT.032",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.5925828",
+                    "-3.3187496"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Yayasan cahaya kesejahteraan madani",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Arjuna no 9",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114,6109515",
+                    "-3,3277624"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. A. YANI KM 5,5 NO. 15A",
+                "Kecamatan": "Banjarmasin Selatan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.62086479787222",
+                    "-3.3429933694045553"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Perdagangan",
+                "Fasilitas": "Klinik",
+                "Alamat": "JL. PANGLIMA BATUR NO.12 RT.009 RW.001",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "-",
+                    "-"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "-",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. K. H. M. Yusuf Pondok Metro Indah Blok J No. 8A, RT. 039 RW. 003",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "-3.283000978290929, 114.59477023631713",
+                    "-3.283000978290929, 114.59477023631713"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Klinik Mandiri Sehat",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Sultan Adam Komp Taekwondo Jalur 1 No 21 ",
+                "Kecamatan": "Banjarmasin Utara"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "12365478,33",
+                    "12345678,22"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Aktivitas Klinik Swasta",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl Kinibalu No. 08",
+                "Kecamatan": "Banjarmasin Tengah"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.584604",
+                    "-3.319517"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "KLINIK",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. S. Parman ",
+                "Kecamatan": "Banjarmasin Barat"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "-",
+                    "-"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nama": "Pengadaan Obat",
+                "Fasilitas": "Klinik",
+                "Alamat": "Jl. Veteran Komp. A. Yani I No. 50",
+                "Kecamatan": "Banjarmasin Timur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    "114.61755028144056",
+                    "-3.3156175864145223"
+                ]
+            }
+        }
+    ]
+}
