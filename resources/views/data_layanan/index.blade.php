@@ -93,52 +93,6 @@
         </div>
     </div>
     
-    <div class="row mt-5 counters">
-        <div class="col-12 mb-4">
-            <h2 class="text-center">Statistik Fasilitas Kesehatan</h2>
-            <p class="text-center text-muted">Data fasilitas kesehatan yang tersedia di Kota Banjarmasin</p>
-        </div>
-        
-        <div class="col-md-3 col-6 mb-4">
-            <div class="card text-center h-100 shadow">
-                <div class="card-body">
-                    <i class="fas fa-pills fa-2x text-primary mb-3"></i>
-                    <h3 class="counter" data-target="176">0</h3>
-                    <p class="card-text">Apotek</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-3 col-6 mb-4">
-            <div class="card text-center h-100 shadow">
-                <div class="card-body">
-                    <i class="fas fa-clinic-medical fa-2x text-success mb-3"></i>
-                    <h3 class="counter" data-target="132">0</h3>
-                    <p class="card-text">Klinik</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-3 col-6 mb-4">
-            <div class="card text-center h-100 shadow">
-                <div class="card-body">
-                    <i class="fas fa-hospital fa-2x text-danger mb-3"></i>
-                    <h3 class="counter" data-target="28">0</h3>
-                    <p class="card-text">Puskesmas</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-3 col-6 mb-4">
-            <div class="card text-center h-100 shadow">
-                <div class="card-body">
-                    <i class="fas fa-heartbeat fa-2x text-warning mb-3"></i>
-                    <h3 class="counter" data-target="11">0</h3>
-                    <p class="card-text">Rumah Sakit</p>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 @include('partials.footer')
 

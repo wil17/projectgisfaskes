@@ -240,10 +240,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Tambahkan baris untuk setiap kecamatan
         data.forEach(kecamatan => {
-            const apotek = kecamatan.Apotek || 0;
-            const klinik = kecamatan.Klinik || 0;
-            const puskesmas = kecamatan.Puskesmas || 0;
-            const rumahSakit = kecamatan["Rumah Sakit"] || 0;
+            const apotek = parseInt(kecamatan.Apotek) || 0;
+            const klinik = parseInt(kecamatan.Klinik) || 0;
+            const puskesmas = parseInt(kecamatan.Puskesmas) || 0;
+            const rumahSakit = parseInt(kecamatan["Rumah Sakit"]) || 0;
             const total = apotek + klinik + puskesmas + rumahSakit;
             
             // Update grand totals
@@ -391,20 +391,26 @@ document.addEventListener('DOMContentLoaded', function() {
                 const kecamatanData = data[selectedKecamatan];
                 
                 if (kecamatanData) {
+                    // Konversi nilai ke integer
+                    const apotekCount = parseInt(kecamatanData.Apotek) || 0;
+                    const klinikCount = parseInt(kecamatanData.Klinik) || 0;
+                    const puskesmasCount = parseInt(kecamatanData.Puskesmas) || 0;
+                    const rumahSakitCount = parseInt(kecamatanData['Rumah Sakit']) || 0;
+                    
                     // Update detail chart
-                    detailFaskesChart.data.datasets[0].data = [kecamatanData.Apotek];
-                    detailFaskesChart.data.datasets[1].data = [kecamatanData.Klinik];
-                    detailFaskesChart.data.datasets[2].data = [kecamatanData.Puskesmas];
-                    detailFaskesChart.data.datasets[3].data = [kecamatanData['Rumah Sakit']];
+                    detailFaskesChart.data.datasets[0].data = [apotekCount];
+                    detailFaskesChart.data.datasets[1].data = [klinikCount];
+                    detailFaskesChart.data.datasets[2].data = [puskesmasCount];
+                    detailFaskesChart.data.datasets[3].data = [rumahSakitCount];
                     detailFaskesChart.options.plugins.title.text = `Detail Fasilitas Kesehatan - ${selectedKecamatan}`;
                     detailFaskesChart.update();
                     
                     // Update percentage chart
                     percentageFaskesChart.data.datasets[0].data = [
-                        kecamatanData.Apotek,
-                        kecamatanData.Klinik,
-                        kecamatanData.Puskesmas,
-                        kecamatanData['Rumah Sakit']
+                        apotekCount,
+                        klinikCount,
+                        puskesmasCount,
+                        rumahSakitCount
                     ];
                     percentageFaskesChart.options.plugins.title.text = `Persentase Fasilitas Kesehatan - ${selectedKecamatan}`;
                     percentageFaskesChart.update();
@@ -438,10 +444,11 @@ document.addEventListener('DOMContentLoaded', function() {
         let totalRumahSakit = 0;
 
         Object.values(data).forEach(kecamatanData => {
-            totalApotek += kecamatanData.Apotek;
-            totalKlinik += kecamatanData.Klinik;
-            totalPuskesmas += kecamatanData.Puskesmas;
-            totalRumahSakit += kecamatanData['Rumah Sakit'];
+            // Konversi string ke number dengan parseInt
+            totalApotek += parseInt(kecamatanData.Apotek) || 0;
+            totalKlinik += parseInt(kecamatanData.Klinik) || 0;
+            totalPuskesmas += parseInt(kecamatanData.Puskesmas) || 0;
+            totalRumahSakit += parseInt(kecamatanData['Rumah Sakit']) || 0;
         });
 
         // Tampilkan statistik keseluruhan
@@ -500,39 +507,41 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateKelurahanChart() {
-    const selectedKecamatan = document.getElementById('kelurahanDropdown').value;
-    
-    if (!selectedKecamatan) {
-        kelurahanChart.data.labels = [];
-        kelurahanChart.data.datasets[0].data = [];
-        kelurahanChart.data.datasets[1].data = [];
-        kelurahanChart.data.datasets[2].data = [];
-        kelurahanChart.data.datasets[3].data = [];  // Added for Rumah Sakit
-        kelurahanChart.options.plugins.title.text = 'Fasilitas Kesehatan per Kelurahan';
-        kelurahanChart.update();
-        return;
-    }
-    // Fetch data kelurahan untuk kecamatan yang dipilih
-    fetch(`/api/kelurahan-statistics?kecamatan=${encodeURIComponent(selectedKecamatan)}`)
-        .then(response => response.json())
-        .then(data => {
-            const kelurahanNames = Object.keys(data);
-            const apotekData = kelurahanNames.map(kelurahan => data[kelurahan].Apotek || 0);
-            const klinikData = kelurahanNames.map(kelurahan => data[kelurahan].Klinik || 0);
-            const puskesmasData = kelurahanNames.map(kelurahan => data[kelurahan].Puskesmas || 0);  // Added for Puskesmas
-            const rumahSakitData = kelurahanNames.map(kelurahan => data[kelurahan]["Rumah Sakit"] || 0);
-            
-            kelurahanChart.data.labels = kelurahanNames;
-            kelurahanChart.data.datasets[0].data = apotekData;
-            kelurahanChart.data.datasets[1].data = klinikData;
-            kelurahanChart.data.datasets[2].data = puskesmasData;  // Added for Puskesmas
-            kelurahanChart.data.datasets[3].data = rumahSakitData;  // Moved to index 3
-            kelurahanChart.options.plugins.title.text = `Fasilitas Kesehatan per Kelurahan - ${selectedKecamatan}`;
+        const selectedKecamatan = document.getElementById('kelurahanDropdown').value;
+        
+        if (!selectedKecamatan) {
+            kelurahanChart.data.labels = [];
+            kelurahanChart.data.datasets[0].data = [];
+            kelurahanChart.data.datasets[1].data = [];
+            kelurahanChart.data.datasets[2].data = [];
+            kelurahanChart.data.datasets[3].data = [];
+            kelurahanChart.options.plugins.title.text = 'Fasilitas Kesehatan per Kelurahan';
             kelurahanChart.update();
-        })
-        .catch(error => {
-            console.error('Error updating kelurahan chart:', error);
-            showErrorMessage('Gagal memuat data kelurahan.');
-        });
+            return;
+        }
+        
+        // Fetch data kelurahan untuk kecamatan yang dipilih
+        fetch(`/api/kelurahan-statistics?kecamatan=${encodeURIComponent(selectedKecamatan)}`)
+            .then(response => response.json())
+            .then(data => {
+                const kelurahanNames = Object.keys(data);
+                // Konversi nilai ke integer untuk setiap tipe fasilitas
+                const apotekData = kelurahanNames.map(kelurahan => parseInt(data[kelurahan].Apotek) || 0);
+                const klinikData = kelurahanNames.map(kelurahan => parseInt(data[kelurahan].Klinik) || 0);
+                const puskesmasData = kelurahanNames.map(kelurahan => parseInt(data[kelurahan].Puskesmas) || 0);
+                const rumahSakitData = kelurahanNames.map(kelurahan => parseInt(data[kelurahan]["Rumah Sakit"]) || 0);
+                
+                kelurahanChart.data.labels = kelurahanNames;
+                kelurahanChart.data.datasets[0].data = apotekData;
+                kelurahanChart.data.datasets[1].data = klinikData;
+                kelurahanChart.data.datasets[2].data = puskesmasData;
+                kelurahanChart.data.datasets[3].data = rumahSakitData;
+                kelurahanChart.options.plugins.title.text = `Fasilitas Kesehatan per Kelurahan - ${selectedKecamatan}`;
+                kelurahanChart.update();
+            })
+            .catch(error => {
+                console.error('Error updating kelurahan chart:', error);
+                showErrorMessage('Gagal memuat data kelurahan.');
+            });
     }
 });

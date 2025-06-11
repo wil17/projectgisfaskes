@@ -15,38 +15,43 @@ class StatistikController extends Controller
     
     // Metode untuk statistik faskes per kecamatan
     public function getFaskesStatistics()
-    {
-        // Ambil semua fasilitas kesehatan dikelompokkan berdasarkan kecamatan dan jenis fasilitas
-        $faskesData = Faskes::select('kecamatan', 'fasilitas', DB::raw('count(*) as total'))
-            ->whereNotNull('kecamatan')
-            ->where('kecamatan', '!=', '')
-            ->groupBy('kecamatan', 'fasilitas')
-            ->get();
+{
+    $kecamatanData = [];
+    
+    // Ambil data kecamatan
+    $kecamatans = Faskes::select('kecamatan')->distinct()->get();
+    
+    foreach ($kecamatans as $kecamatan) {
+        $kecamatanName = $kecamatan->kecamatan;
         
-        // Organisasi data untuk konsumsi frontend
-        $statistics = [];
+        // Hitung total setiap jenis faskes per kecamatan
+        $apotekCount = Faskes::where('kecamatan', $kecamatanName)
+                            ->where('fasilitas', 'Apotek')
+                            ->count();
         
-        foreach ($faskesData as $faskes) {
-            // Normalisasi nama kecamatan dan fasilitas
-            $normalizedKecamatan = $this->normalizeString($faskes->kecamatan);
-            $normalizedFasilitas = $this->normalizeString($faskes->fasilitas);
-            
-            // Inisialisasi kecamatan jika belum ada
-            if (!isset($statistics[$normalizedKecamatan])) {
-                $statistics[$normalizedKecamatan] = [
-                    "Apotek" => 0,
-                    "Klinik" => 0,
-                    "Puskesmas" => 0,
-                    "Rumah Sakit" => 0
-                ];
-            }
-            
-            // Tambahkan jumlah berdasarkan jenis fasilitas
-            $statistics[$normalizedKecamatan][$normalizedFasilitas] = $faskes->total;
-        }
+        $klinikCount = Faskes::where('kecamatan', $kecamatanName)
+                            ->where('fasilitas', 'Klinik')
+                            ->count();
         
-        return response()->json($statistics);
+        $puskesmasCount = Faskes::where('kecamatan', $kecamatanName)
+                                ->where('fasilitas', 'Puskesmas')
+                                ->count();
+        
+        $rumahSakitCount = Faskes::where('kecamatan', $kecamatanName)
+                                ->where('fasilitas', 'Rumah Sakit')
+                                ->count();
+        
+        // Simpan data kecamatan dengan konversi eksplisit ke integer
+        $kecamatanData[$kecamatanName] = [
+            'Apotek' => (int)$apotekCount,
+            'Klinik' => (int)$klinikCount,
+            'Puskesmas' => (int)$puskesmasCount,
+            'Rumah Sakit' => (int)$rumahSakitCount
+        ];
     }
+    
+    return response()->json($kecamatanData);
+}
     
     // Metode untuk statistik apotek, klinik, dan rumah sakit per kelurahan
 public function getKelurahanStatistics(Request $request)
