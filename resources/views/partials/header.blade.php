@@ -24,9 +24,30 @@
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('data.layanan*') ? 'active' : '' }}" href="{{ route('data.layanan')}}">Data Layanan</a>
                 </li>
+                
+                <!-- Menu Masuk atau Admin sesuai status login -->
+                @if(session()->has('admin_logged_in'))
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user-shield me-1"></i>{{ session('admin_username') }}
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{{ route('admin.dashboard') }}"><i class="fas fa-tachometer-alt me-2"></i>Dashboard Admin</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <form action="{{ route('admin.logout') }}" method="POST">
+                                @csrf
+                                <input type="hidden" name="redirect" value="map">
+                                <button type="submit" class="dropdown-item text-danger"><i class="fas fa-sign-out-alt me-2"></i>Logout</button>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+                @else
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('admin.login') ? 'active' : '' }}" href="{{ route('admin.login') }}">Masuk</a>
                 </li>
+                @endif
             </ul>
         </div>
     </div>

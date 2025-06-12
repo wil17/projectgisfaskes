@@ -6,9 +6,20 @@ use App\Http\Controllers\Controller;
 use App\Models\Admin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\View;
 
 class AuthController extends Controller
 {
+    public function __construct()
+    {
+        // Berbagi status admin ke semua view
+        View::composer('*', function ($view) {
+            $view->with('is_admin_logged_in', session()->has('admin_logged_in'))
+                 ->with('admin_username', session('admin_username'))
+                 ->with('admin_email', session('admin_email'));
+        });
+    }
+
     public function showLogin()
     {
         // Redirect jika sudah login
@@ -45,11 +56,14 @@ class AuthController extends Controller
         ])->withInput($request->only('username'));
     }
 
-    public function logout()
+    public function logout(Request $request)
     {
-        session()->flush();
+        // Ambil parameter redirect jika ada
+        $redirectTo = $request->input('redirect', 'map');
         
-        return redirect()->route('map')
+        session()->forget(['admin_logged_in', 'admin_id', 'admin_username', 'admin_email']);
+        
+        return redirect()->route($redirectTo)
                        ->with('success', 'Anda telah logout.');
     }
 }

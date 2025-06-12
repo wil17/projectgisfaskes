@@ -71,8 +71,15 @@
                                             <span>Rumah Sakit</span>
                                         </a>
                                     </li>
+                                    
                                 </ul>
                             </div>
+<li class="nav-item">
+    <a class="nav-link" href="{{ route('map') }}">
+        <i class="fas fa-globe"></i> 
+        <span>Beranda publik</span>
+    </a>
+</li>
                         </li>
                     </ul>
                 </div>
