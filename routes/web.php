@@ -76,6 +76,8 @@ Route::prefix('admin')->middleware('admin.auth')->group(function () {
     Route::delete('/apotek/destroy/{id}', [ApotekAdminController::class, 'destroy'])->name('admin.apotek.destroy');
     Route::get('/apotek/search', [ApotekAdminController::class, 'search'])->name('admin.apotek.search');
     Route::get('/apotek/export/pdf', [ApotekAdminController::class, 'exportPDF'])->name('admin.apotek.export.pdf');
+    Route::get('/get-kelurahans', [App\Http\Controllers\Admin\ApotekApiController::class, 'getKelurahans'])->name('admin.get-kelurahans');
+Route::get('/get-location-coordinates', [App\Http\Controllers\Admin\ApotekApiController::class, 'getLocationCoordinates'])->name('admin.get-location-coordinates');
 
     // Klinik Admin Management Routes
     Route::get('/klinik', [KlinikAdminController::class, 'index'])->name('admin.klinik.index');
