@@ -3,9 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Apotek;
-use App\Models\Kliniks;
-use App\Models\RumahSakit;
 use App\Models\Faskes;
 use App\Models\Puskesmas;
 use App\Models\KlasterPuskesmas;
@@ -28,14 +25,14 @@ class DataLayananController extends Controller
      */
     public function apotek(Request $request)
     {
-        // Ambil data apotek
-        $query = Apotek::query();
+        // Ambil data apotek dari tabel faskes
+        $query = Faskes::where('fasilitas', 'Apotek');
         
         // Filter berdasarkan pencarian
         if ($request->has('search') && !empty($request->search)) {
             $search = $request->search;
             $query->where(function($q) use ($search) {
-                $q->where('nama_apotek', 'like', '%' . $search . '%')
+                $q->where('nama', 'like', '%' . $search . '%')
                   ->orWhere('alamat', 'like', '%' . $search . '%')
                   ->orWhere('kecamatan', 'like', '%' . $search . '%')
                   ->orWhere('kelurahan', 'like', '%' . $search . '%');
@@ -48,7 +45,10 @@ class DataLayananController extends Controller
         }
 
         // Sorting
-        $sortField = $request->get('sort', 'nama_apotek');
+        $sortField = $request->get('sort', 'nama');
+        if ($sortField == 'nama_apotek') {
+            $sortField = 'nama'; // Konversi field nama dari frontend ke backend
+        }
         $sortDirection = $request->get('direction', 'asc');
         $query->orderBy($sortField, $sortDirection);
 
@@ -56,7 +56,7 @@ class DataLayananController extends Controller
         $apotek = $query->paginate(10)->withQueryString();
 
         // Ambil daftar kecamatan untuk filter
-        $kecamatanList = DB::table('apotek')
+        $kecamatanList = Faskes::where('fasilitas', 'Apotek')
                         ->select('kecamatan')
                         ->distinct()
                         ->orderBy('kecamatan')
@@ -70,7 +70,9 @@ class DataLayananController extends Controller
      */
     public function detailApotek($id)
     {
-        $apotek = Apotek::findOrFail($id);
+        $apotek = Faskes::where('id', $id)
+                       ->where('fasilitas', 'Apotek')
+                       ->firstOrFail();
         return view('data_layanan.detail_apotek', compact('apotek'));
     }
 
@@ -79,14 +81,14 @@ class DataLayananController extends Controller
      */
     public function klinik(Request $request)
     {
-        // Ambil data klinik
-        $query = Kliniks::query();
+        // Ambil data klinik dari tabel faskes
+        $query = Faskes::where('fasilitas', 'Klinik');
         
         // Filter berdasarkan pencarian
         if ($request->has('search') && !empty($request->search)) {
             $search = $request->search;
             $query->where(function($q) use ($search) {
-                $q->where('nama_klinik', 'like', '%' . $search . '%')
+                $q->where('nama', 'like', '%' . $search . '%')
                   ->orWhere('alamat', 'like', '%' . $search . '%')
                   ->orWhere('kecamatan', 'like', '%' . $search . '%')
                   ->orWhere('kelurahan', 'like', '%' . $search . '%')
@@ -100,7 +102,10 @@ class DataLayananController extends Controller
         }
 
         // Sorting
-        $sortField = $request->get('sort', 'nama_klinik');
+        $sortField = $request->get('sort', 'nama');
+        if ($sortField == 'nama_klinik') {
+            $sortField = 'nama'; // Konversi field nama dari frontend ke backend
+        }
         $sortDirection = $request->get('direction', 'asc');
         $query->orderBy($sortField, $sortDirection);
 
@@ -108,7 +113,7 @@ class DataLayananController extends Controller
         $klinik = $query->paginate(10)->withQueryString();
 
         // Ambil daftar kecamatan untuk filter
-        $kecamatanList = DB::table('klinik')
+        $kecamatanList = Faskes::where('fasilitas', 'Klinik')
                         ->select('kecamatan')
                         ->distinct()
                         ->orderBy('kecamatan')
@@ -122,26 +127,26 @@ class DataLayananController extends Controller
      */
     public function detailKlinik($id)
     {
-        $klinik = Kliniks::findOrFail($id);
+        $klinik = Faskes::where('id', $id)
+                       ->where('fasilitas', 'Klinik')
+                       ->firstOrFail();
         return view('data_layanan.detail_klinik', compact('klinik'));
     }
 
     /**
      * Menampilkan data rumah sakit dengan filter dan pagination
-     * Menggunakan Model Eloquent untuk mendapatkan accessor poliklinik_dokter_array
+     * Menggunakan Model Faskes dengan scope rumahsakits
      */
     public function rumahSakit(Request $request)
     {
-        // Gunakan model RumahSakit daripada query builder
-        $query = RumahSakit::select('id_rs', 'nama_rs', 'alamat', 'poliklinik_dokter', 
-                                     'kota', 'kecamatan', 'kelurahan', 'longitude', 'latitude')
-                           ->distinct('id_rs');
+        // Gunakan model Faskes dengan scope rumahsakits
+        $query = Faskes::rumahsakits();
         
         // Filter berdasarkan pencarian
         if ($request->has('search') && !empty($request->search)) {
             $search = $request->search;
             $query->where(function($q) use ($search) {
-                $q->where('nama_rs', 'like', '%' . $search . '%')
+                $q->where('nama', 'like', '%' . $search . '%')
                   ->orWhere('alamat', 'like', '%' . $search . '%')
                   ->orWhere('poliklinik_dokter', 'like', '%' . $search . '%')
                   ->orWhere('kecamatan', 'like', '%' . $search . '%')
@@ -155,7 +160,7 @@ class DataLayananController extends Controller
         }
 
         // Sorting
-        $sortField = $request->get('sort', 'nama_rs');
+        $sortField = $request->get('sort', 'nama');
         $sortDirection = $request->get('direction', 'asc');
         $query->orderBy($sortField, $sortDirection);
 
@@ -163,7 +168,7 @@ class DataLayananController extends Controller
         $rumahSakit = $query->paginate(5)->withQueryString();  // Mengurangi jumlah item per halaman menjadi 5
 
         // Ambil daftar kecamatan untuk filter
-        $kecamatanList = DB::table('rumahsakit')
+        $kecamatanList = Faskes::rumahsakits()
                         ->select('kecamatan')
                         ->distinct()
                         ->orderBy('kecamatan')
@@ -177,13 +182,11 @@ class DataLayananController extends Controller
      */
     public function detailRumahSakit($id)
     {
-        // Gunakan model RumahSakit daripada query builder
-        $rumahSakit = RumahSakit::where('id_rs', $id)->first();
+        // Gunakan model Faskes
+        $rumahSakit = Faskes::where('id', $id)
+                    ->where('fasilitas', 'Rumah Sakit')
+                    ->firstOrFail();
                         
-        if (!$rumahSakit) {
-            abort(404, 'Rumah Sakit tidak ditemukan');
-        }
-        
         return view('data_layanan.detail_rumahsakit', compact('rumahSakit'));
     }
 

@@ -114,7 +114,7 @@
                         <tr>
                             <td>{{ ($kliniks->currentPage() - 1) * $kliniks->perPage() + $index + 1 }}</td>
                             <td>
-                                <span class="fw-medium">{{ $klinik->nama_klinik }}</span>
+                                <span class="fw-medium">{{ $klinik->nama }}</span>
                             </td>
                             <td>
                                 @if($klinik->skala_usaha == 'Kecil')
@@ -134,14 +134,14 @@
                             <td>{{ $klinik->kelurahan }}</td>
                             <td>
                                 <div class="action-buttons d-flex">
-                                    <a href="{{ route('admin.klinik.edit', $klinik->id_klinik) }}" class="btn btn-sm btn-info me-1" title="Edit">
+                                    <a href="{{ route('admin.klinik.edit', $klinik->id) }}" class="btn btn-sm btn-info me-1" title="Edit">
                                         <i class="fas fa-edit"></i>
                                     </a>
                                     <button type="button" class="btn btn-sm btn-danger" 
                                         data-bs-toggle="modal" 
                                         data-bs-target="#deleteModal" 
-                                        data-id="{{ $klinik->id_klinik }}"
-                                        data-name="{{ $klinik->nama_klinik }}"
+                                        data-id="{{ $klinik->id }}"
+                                        data-name="{{ $klinik->nama }}"
                                         title="Hapus">
                                         <i class="fas fa-trash-alt"></i>
                                     </button>

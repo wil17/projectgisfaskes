@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Faskes;
-use App\Models\RumahSakit;
 use App\Traits\LogsActivity;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
@@ -22,13 +21,14 @@ class RumahSakitAdminController extends Controller
      */
     public function index(Request $request)
     {
-        $query = RumahSakit::select('id_rs', 'nama_rs', 'alamat', 'poliklinik_dokter', 'kecamatan', 'kelurahan');
+        $query = Faskes::where('fasilitas', 'Rumah Sakit')
+            ->select('id', 'nama', 'alamat', 'poliklinik_dokter', 'kecamatan', 'kelurahan');
         
         // Handle search
         if ($request->has('search') && !empty($request->search)) {
             $search = $request->search;
             $query->where(function($q) use ($search) {
-                $q->where('nama_rs', 'LIKE', "%{$search}%")
+                $q->where('nama', 'LIKE', "%{$search}%")
                   ->orWhere('alamat', 'LIKE', "%{$search}%")
                   ->orWhere('poliklinik_dokter', 'LIKE', "%{$search}%")
                   ->orWhere('kecamatan', 'LIKE', "%{$search}%")
@@ -44,7 +44,8 @@ class RumahSakitAdminController extends Controller
         $rumahsakits = $query->paginate(10)->withQueryString();
         
         // Get unique kecamatans for filter dropdown
-        $kecamatans = RumahSakit::select('kecamatan')
+        $kecamatans = Faskes::where('fasilitas', 'Rumah Sakit')
+            ->select('kecamatan')
             ->distinct()
             ->orderBy('kecamatan')
             ->pluck('kecamatan');
@@ -59,11 +60,14 @@ class RumahSakitAdminController extends Controller
     {
         $query = $request->get('query');
         
-        $rumahsakits = RumahSakit::where('nama_rs', 'LIKE', "%{$query}%")
-            ->orWhere('alamat', 'LIKE', "%{$query}%")
-            ->orWhere('poliklinik_dokter', 'LIKE', "%{$query}%")
-            ->orWhere('kecamatan', 'LIKE', "%{$query}%")
-            ->orWhere('kelurahan', 'LIKE', "%{$query}%")
+        $rumahsakits = Faskes::where('fasilitas', 'Rumah Sakit')
+            ->where(function($q) use ($query) {
+                $q->where('nama', 'LIKE', "%{$query}%")
+                  ->orWhere('alamat', 'LIKE', "%{$query}%")
+                  ->orWhere('poliklinik_dokter', 'LIKE', "%{$query}%")
+                  ->orWhere('kecamatan', 'LIKE', "%{$query}%")
+                  ->orWhere('kelurahan', 'LIKE', "%{$query}%");
+            })
             ->limit(10)
             ->get();
         
@@ -104,7 +108,7 @@ class RumahSakitAdminController extends Controller
 
         DB::beginTransaction();
         try {
-            // Generate a unique ID for both tables
+            // Generate a unique ID
             $id = 'RS' . Str::random(8);
             
             // Create record in faskes table
@@ -115,22 +119,10 @@ class RumahSakitAdminController extends Controller
                 'alamat' => $request->input('alamat'),
                 'kecamatan' => $request->input('kecamatan'),
                 'kelurahan' => $request->input('kelurahan'),
+                'kota' => $request->input('kota', 'Banjarmasin'),
                 'latitude' => $request->input('latitude'),
                 'longitude' => $request->input('longitude'),
-            ]);
-            
-            // Create record in rumahsakit table
-            $rumahsakit = RumahSakit::create([
-                'id_rs' => $id,
-                'id' => $id, // Foreign key to faskes table
-                'nama_rs' => $request->input('nama_rs'),
-                'alamat' => $request->input('alamat'),
                 'poliklinik_dokter' => $request->input('poliklinik_dokter'),
-                'kota' => $request->input('kota'),
-                'kecamatan' => $request->input('kecamatan'),
-                'kelurahan' => $request->input('kelurahan'),
-                'longitude' => $request->input('longitude'),
-                'latitude' => $request->input('latitude'),
             ]);
             
             // Log activity for faskes creation
@@ -152,21 +144,14 @@ class RumahSakitAdminController extends Controller
     /**
      * Show the form for editing the specified rumah sakit.
      *
-     * @param  string  $id_rs
+     * @param  string  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id_rs)
+    public function edit($id)
     {
-        $rumahsakit = RumahSakit::where('id_rs', $id_rs)->firstOrFail();
-        
-        // Get related faskes data
-        $faskes = Faskes::where('id', $rumahsakit->id)->first();
-        
-        // If faskes exists, add latitude and longitude to rumah sakit
-        if ($faskes) {
-            $rumahsakit->latitude = $faskes->latitude;
-            $rumahsakit->longitude = $faskes->longitude;
-        }
+        $rumahsakit = Faskes::where('id', $id)
+                           ->where('fasilitas', 'Rumah Sakit')
+                           ->firstOrFail();
         
         $kecamatans = Faskes::select('kecamatan')->distinct()->orderBy('kecamatan')->pluck('kecamatan');
         $kelurahans = Faskes::select('kelurahan')->distinct()->orderBy('kelurahan')->pluck('kelurahan');
@@ -178,10 +163,10 @@ class RumahSakitAdminController extends Controller
      * Update the specified rumah sakit in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  string  $id_rs
+     * @param  string  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id_rs)
+    public function update(Request $request, $id)
     {
         $request->validate([
             'nama_rs' => 'required|string|max:255',
@@ -196,43 +181,27 @@ class RumahSakitAdminController extends Controller
 
         DB::beginTransaction();
         try {
-            $rumahsakit = RumahSakit::where('id_rs', $id_rs)->firstOrFail();
-            $faskes = Faskes::where('id', $rumahsakit->id)->first();
+            $rumahsakit = Faskes::where('id', $id)
+                               ->where('fasilitas', 'Rumah Sakit')
+                               ->firstOrFail();
             
             // Simpan nilai lama untuk logging
-            $oldFaskesValues = $faskes ? $faskes->toArray() : [];
-            $oldRumahSakitValues = $rumahsakit->toArray();
+            $oldValues = $rumahsakit->toArray();
             
-            // Update tabel faskes
-            if ($faskes) {
-                $faskes->update([
-                    'nama' => $request->input('nama_rs'),
-                    'alamat' => $request->input('alamat'),
-                    'kecamatan' => $request->input('kecamatan'),
-                    'kelurahan' => $request->input('kelurahan'),
-                    'latitude' => $request->input('latitude'),
-                    'longitude' => $request->input('longitude'),
-                ]);
-            }
-            
-            // Update tabel rumahsakit
+            // Update faskes record
             $rumahsakit->update([
-                'nama_rs' => $request->input('nama_rs'),
+                'nama' => $request->input('nama_rs'),
                 'alamat' => $request->input('alamat'),
-                'poliklinik_dokter' => $request->input('poliklinik_dokter'),
-                'kota' => $request->input('kota'),
                 'kecamatan' => $request->input('kecamatan'),
                 'kelurahan' => $request->input('kelurahan'),
-                'longitude' => $request->input('longitude'),
+                'kota' => $request->input('kota'),
                 'latitude' => $request->input('latitude'),
+                'longitude' => $request->input('longitude'),
+                'poliklinik_dokter' => $request->input('poliklinik_dokter'),
             ]);
             
-            // Log activity untuk update - gabungkan nilai lama dari kedua tabel
-            $allOldValues = array_merge($oldFaskesValues, $oldRumahSakitValues);
-            
-            // Refresh the model to get updated values
-            $faskes->refresh();
-            $this->logUpdate($faskes, $allOldValues, "Data rumah sakit '{$request->input('nama_rs')}' telah diperbarui");
+            // Log activity untuk update
+            $this->logUpdate($rumahsakit, $oldValues, "Data rumah sakit '{$request->input('nama_rs')}' telah diperbarui");
             
             DB::commit();
             
@@ -250,35 +219,22 @@ class RumahSakitAdminController extends Controller
     /**
      * Remove the specified rumah sakit from storage.
      *
-     * @param  string  $id_rs
+     * @param  string  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id_rs)
+    public function destroy($id)
     {
         DB::beginTransaction();
         try {
-            $rumahsakit = RumahSakit::where('id_rs', $id_rs)->first();
-            
-            if (!$rumahsakit) {
-                throw new \Exception('Rumah Sakit tidak ditemukan');
-            }
-            
-            $faskes = Faskes::where('id', $rumahsakit->id)->first();
+            $rumahsakit = Faskes::where('id', $id)
+                               ->where('fasilitas', 'Rumah Sakit')
+                               ->firstOrFail();
             
             // Log activity sebelum data dihapus
-            if ($faskes) {
-                $this->logDelete($faskes, "Rumah Sakit '{$rumahsakit->nama_rs}' telah dihapus dari sistem");
-            }
+            $this->logDelete($rumahsakit, "Rumah Sakit '{$rumahsakit->nama}' telah dihapus dari sistem");
             
             // Hapus data
-            if ($rumahsakit) {
-                $rumahsakit->delete();
-            }
-            
-            // Hapus data faskes jika tidak ada relasi lain yang menggunakan
-            if ($faskes) {
-                $faskes->delete();
-            }
+            $rumahsakit->delete();
             
             DB::commit();
             
@@ -301,13 +257,13 @@ class RumahSakitAdminController extends Controller
     public function exportPDF(Request $request)
     {
         try {
-            $query = RumahSakit::query();
+            $query = Faskes::where('fasilitas', 'Rumah Sakit');
             
             // Filter berdasarkan pencarian jika ada
             if ($request->has('search') && !empty($request->search)) {
                 $search = $request->search;
                 $query->where(function($q) use ($search) {
-                    $q->where('nama_rs', 'LIKE', "%{$search}%")
+                    $q->where('nama', 'LIKE', "%{$search}%")
                       ->orWhere('alamat', 'LIKE', "%{$search}%")
                       ->orWhere('poliklinik_dokter', 'LIKE', "%{$search}%")
                       ->orWhere('kecamatan', 'LIKE', "%{$search}%")
@@ -321,7 +277,7 @@ class RumahSakitAdminController extends Controller
             }
 
             // Sorting
-            $sortField = $request->get('sort', 'nama_rs');
+            $sortField = $request->get('sort', 'nama');
             $sortDirection = $request->get('direction', 'asc');
             $query->orderBy($sortField, $sortDirection);
 
@@ -424,15 +380,15 @@ class RumahSakitAdminController extends Controller
     {
         try {
             // Dapatkan ID rumah sakit pertama sebagai model_id (atau gunakan string jika tidak ada)
-            $firstRumahSakit = RumahSakit::first();
-            $modelId = $firstRumahSakit ? $firstRumahSakit->id_rs : 'export-pdf';
+            $firstRumahSakit = Faskes::where('fasilitas', 'Rumah Sakit')->first();
+            $modelId = $firstRumahSakit ? $firstRumahSakit->id : 'export-pdf';
             
             // Gunakan struktur model ActivityLog yang ada
             $log = new \App\Models\ActivityLog();
             $log->user_id = auth()->id() ?? 'admin';
             $log->user_name = auth()->user()->name ?? 'Admin';
             $log->action = 'export';
-            $log->model_type = 'App\Models\RumahSakit';
+            $log->model_type = 'App\Models\Faskes';
             $log->model_id = $modelId; // Gunakan ID yang valid
             $log->model_name = 'Ekspor PDF Rumah Sakit';
             $log->facility_type = 'Rumah Sakit';

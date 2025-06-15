@@ -77,7 +77,7 @@ Route::prefix('admin')->middleware('admin.auth')->group(function () {
     Route::get('/apotek/search', [ApotekAdminController::class, 'search'])->name('admin.apotek.search');
     Route::get('/apotek/export/pdf', [ApotekAdminController::class, 'exportPDF'])->name('admin.apotek.export.pdf');
     Route::get('/get-kelurahans', [App\Http\Controllers\Admin\ApotekApiController::class, 'getKelurahans'])->name('admin.get-kelurahans');
-Route::get('/get-location-coordinates', [App\Http\Controllers\Admin\ApotekApiController::class, 'getLocationCoordinates'])->name('admin.get-location-coordinates');
+    Route::get('/get-location-coordinates', [App\Http\Controllers\Admin\ApotekApiController::class, 'getLocationCoordinates'])->name('admin.get-location-coordinates');
 
     // Klinik Admin Management Routes
     Route::get('/klinik', [KlinikAdminController::class, 'index'])->name('admin.klinik.index');
@@ -88,16 +88,21 @@ Route::get('/get-location-coordinates', [App\Http\Controllers\Admin\ApotekApiCon
     Route::delete('/klinik/destroy/{id}', [KlinikAdminController::class, 'destroy'])->name('admin.klinik.destroy');
     Route::get('/klinik/search', [KlinikAdminController::class, 'search'])->name('admin.klinik.search');
     Route::get('/klinik/export/pdf', [KlinikAdminController::class, 'exportPDF'])->name('admin.klinik.export.pdf');
-    
+    Route::get('/get-klinik-kelurahans', [App\Http\Controllers\Admin\KlinikApiController::class, 'getKelurahans'])->name('admin.get-klinik-kelurahans');
+    Route::get('/get-klinik-location-coordinates', [App\Http\Controllers\Admin\KlinikApiController::class, 'getLocationCoordinates'])->name('admin.get-klinik-location-coordinates');
+
     // Rumah Sakit Admin Management Routes
     Route::get('/rumahsakit', [RumahSakitAdminController::class, 'index'])->name('admin.rumahsakit.index');
     Route::get('/rumahsakit/create', [RumahSakitAdminController::class, 'create'])->name('admin.rumahsakit.create');
     Route::post('/rumahsakit/store', [RumahSakitAdminController::class, 'store'])->name('admin.rumahsakit.store');
-    Route::get('/rumahsakit/edit/{id_rs}', [RumahSakitAdminController::class, 'edit'])->name('admin.rumahsakit.edit');
-    Route::put('/rumahsakit/update/{id_rs}', [RumahSakitAdminController::class, 'update'])->name('admin.rumahsakit.update');
-    Route::delete('/rumahsakit/destroy/{id_rs}', [RumahSakitAdminController::class, 'destroy'])->name('admin.rumahsakit.destroy');
+    // Updated routes to use 'id' instead of 'id_rs'
+    Route::get('/rumahsakit/edit/{id}', [RumahSakitAdminController::class, 'edit'])->name('admin.rumahsakit.edit');
+    Route::put('/rumahsakit/update/{id}', [RumahSakitAdminController::class, 'update'])->name('admin.rumahsakit.update');
+    Route::delete('/rumahsakit/destroy/{id}', [RumahSakitAdminController::class, 'destroy'])->name('admin.rumahsakit.destroy');
     Route::get('/rumahsakit/search', [RumahSakitAdminController::class, 'search'])->name('admin.rumahsakit.search');
     Route::get('/rumahsakit/export/pdf', [RumahSakitAdminController::class, 'exportPDF'])->name('admin.rumahsakit.export.pdf');
+    Route::get('/get-rumahsakit-kelurahans', [App\Http\Controllers\Admin\RumahSakitApiController::class, 'getKelurahans'])->name('admin.get-rumahsakit-kelurahans');
+    Route::get('/get-rumahsakit-location-coordinates', [App\Http\Controllers\Admin\RumahSakitApiController::class, 'getLocationCoordinates'])->name('admin.get-rumahsakit-location-coordinates');
 
     // Puskesmas Admin Management Routes
     Route::get('/puskesmas', [PuskesmasAdminController::class, 'index'])->name('admin.puskesmas.index');

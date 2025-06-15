@@ -105,10 +105,10 @@
                     <tr>
                         <th>No</th>
                         <th>
-                            <a href="{{ route('data.layanan.apotek', ['sort' => 'nama_apotek', 'direction' => request('sort') == 'nama_apotek' && request('direction') == 'asc' ? 'desc' : 'asc', 'search' => request('search'), 'kecamatan' => request('kecamatan')]) }}" 
+                            <a href="{{ route('data.layanan.apotek', ['sort' => 'nama', 'direction' => request('sort') == 'nama' || request('sort') == 'nama_apotek' && request('direction') == 'asc' ? 'desc' : 'asc', 'search' => request('search'), 'kecamatan' => request('kecamatan')]) }}" 
                                class="text-decoration-none text-dark d-flex align-items-center">
                                 Nama Apotek
-                                @if(request('sort') == 'nama_apotek')
+                                @if(request('sort') == 'nama' || request('sort') == 'nama_apotek')
                                     @if(request('direction') == 'asc')
                                         <i class="fas fa-sort-up ms-1 text-primary"></i>
                                     @else
@@ -145,13 +145,13 @@
                             <!-- Header row untuk mobile - hanya tampil di mobile -->
                             <div class="card-header-row d-md-none">
                                 <div class="number-badge">{{ $apotek->firstItem() + $index }}</div>
-                                <div class="fw-medium">{{ $item->nama_apotek ?? 'Apotek ' . $item->id_apotek }}</div>
+                                <div class="fw-medium">{{ $item->nama ?? 'Apotek ' . $item->id }}</div>
                             </div>
                             
                             <!-- Baris data normal -->
                             <td data-label="No" class="d-none d-md-table-cell">{{ $apotek->firstItem() + $index }}</td>
                             <td data-label="Nama Apotek">
-                                <div class="cell-content focus-target">{{ $item->nama_apotek ?? 'Apotek ' . $item->id_apotek }}</div>
+                                <div class="cell-content focus-target">{{ $item->nama ?? 'Apotek ' . $item->id }}</div>
                             </td>
                             <td data-label="Alamat">
                                 <div class="cell-content"><i class="fas fa-map-marker-alt text-danger me-1"></i> {{ $item->alamat }}</div>
@@ -172,8 +172,8 @@
                             </td>
                             <td data-label="Detail" class="text-center">
                                 <button type="button" class="btn btn-sm btn-info view-detail" 
-                                        data-id="{{ $item->id_apotek }}"
-                                        data-nama="{{ $item->nama_apotek ?? 'Apotek ' . $item->id_apotek }}"
+                                        data-id="{{ $item->id }}"
+                                        data-nama="{{ $item->nama ?? 'Apotek ' . $item->id }}"
                                         data-alamat="{{ $item->alamat }}"
                                         data-kota="{{ $item->kota }}"
                                         data-kecamatan="{{ $item->kecamatan }}"

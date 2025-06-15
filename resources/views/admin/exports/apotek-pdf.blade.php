@@ -1,198 +1,123 @@
-<!-- resources/views/admin/exports/apotek-pdf.blade.php -->
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Apotek - {{ $kecamatan }}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Data Apotek {{ $kecamatan }}</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            font-size: 11px;
-            color: #333;
+            font-size: 12px;
+            line-height: 1.3;
+            margin: 0;
+            padding: 0;
         }
         .header {
             text-align: center;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ddd;
         }
-        .logo {
-            font-size: 22px;
-            font-weight: bold;
-            color: #007bff;
-            margin-bottom: 10px;
-        }
-        .title {
+        .header h1 {
+            margin: 0;
+            padding: 0;
             font-size: 18px;
             font-weight: bold;
-            margin-bottom: 5px;
         }
-        .subtitle {
-            font-size: 14px;
-            color: #666;
+        .header p {
+            margin: 5px 0;
+            font-size: 11px;
         }
-        .info-box {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-left: 4px solid #007bff;
-            margin-bottom: 20px;
-        }
-        .info-row {
-            display: flex;
-            margin-bottom: 5px;
-        }
-        .info-label {
-            font-weight: bold;
-            width: 120px;
+        .meta-info {
+            margin-bottom: 15px;
+            font-size: 11px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin-bottom: 15px;
         }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 5px;
+        table th {
+            background-color: #f2f2f2;
             text-align: left;
+            padding: 8px;
+            font-size: 11px;
+            border: 1px solid #ddd;
+        }
+        table td {
+            padding: 6px 8px;
+            border: 1px solid #ddd;
             font-size: 10px;
-            vertical-align: top;
         }
-        th {
-            background-color: #f8f9fa;
-            font-weight: bold;
-            color: #495057;
-        }
-        .text-center {
-            text-align: center;
-        }
-        .badge {
-            display: inline-block;
-            padding: 2px 5px;
-            border-radius: 3px;
-            font-size: 9px;
-            font-weight: bold;
-            color: white;
-        }
-        .badge-info {
-            background-color: #17a2b8;
-        }
-        .badge-primary {
-            background-color: #007bff;
-        }
-        .badge-success {
-            background-color: #28a745;
-        }
-        .badge-secondary {
-            background-color: #6c757d;
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
         }
         .footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin-top: 30px;
             text-align: center;
-            font-size: 9px;
+            font-size: 10px;
             color: #666;
             border-top: 1px solid #ddd;
             padding-top: 10px;
         }
-        .page-number::after {
-            content: counter(page);
-        }
-        .metadata {
-            font-size: 8px;
-            color: #999;
-            margin-top: 5px;
+        .page-break {
+            page-break-after: always;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <div class="logo">SIG Fasilitas Kesehatan Banjarmasin</div>
-        <div class="title">Data Apotek di Kota Banjarmasin</div>
-        <div class="subtitle">{{ $kecamatan }}</div>
+        <h1>DAFTAR APOTEK KOTA BANJARMASIN</h1>
+        <p>{{ $kecamatan }}</p>
     </div>
 
-    <div class="info-box">
-        <div class="info-row">
-            <span class="info-label">Kecamatan:</span>
-            <span>{{ $kecamatan }}</span>
-        </div>
-        @if($search)
-        <div class="info-row">
-            <span class="info-label">Pencarian:</span>
-            <span>{{ $search }}</span>
-        </div>
-        @endif
-        <div class="info-row">
-            <span class="info-label">Total Data:</span>
-            <span>{{ $total }} Apotek</span>
-        </div>
-        <div class="info-row">
-            <span class="info-label">Digenerate:</span>
-            <span>{{ $generated_at }}</span>
-        </div>
-        <div class="info-row">
-            <span class="info-label">Admin:</span>
-            <span>{{ $generated_by }}</span>
-        </div>
+    <div class="meta-info">
+        <table style="border: none; width: 100%;">
+            <tr style="border: none;">
+                <td style="border: none; width: 60%;">
+                    <strong>Filter Pencarian:</strong> {{ !empty($search) ? $search : 'Tidak ada' }}<br>
+                    <strong>Total Data:</strong> {{ $total }} apotek
+                </td>
+                <td style="border: none; width: 40%; text-align: right;">
+                    <strong>Tanggal Cetak:</strong> {{ $generated_at }}<br>
+                    <strong>Dicetak Oleh:</strong> {{ $generated_by }}
+                </td>
+            </tr>
+        </table>
     </div>
 
     <table>
         <thead>
             <tr>
-                <th width="4%">No</th>
-                <th width="18%">Nama Apotek</th>
-                <th width="10%">Skala Usaha</th>
-                <th width="18%">Alamat</th>
-                <th width="8%">Kecamatan</th>
-                <th width="8%">Kelurahan</th>
-                <th width="7%">Kota</th>
-                <th width="10%">Tanggal Berdiri</th>
-                <th width="7%">Tenaga Kerja</th>
-                <th width="10%">Koordinat</th>
+                <th width="5%">No</th>
+                <th width="20%">Nama Apotek</th>
+                <th width="15%">Skala Usaha</th>
+                <th width="20%">Alamat</th>
+                <th width="15%">Kecamatan</th>
+                <th width="15%">Kelurahan</th>
+                <th width="10%">Tenaga Kerja</th>
             </tr>
         </thead>
         <tbody>
-            @foreach($apoteksList as $index => $item)
-            <tr>
-                <td class="text-center">{{ $index + 1 }}</td>
-                <td>{{ $item->nama_apotek ?? 'Apotek ' . $item->id_apotek }}</td>
-                <td class="text-center">
-                    @if($item->skala_usaha == 'Kecil')
-                        <span class="badge badge-info">Kecil</span>
-                    @elseif($item->skala_usaha == 'Mikro')
-                        <span class="badge badge-primary">Mikro</span>
-                    @elseif($item->skala_usaha == 'Besar')
-                        <span class="badge badge-success">Besar</span>
-                    @elseif($item->skala_usaha == 'Menengah')
-                        <span class="badge badge-secondary">Menengah</span>
-                    @else
-                        {{ $item->skala_usaha ?? '-' }}
-                    @endif
-                </td>
-                <td>{{ $item->alamat ?? '-' }}</td>
-                <td>{{ $item->kecamatan ?? '-' }}</td>
-                <td>{{ $item->kelurahan ?? '-' }}</td>
-                <td>{{ $item->kota ?? 'Banjarmasin' }}</td>
-                <td>{{ $item->tgl_berdiri ?? '-' }}</td>
-                <td class="text-center">{{ $item->tenaga_kerja ?? '-' }}</td>
-                <td>
-                    @if($item->latitude && $item->longitude)
-                        {{ number_format($item->latitude, 6) }}, {{ number_format($item->longitude, 6) }}
-                    @else
-                        -
-                    @endif
-                </td>
-            </tr>
-            @endforeach
+            @forelse($apoteksList as $index => $apotek)
+                <tr>
+                    <td>{{ $index + 1 }}</td>
+                    <td>{{ $apotek->nama }}</td>
+                    <td>{{ $apotek->skala_usaha }}</td>
+                    <td>{{ $apotek->alamat }}</td>
+                    <td>{{ $apotek->kecamatan }}</td>
+                    <td>{{ $apotek->kelurahan }}</td>
+                    <td>{{ $apotek->tenaga_kerja ?? '-' }}</td>
+                </tr>
+            @empty
+                <tr>
+                    <td colspan="7" style="text-align: center;">Tidak ada data apotek yang tersedia</td>
+                </tr>
+            @endforelse
         </tbody>
     </table>
 
     <div class="footer">
-        <p>Halaman <span class="page-number"></span> - Digenerate dari SIG Fasilitas Kesehatan Banjarmasin pada {{ $generated_at }}</p>
-        <p class="metadata">ID: PDF-APT-{{ date('YmdHis') }}</p>
+        <p>Data Apotek Kota Banjarmasin - Dihasilkan pada {{ $generated_at }}</p>
     </div>
 </body>
 </html>

@@ -137,20 +137,33 @@
             @foreach($rumahsakits as $index => $item)
             <tr>
                 <td class="text-center">{{ $index + 1 }}</td>
-                <td>{{ $item->nama_rs ?? 'RS ' . $item->id_rs }}</td>
+                <td>{{ $item->nama ?? 'RS ' . $item->id }}</td>
                 <td>{{ $item->alamat ?? '-' }}</td>
                 <td>
                     @php
-                        $polikliniks = explode(',', $item->poliklinik ?? '');
-                        $polikliniks = array_map('trim', $polikliniks);
-                        echo implode(', ', array_filter($polikliniks));
+                        $polikliniks = [];
+                        $dokters = [];
+                        
+                        if ($item->poliklinik_dokter) {
+                            $poliSections = explode(';', $item->poliklinik_dokter);
+                            foreach ($poliSections as $section) {
+                                $parts = explode(':', $section, 2);
+                                if (count($parts) == 2) {
+                                    $polikliniks[] = trim($parts[0]);
+                                    if (!empty(trim($parts[1]))) {
+                                        $docs = array_map('trim', explode(',', $parts[1]));
+                                        $dokters = array_merge($dokters, $docs);
+                                    }
+                                }
+                            }
+                        }
+                        
+                        echo implode(', ', $polikliniks);
                     @endphp
                 </td>
                 <td>
                     @php
-                        $dokters = explode(',', $item->nama_dokter ?? '');
-                        $dokters = array_map('trim', $dokters);
-                        echo implode(', ', array_filter($dokters));
+                        echo implode(', ', $dokters);
                     @endphp
                 </td>
                 <td>{{ $item->kecamatan ?? '-' }}</td>

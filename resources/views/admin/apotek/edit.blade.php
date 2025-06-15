@@ -20,7 +20,7 @@
                 <div class="form-card">
                     <div class="form-header">
                         <h1><i class="fas fa-edit"></i> Edit Apotek</h1>
-                        <p class="subtitle">Perbarui informasi apotek {{ $apotek->nama_apotek }}</p>
+                        <p class="subtitle">Perbarui informasi apotek {{ $apotek->nama }}</p>
                     </div>
                     
                     <div class="form-body">
@@ -34,7 +34,7 @@
                             </div>
                         @endif
 
-                        <form action="{{ route('admin.apotek.update', $apotek->id_apotek) }}" method="POST" id="editApotekForm">
+                        <form action="{{ route('admin.apotek.update', $apotek->id) }}" method="POST" id="editApotekForm">
                             @csrf
                             @method('PUT')
                             
@@ -43,7 +43,7 @@
                                     <div class="form-group">
                                         <label for="nama_apotek" class="form-label">Nama Apotek <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" id="nama_apotek" name="nama_apotek" 
-                                               value="{{ old('nama_apotek', $apotek->nama_apotek) }}" required placeholder="Masukkan nama apotek">
+                                               value="{{ old('nama_apotek', $apotek->nama) }}" required placeholder="Masukkan nama apotek">
                                     </div>
                                 </div>
                                 
@@ -138,24 +138,23 @@
                                     </p>
                                 </div>
                                 
-                                <!-- Change these coordinate input fields in the Apotek edit.blade.php file -->
-<div class="row">
-    <div class="col-md-6">
-        <div class="form-group">
-            <label for="latitude" class="form-label">Latitude <span class="text-danger">*</span></label>
-            <input type="text" class="form-control" id="latitude" name="latitude" 
-                   value="{{ old('latitude', $apotek->latitude) }}" required placeholder="Masukkan latitude koordinat">
-        </div>
-    </div>
-    
-    <div class="col-md-6">
-        <div class="form-group">
-            <label for="longitude" class="form-label">Longitude <span class="text-danger">*</span></label>
-            <input type="text" class="form-control" id="longitude" name="longitude" 
-                   value="{{ old('longitude', $apotek->longitude) }}" required placeholder="Masukkan longitude koordinat">
-        </div>
-    </div>
-</div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="latitude" class="form-label">Latitude <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="latitude" name="latitude" 
+                                                value="{{ old('latitude', $apotek->latitude) }}" required placeholder="Masukkan latitude koordinat">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="longitude" class="form-label">Longitude <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="longitude" name="longitude" 
+                                                value="{{ old('longitude', $apotek->longitude) }}" required placeholder="Masukkan longitude koordinat">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             
                             <div class="btn-group">

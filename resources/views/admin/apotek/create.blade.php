@@ -190,7 +190,7 @@
                                         <div class="form-group">
                                             <label for="latitude" class="form-label">Latitude <span class="text-danger">*</span></label>
                                             <input type="text" class="form-control" id="latitude" name="latitude" 
-                                                   value="{{ old('latitude') }}" required readonly placeholder="Latitude koordinat">
+                                                   value="{{ old('latitude') }}" required placeholder="Latitude koordinat">
                                         </div>
                                     </div>
                                     
@@ -198,7 +198,7 @@
                                         <div class="form-group">
                                             <label for="longitude" class="form-label">Longitude <span class="text-danger">*</span></label>
                                             <input type="text" class="form-control" id="longitude" name="longitude" 
-                                                   value="{{ old('longitude') }}" required readonly placeholder="Longitude koordinat">
+                                                   value="{{ old('longitude') }}" required placeholder="Longitude koordinat">
                                         </div>
                                     </div>
                                 </div>

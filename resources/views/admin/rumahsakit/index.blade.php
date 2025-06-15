@@ -114,7 +114,7 @@
                         <tr>
                             <td>{{ ($rumahsakits->currentPage() - 1) * $rumahsakits->perPage() + $index + 1 }}</td>
                             <td>
-                                <span class="fw-medium">{{ $rumahsakit->nama_rs }}</span>
+                                <span class="fw-medium">{{ $rumahsakit->nama }}</span>
                             </td>
                             <td>{{ $rumahsakit->alamat }}</td>
                             <td>
@@ -137,14 +137,14 @@
                             <td>{{ $rumahsakit->kelurahan }}</td>
                             <td>
                                 <div class="action-buttons d-flex">
-                                    <a href="{{ route('admin.rumahsakit.edit', $rumahsakit->id_rs) }}" class="btn btn-sm btn-info me-1" title="Edit">
+                                    <a href="{{ route('admin.rumahsakit.edit', $rumahsakit->id) }}" class="btn btn-sm btn-info me-1" title="Edit">
                                         <i class="fas fa-edit"></i>
                                     </a>
                                     <button type="button" class="btn btn-sm btn-danger" 
                                         data-bs-toggle="modal" 
                                         data-bs-target="#deleteModal" 
-                                        data-id="{{ $rumahsakit->id_rs }}"
-                                        data-name="{{ $rumahsakit->nama_rs }}"
+                                        data-id="{{ $rumahsakit->id }}"
+                                        data-name="{{ $rumahsakit->nama }}"
                                         title="Hapus">
                                         <i class="fas fa-trash-alt"></i>
                                     </button>

@@ -10,6 +10,56 @@
 @section('styles')
 <link rel="stylesheet" href="{{ asset('css/adminapotek.css') }}">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<style>
+    /* Loading indicator style */
+    .loading-overlay {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .spinner {
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border-left-color: #09f;
+        animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    #map-container {
+        position: relative;
+        height: 400px;
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .coordinate-display {
+        background-color: #f8f9fa;
+        padding: 8px 15px;
+        border-radius: 6px;
+        margin: 10px 0;
+        border: 1px solid #dee2e6;
+    }
+    
+    .coordinate-display.has-coordinates {
+        background-color: #e8f4ff;
+        border-color: #b8daff;
+    }
+</style>
 @endsection
 
 @section('content')
@@ -20,7 +70,7 @@
                 <div class="form-card">
                     <div class="form-header">
                         <h1><i class="fas fa-edit"></i> Edit Rumah Sakit</h1>
-                        <p class="subtitle">Perbarui informasi rumah sakit {{ $rumahsakit->nama_rs }}</p>
+                        <p class="subtitle">Perbarui informasi rumah sakit {{ $rumahsakit->nama }}</p>
                     </div>
                     
                     <div class="form-body">
@@ -34,14 +84,14 @@
                             </div>
                         @endif
 
-                        <form action="{{ route('admin.rumahsakit.update', $rumahsakit->id_rs) }}" method="POST" id="editRumahSakitForm">
+                        <form action="{{ route('admin.rumahsakit.update', $rumahsakit->id) }}" method="POST" id="editRumahSakitForm">
                             @csrf
                             @method('PUT')
                             
                             <div class="form-group">
                                 <label for="nama_rs" class="form-label">Nama Rumah Sakit <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="nama_rs" name="nama_rs" 
-                                       value="{{ old('nama_rs', $rumahsakit->nama_rs) }}" required placeholder="Masukkan nama rumah sakit">
+                                       value="{{ old('nama_rs', $rumahsakit->nama) }}" required placeholder="Masukkan nama rumah sakit">
                             </div>
                             
                             <div class="form-group">
@@ -95,10 +145,15 @@
                                 <h6><i class="fas fa-map-marker-alt"></i> Lokasi Rumah Sakit</h6>
                                 
                                 <div class="map-instruction">
+                                    <p><i class="fas fa-info-circle"></i> Peta akan menunjukkan lokasi rumah sakit saat ini</p>
                                     <p><i class="fas fa-hand-pointer"></i> Klik pada peta untuk mengubah lokasi rumah sakit</p>
                                 </div>
                                 
-                                <div id="map-container"></div>
+                                <div id="map-container">
+                                    <div class="loading-overlay" id="mapLoading">
+                                        <div class="spinner"></div>
+                                    </div>
+                                </div>
                                 
                                 <div class="coordinate-display has-coordinates" id="coordinateDisplay">
                                     <p class="coordinate-text" id="coordinateText">
@@ -152,16 +207,149 @@
 <script>
     let map;
     let marker;
+    // Koordinat untuk kecamatan di Banjarmasin (dari GeoJSON)
+    const kecamatanCoordinates = {
+        'Banjarmasin Barat': [-3.3259, 114.5855],
+        'Banjarmasin Selatan': [-3.3364, 114.5900],
+        'Banjarmasin Tengah': [-3.3194, 114.5900],
+        'Banjarmasin Timur': [-3.3167, 114.6091],
+        'Banjarmasin Utara': [-3.2923, 114.5900]
+    };
+    
+    // Koordinat untuk kelurahan di Banjarmasin (sebagian, dari GeoJSON)
+    const kelurahanCoordinates = {
+        // Banjarmasin Utara
+        'Alalak Selatan': [-3.2823, 114.5725],
+        'Alalak Tengah': [-3.2748, 114.5783],
+        'Alalak Utara': [-3.2665, 114.5829],
+        // Banjarmasin Barat
+        'Pelambuan': [-3.3281, 114.5746],
+        'Telaga Biru': [-3.3259, 114.5795],
+        'Telawang': [-3.3259, 114.5855],
+        // Banjarmasin Selatan
+        'Kelayan Barat': [-3.3364, 114.5900],
+        'Kelayan Timur': [-3.3364, 114.5950],
+        'Pemurus Baru': [-3.3364, 114.6000],
+        // Banjarmasin Tengah
+        'Kertak Baru Ulu': [-3.3194, 114.5855],
+        'Teluk Dalam': [-3.3194, 114.5900],
+        'Seberang Mesjid': [-3.3194, 114.5950],
+        // Banjarmasin Timur
+        'Kuripan': [-3.3167, 114.6091],
+        'Banua Anyar': [-3.3167, 114.6150],
+        'Pengambangan': [-3.3167, 114.6200]
+    };
     
     $(document).ready(function() {
         // Initialize map with existing coordinates
         initializeMap();
+        
+        // Event listener untuk dropdown kecamatan
+        $('#kecamatan').on('change', function() {
+            const selectedKecamatan = $(this).val();
+            if (selectedKecamatan) {
+                // Tampilkan loading
+                $('#mapLoading').css('display', 'flex');
+                
+                // Pindahkan peta ke kecamatan yang dipilih
+                if (kecamatanCoordinates[selectedKecamatan]) {
+                    moveMapToLocation(kecamatanCoordinates[selectedKecamatan]);
+                    $('#mapLoading').css('display', 'none');
+                } else {
+                    // Jika tidak ada koordinat hardcoded, coba ambil dari API
+                    getLocationCoordinates(selectedKecamatan, '');
+                }
+                
+                // Filter kelurahan berdasarkan kecamatan yang dipilih
+                getKelurahans(selectedKecamatan);
+            }
+        });
+        
+        // Event listener untuk dropdown kelurahan
+        $('#kelurahan').on('change', function() {
+            const selectedKelurahan = $(this).val();
+            const selectedKecamatan = $('#kecamatan').val();
+            
+            if (selectedKelurahan) {
+                // Tampilkan loading
+                $('#mapLoading').css('display', 'flex');
+                
+                // Pindahkan peta ke kelurahan yang dipilih
+                if (kelurahanCoordinates[selectedKelurahan]) {
+                    moveMapToLocation(kelurahanCoordinates[selectedKelurahan]);
+                    $('#mapLoading').css('display', 'none');
+                } else {
+                    // Jika tidak ada koordinat hardcoded, coba ambil dari API
+                    getLocationCoordinates(selectedKecamatan, selectedKelurahan);
+                }
+            }
+        });
         
         // Add event listeners for manual coordinate input
         $('#latitude, #longitude').on('change', function() {
             updateMapFromInputs();
         });
     });
+    
+    // Fungsi untuk memfilter kelurahan berdasarkan kecamatan
+    function getKelurahans(kecamatan) {
+        $.ajax({
+            url: '{{ route("admin.get-rumahsakit-kelurahans") }}',
+            type: 'GET',
+            data: { kecamatan: kecamatan },
+            success: function(response) {
+                // Reset dropdown kelurahan
+                let options = '<option value="">Pilih Kelurahan</option>';
+                
+                if (response.success && response.kelurahans && response.kelurahans.length > 0) {
+                    response.kelurahans.forEach(function(kelurahan) {
+                        const isSelected = kelurahan === '{{ $rumahsakit->kelurahan }}' ? 'selected' : '';
+                        options += `<option value="${kelurahan}" ${isSelected}>${kelurahan}</option>`;
+                    });
+                }
+                
+                $('#kelurahan').html(options);
+            },
+            error: function(xhr) {
+                console.error('Error loading kelurahans:', xhr.responseText);
+            }
+        });
+    }
+    
+    // Fungsi untuk mendapatkan koordinat lokasi dari API
+    function getLocationCoordinates(kecamatan, kelurahan) {
+        $.ajax({
+            url: '{{ route("admin.get-rumahsakit-location-coordinates") }}',
+            type: 'GET',
+            data: { 
+                kecamatan: kecamatan,
+                kelurahan: kelurahan
+            },
+            success: function(response) {
+                // Sembunyikan loading
+                $('#mapLoading').css('display', 'none');
+                
+                if (response.success && response.coordinates) {
+                    // Set view ke koordinat yang dipilih
+                    const lat = response.coordinates.lat;
+                    const lng = response.coordinates.lng;
+                    
+                    // Pindahkan peta ke lokasi
+                    map.setView([lat, lng], 15);
+                    
+                    // Update marker dan nilai input
+                    updateMarkerPosition(lat, lng);
+                } else {
+                    console.warn('Koordinat tidak ditemukan:', response.message);
+                }
+            },
+            error: function(xhr) {
+                // Sembunyikan loading
+                $('#mapLoading').css('display', 'none');
+                console.error('Error getting coordinates:', xhr.responseText);
+            }
+        });
+    }
     
     function initializeMap() {
         // Get existing coordinates or use default
@@ -183,17 +371,7 @@
         
         // Add click event to map
         map.on('click', function(e) {
-            const lat = e.latlng.lat;
-            const lng = e.latlng.lng;
-            
-            $('#latitude').val(lat.toFixed(6));
-            $('#longitude').val(lng.toFixed(6));
-            
-            // Update coordinate display
-            updateCoordinateDisplay(lat, lng);
-            
-            // Add or update marker
-            updateMarker(lat, lng);
+            updateMarkerPosition(e.latlng.lat, e.latlng.lng);
         });
     }
     
@@ -206,14 +384,34 @@
             map.setView([lat, lng], 15);
             
             // Add or update marker
-            updateMarker(lat, lng);
-            
-            // Update coordinate display
-            updateCoordinateDisplay(lat, lng);
+            updateMarkerPosition(lat, lng);
         }
     }
     
-    function updateMarker(lat, lng) {
+    // Fungsi untuk memindahkan peta ke lokasi tertentu
+    function moveMapToLocation(coordinates) {
+        if (!coordinates || !Array.isArray(coordinates) || coordinates.length !== 2) {
+            console.error('Invalid coordinates provided:', coordinates);
+            return;
+        }
+        
+        const [lat, lng] = coordinates;
+        
+        // Set view ke koordinat yang dipilih
+        map.setView([lat, lng], 15);
+        
+        // Update marker dan field input
+        updateMarkerPosition(lat, lng);
+    }
+    
+    // Fungsi untuk memperbarui posisi marker dan nilai input
+    function updateMarkerPosition(lat, lng) {
+        $('#latitude').val(lat.toFixed(6));
+        $('#longitude').val(lng.toFixed(6));
+        
+        // Update coordinate display
+        updateCoordinateDisplay(lat, lng);
+        
         // Add or update marker
         if (marker) {
             marker.setLatLng([lat, lng]);

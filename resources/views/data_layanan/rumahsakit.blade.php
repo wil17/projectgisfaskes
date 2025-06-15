@@ -224,7 +224,7 @@
                         <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center">
                             <h5 class="mb-2 mb-sm-0 fw-bold text-primary">
                                 <i class="fas fa-heartbeat fa-1x text-warning me-2"></i>
-                                {{ $item->nama_rs ?? 'Rumah Sakit ' . $item->id_rs }}
+                                {{ $item->nama_rs }}
                             </h5>
                             <span class="badge bg-primary">{{ $item->kecamatan }}</span>
                         </div>
@@ -247,7 +247,7 @@
                                         <p class="mb-2">
                                             <i class="fas fa-city text-success me-2"></i>
                                             <strong>Kota:</strong>
-                                            <span class="ms-1">{{ $item->kota }}</span>
+                                            <span class="ms-1">{{ $item->kota ?? 'Banjarmasin' }}</span>
                                         </p>
                                         
                                         <p class="mb-2">
@@ -273,7 +273,7 @@
                                     </div>
                                     <div class="card-body p-0" style="max-height: 300px; overflow-y: auto;">
                                         @php
-                                            // Parse data poliklinik dan dokter dari kolom poliklinik_dokter
+                                            // Parse data poliklinik dan dokter dari accessor poliklinik_dokter_array
                                             $poliDokterMap = $item->poliklinik_dokter_array;
                                         @endphp
 
@@ -317,10 +317,10 @@
                             <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
                                 <button type="button" class="btn btn-info view-detail w-100 w-sm-auto" 
                                         data-id="{{ $item->id_rs }}"
-                                        data-nama="{{ $item->nama_rs ?? 'Rumah Sakit ' . $item->id_rs }}"
+                                        data-nama="{{ $item->nama_rs }}"
                                         data-alamat="{{ $item->alamat }}"
                                         data-poliklinik-dokter="{{ json_encode($item->poliklinik_dokter_array) }}"
-                                        data-kota="{{ $item->kota }}"
+                                        data-kota="{{ $item->kota ?? 'Banjarmasin' }}"
                                         data-kecamatan="{{ $item->kecamatan }}"
                                         data-kelurahan="{{ $item->kelurahan }}"
                                         data-long="{{ $item->longitude }}"

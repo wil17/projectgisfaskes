@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Peta Fasilitas Kesehatan di Kota Banjarmasin</title>
+    <title>Data Klinik di Kota Banjarmasin</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -105,10 +105,10 @@
                         <tr>
                             <th>No</th>
                             <th>
-                                <a href="{{ route('data.layanan.klinik', ['sort' => 'nama_klinik', 'direction' => request('sort') == 'nama_klinik' && request('direction') == 'asc' ? 'desc' : 'asc', 'search' => request('search'), 'kecamatan' => request('kecamatan')]) }}" 
+                                <a href="{{ route('data.layanan.klinik', ['sort' => 'nama', 'direction' => request('sort') == 'nama' || request('sort') == 'nama_klinik' && request('direction') == 'asc' ? 'desc' : 'asc', 'search' => request('search'), 'kecamatan' => request('kecamatan')]) }}" 
                                    class="text-decoration-none text-dark d-flex align-items-center">
                                     Nama Klinik
-                                    @if(request('sort') == 'nama_klinik')
+                                    @if(request('sort') == 'nama' || request('sort') == 'nama_klinik')
                                         @if(request('direction') == 'asc')
                                             <i class="fas fa-sort-up ms-1 text-success"></i>
                                         @else
@@ -145,13 +145,13 @@
                                 <!-- Header row untuk mobile - hanya tampil di mobile -->
                                 <div class="card-header-row d-md-none">
                                     <div class="number-badge">{{ $klinik->firstItem() + $index }}</div>
-                                    <div class="fw-medium">{{ $item->nama_klinik ?? 'Klinik ' . $item->id_klinik }}</div>
+                                    <div class="fw-medium">{{ $item->nama }}</div>
                                 </div>
                                 
                                 <!-- Baris data normal -->
                                 <td data-label="No" class="d-none d-md-table-cell">{{ $klinik->firstItem() + $index }}</td>
                                 <td data-label="Nama Klinik">
-                                    <div class="cell-content focus-target">{{ $item->nama_klinik ?? 'Klinik ' . $item->id_klinik }}</div>
+                                    <div class="cell-content focus-target">{{ $item->nama }}</div>
                                 </td>
                                 <td data-label="Alamat">
                                     <div class="cell-content"><i class="fas fa-map-marker-alt text-danger me-1"></i> {{ $item->alamat }}</div>
@@ -172,8 +172,8 @@
                                 </td>
                                 <td data-label="Detail" class="text-center">
                                     <button type="button" class="btn btn-sm btn-info view-detail" 
-                                            data-id="{{ $item->id_klinik }}"
-                                            data-nama="{{ $item->nama_klinik ?? 'Klinik ' . $item->id_klinik }}"
+                                            data-id="{{ $item->id }}"
+                                            data-nama="{{ $item->nama }}"
                                             data-alamat="{{ $item->alamat }}"
                                             data-kota="{{ $item->kota }}"
                                             data-kecamatan="{{ $item->kecamatan }}"

@@ -20,7 +20,7 @@
                 <div class="form-card">
                     <div class="form-header">
                         <h1><i class="fas fa-edit"></i> Edit Klinik</h1>
-                        <p class="subtitle">Perbarui informasi klinik {{ $klinik->nama_klinik }}</p>
+                        <p class="subtitle">Perbarui informasi klinik {{ $klinik->nama }}</p>
                     </div>
                     
                     <div class="form-body">
@@ -34,7 +34,7 @@
                             </div>
                         @endif
 
-                        <form action="{{ route('admin.klinik.update', $klinik->id_klinik) }}" method="POST" id="editKlinikForm">
+                        <form action="{{ route('admin.klinik.update', $klinik->id) }}" method="POST" id="editKlinikForm">
                             @csrf
                             @method('PUT')
                             
@@ -43,7 +43,7 @@
                                     <div class="form-group">
                                         <label for="nama_klinik" class="form-label">Nama Klinik <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" id="nama_klinik" name="nama_klinik" 
-                                               value="{{ old('nama_klinik', $klinik->nama_klinik) }}" required placeholder="Masukkan nama klinik">
+                                               value="{{ old('nama_klinik', $klinik->nama) }}" required placeholder="Masukkan nama klinik">
                                     </div>
                                 </div>
                                 
@@ -54,7 +54,7 @@
                                             <option value="">Pilih Skala Usaha</option>
                                             <option value="Kecil" {{ old('skala_usaha', $klinik->skala_usaha) == 'Kecil' ? 'selected' : '' }}>Kecil</option>
                                             <option value="Mikro" {{ old('skala_usaha', $klinik->skala_usaha) == 'Mikro' ? 'selected' : '' }}>Mikro</option>
-                                            <option value="Besar" {{ old('skala_usaha', $klinik->skala_usaha) == 'Mikro' ? 'selected' : '' }}>Besar</option>
+                                            <option value="Besar" {{ old('skala_usaha', $klinik->skala_usaha) == 'Besar' ? 'selected' : '' }}>Besar</option>
                                         </select>
                                     </div>
                                 </div>
@@ -138,24 +138,23 @@
                                     </p>
                                 </div>
                                 
-                                <!-- Change these coordinate input fields in the Klinik edit.blade.php file -->
-<div class="row">
-    <div class="col-md-6">
-        <div class="form-group">
-            <label for="latitude" class="form-label">Latitude <span class="text-danger">*</span></label>
-            <input type="text" class="form-control" id="latitude" name="latitude" 
-                   value="{{ old('latitude', $klinik->latitude) }}" required placeholder="Masukkan latitude koordinat">
-        </div>
-    </div>
-    
-    <div class="col-md-6">
-        <div class="form-group">
-            <label for="longitude" class="form-label">Longitude <span class="text-danger">*</span></label>
-            <input type="text" class="form-control" id="longitude" name="longitude" 
-                   value="{{ old('longitude', $klinik->longitude) }}" required placeholder="Masukkan longitude koordinat">
-        </div>
-    </div>
-</div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="latitude" class="form-label">Latitude <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="latitude" name="latitude" 
+                                                value="{{ old('latitude', $klinik->latitude) }}" required placeholder="Masukkan latitude koordinat">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="longitude" class="form-label">Longitude <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="longitude" name="longitude" 
+                                                value="{{ old('longitude', $klinik->longitude) }}" required placeholder="Masukkan longitude koordinat">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             
                             <div class="btn-group">
