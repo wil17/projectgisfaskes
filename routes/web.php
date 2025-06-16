@@ -104,22 +104,28 @@ Route::prefix('admin')->middleware('admin.auth')->group(function () {
     Route::get('/get-rumahsakit-kelurahans', [App\Http\Controllers\Admin\RumahSakitApiController::class, 'getKelurahans'])->name('admin.get-rumahsakit-kelurahans');
     Route::get('/get-rumahsakit-location-coordinates', [App\Http\Controllers\Admin\RumahSakitApiController::class, 'getLocationCoordinates'])->name('admin.get-rumahsakit-location-coordinates');
 
-    // Puskesmas Admin Management Routes
-    Route::get('/puskesmas', [PuskesmasAdminController::class, 'index'])->name('admin.puskesmas.index');
-    Route::get('/puskesmas/create', [PuskesmasAdminController::class, 'create'])->name('admin.puskesmas.create');
-    Route::post('/puskesmas/store', [PuskesmasAdminController::class, 'store'])->name('admin.puskesmas.store');
-    Route::get('/puskesmas/edit/{id_puskesmas}', [PuskesmasAdminController::class, 'edit'])->name('admin.puskesmas.edit');
-    Route::put('/puskesmas/update/{id_puskesmas}', [PuskesmasAdminController::class, 'update'])->name('admin.puskesmas.update');
-    Route::delete('/puskesmas/destroy/{id_puskesmas}', [PuskesmasAdminController::class, 'destroy'])->name('admin.puskesmas.destroy');
-    Route::get('/puskesmas/search', [PuskesmasAdminController::class, 'search'])->name('admin.puskesmas.search');
-    Route::get('/puskesmas/export/pdf', [PuskesmasAdminController::class, 'exportPDF'])->name('admin.puskesmas.export.pdf');
+    // Puskesmas Admin Management Routes - Perbarui parameter ID
+Route::get('/puskesmas', [PuskesmasAdminController::class, 'index'])->name('admin.puskesmas.index');
+Route::get('/puskesmas/create', [PuskesmasAdminController::class, 'create'])->name('admin.puskesmas.create');
+Route::post('/puskesmas/store', [PuskesmasAdminController::class, 'store'])->name('admin.puskesmas.store');
+Route::get('/puskesmas/edit/{id}', [PuskesmasAdminController::class, 'edit'])->name('admin.puskesmas.edit');
+Route::put('/puskesmas/update/{id}', [PuskesmasAdminController::class, 'update'])->name('admin.puskesmas.update');
+Route::delete('/puskesmas/destroy/{id}', [PuskesmasAdminController::class, 'destroy'])->name('admin.puskesmas.destroy');
+Route::get('/puskesmas/search', [PuskesmasAdminController::class, 'search'])->name('admin.puskesmas.search');
+Route::get('/puskesmas/export/pdf', [PuskesmasAdminController::class, 'exportPDF'])->name('admin.puskesmas.export.pdf');
+// API routes untuk puskesmas
+Route::get('/get-puskesmas-kelurahans', [App\Http\Controllers\Admin\PuskesmasApiController::class, 'getKelurahans'])
+    ->name('admin.get-puskesmas-kelurahans');
+Route::get('/get-puskesmas-location-coordinates', [App\Http\Controllers\Admin\PuskesmasApiController::class, 'getLocationCoordinates'])
+    ->name('admin.get-puskesmas-location-coordinates');
 
-    // Klaster routes
-    Route::get('/puskesmas/{id_puskesmas}/klaster', [PuskesmasAdminController::class, 'klasterIndex'])->name('admin.puskesmas.klaster.index');
-    Route::post('/puskesmas/{id_puskesmas}/klaster/store', [PuskesmasAdminController::class, 'klasterStore'])->name('admin.puskesmas.klaster.store');
-    Route::put('/puskesmas/klaster/{id_klaster}', [PuskesmasAdminController::class, 'klasterUpdate'])->name('admin.puskesmas.klaster.update');
-    Route::delete('/puskesmas/klaster/{id_klaster}', [PuskesmasAdminController::class, 'klasterDestroy'])->name('admin.puskesmas.klaster.destroy');
-    
+
+// Klaster routes
+Route::get('/puskesmas/{id}/klaster', [PuskesmasAdminController::class, 'klasterIndex'])->name('admin.puskesmas.klaster.index');
+Route::post('/puskesmas/{id}/klaster/store', [PuskesmasAdminController::class, 'klasterStore'])->name('admin.puskesmas.klaster.store');
+Route::put('/puskesmas/klaster/{id_klaster}', [PuskesmasAdminController::class, 'klasterUpdate'])->name('admin.puskesmas.klaster.update');
+Route::delete('/puskesmas/klaster/{id_klaster}', [PuskesmasAdminController::class, 'klasterDestroy'])->name('admin.puskesmas.klaster.destroy');
+
     // Layanan routes
     Route::get('/puskesmas/klaster/{id_klaster}/layanan', [PuskesmasAdminController::class, 'layananIndex'])->name('admin.puskesmas.layanan.index');
     Route::post('/puskesmas/klaster/{id_klaster}/layanan/store', [PuskesmasAdminController::class, 'layananStore'])->name('admin.puskesmas.layanan.store');

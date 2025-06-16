@@ -114,7 +114,7 @@
                         <tr>
                             <td>{{ ($puskesmas->currentPage() - 1) * $puskesmas->perPage() + $index + 1 }}</td>
                             <td>
-                                <span class="fw-medium">{{ $pkm->nama_puskesmas }}</span>
+                                <span class="fw-medium">{{ $pkm->nama }}</span>
                             </td>
                             <td>{{ $pkm->alamat }}</td>
                             <td>{{ $pkm->kepala_puskesmas }}</td>
@@ -122,14 +122,14 @@
                             <td>{{ $pkm->kelurahan }}</td>
                             <td>
                                 <div class="action-buttons d-flex">
-                                    <a href="{{ route('admin.puskesmas.edit', $pkm->id_puskesmas) }}" class="btn btn-sm btn-info me-1" title="Edit">
+                                    <a href="{{ route('admin.puskesmas.edit', $pkm->id) }}" class="btn btn-sm btn-info me-1" title="Edit">
                                         <i class="fas fa-edit"></i>
                                     </a>
                                     <button type="button" class="btn btn-sm btn-danger" 
                                         data-bs-toggle="modal" 
                                         data-bs-target="#deleteModal" 
-                                        data-id="{{ $pkm->id_puskesmas }}"
-                                        data-name="{{ $pkm->nama_puskesmas }}"
+                                        data-id="{{ $pkm->id }}"
+                                        data-name="{{ $pkm->nama }}"
                                         title="Hapus">
                                         <i class="fas fa-trash-alt"></i>
                                     </button>

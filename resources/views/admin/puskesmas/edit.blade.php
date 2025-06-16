@@ -73,6 +73,47 @@
         flex-grow: 1;
         margin-bottom: 15px;
     }
+    
+    /* Loading indicator style */
+    .loading-overlay {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .spinner {
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border-left-color: #09f;
+        animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    .coordinate-display {
+        background-color: #f8f9fa;
+        padding: 8px 15px;
+        border-radius: 6px;
+        margin: 10px 0;
+        border: 1px solid #dee2e6;
+    }
+    
+    .coordinate-display.has-coordinates {
+        background-color: #e8f4ff;
+        border-color: #b8daff;
+    }
 </style>
 @endsection
 
@@ -84,7 +125,7 @@
                 <div class="form-card">
                     <div class="form-header">
                         <h1><i class="fas fa-edit"></i> Edit Puskesmas</h1>
-                        <p class="subtitle">Perbarui informasi puskesmas {{ $puskesmas->nama_puskesmas }}</p>
+                        <p class="subtitle">Perbarui informasi puskesmas {{ $puskesmas->nama }}</p>
                     </div>
                     
                     <div class="form-body">
@@ -98,14 +139,14 @@
                             </div>
                         @endif
 
-                        <form action="{{ route('admin.puskesmas.update', $puskesmas->id_puskesmas) }}" method="POST" id="editPuskesmasForm">
+                        <form action="{{ route('admin.puskesmas.update', $puskesmas->id) }}" method="POST" id="editPuskesmasForm">
                             @csrf
                             @method('PUT')
                             
                             <div class="form-group">
                                 <label for="nama_puskesmas" class="form-label">Nama Puskesmas <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="nama_puskesmas" name="nama_puskesmas" 
-                                       value="{{ old('nama_puskesmas', $puskesmas->nama_puskesmas) }}" required placeholder="Masukkan nama puskesmas">
+                                       value="{{ old('nama_puskesmas', $puskesmas->nama) }}" required placeholder="Masukkan nama puskesmas">
                             </div>
                             
                             <div class="form-group">
@@ -176,10 +217,15 @@
                                 <h6><i class="fas fa-map-marker-alt"></i> Lokasi Puskesmas</h6>
                                 
                                 <div class="map-instruction">
-                                    <p><i class="fas fa-hand-pointer"></i> Klik pada peta untuk mengubah lokasi puskesmas</p>
+                                    <p><i class="fas fa-info-circle"></i> Peta akan otomatis menunjukkan lokasi sesuai kecamatan dan kelurahan yang dipilih</p>
+                                    <p><i class="fas fa-hand-pointer"></i> Anda juga dapat mengklik pada peta untuk menentukan lokasi yang lebih spesifik</p>
                                 </div>
                                 
-                                <div id="map-container"></div>
+                                <div id="map-container">
+                                    <div class="loading-overlay" id="mapLoading">
+                                        <div class="spinner"></div>
+                                    </div>
+                                </div>
                                 
                                 <div class="coordinate-display has-coordinates" id="coordinateDisplay">
                                     <p class="coordinate-text" id="coordinateText">
@@ -241,7 +287,7 @@
                                             </div>
                                             <h6>Kelola Klaster</h6>
                                             <p class="text-muted small">Mengelola klaster dan penanggung jawab setiap klaster pada puskesmas</p>
-                                            <a href="{{ route('admin.puskesmas.klaster.index', $puskesmas->id_puskesmas) }}" class="btn btn-sm btn-outline-primary">
+                                            <a href="{{ route('admin.puskesmas.klaster.index', $puskesmas->id) }}" class="btn btn-sm btn-outline-primary">
                                                 <i class="fas fa-arrow-right me-1"></i> Kelola
                                             </a>
                                         </div>
@@ -275,7 +321,7 @@
         <div class="modal-content">
             <div class="modal-header bg-primary text-white">
                 <h5 class="modal-title" id="mapModalLabel">
-                    <i class="fas fa-map-marker-alt me-2"></i> Lokasi {{ $puskesmas->nama_puskesmas }}
+                    <i class="fas fa-map-marker-alt me-2"></i> Lokasi {{ $puskesmas->nama }}
                 </h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -296,6 +342,38 @@
 <script>
     let map;
     let marker;
+    // Koordinat untuk kecamatan di Banjarmasin (dari GeoJSON)
+    const kecamatanCoordinates = {
+        'Banjarmasin Barat': [-3.3259, 114.5855],
+        'Banjarmasin Selatan': [-3.3364, 114.5900],
+        'Banjarmasin Tengah': [-3.3194, 114.5900],
+        'Banjarmasin Timur': [-3.3167, 114.6091],
+        'Banjarmasin Utara': [-3.2923, 114.5900]
+    };
+    
+    // Koordinat untuk kelurahan di Banjarmasin (sebagian, dari GeoJSON)
+    const kelurahanCoordinates = {
+        // Banjarmasin Utara
+        'Alalak Selatan': [-3.2823, 114.5725],
+        'Alalak Tengah': [-3.2748, 114.5783],
+        'Alalak Utara': [-3.2665, 114.5829],
+        // Banjarmasin Barat
+        'Pelambuan': [-3.3281, 114.5746],
+        'Telaga Biru': [-3.3259, 114.5795],
+        'Telawang': [-3.3259, 114.5855],
+        // Banjarmasin Selatan
+        'Kelayan Barat': [-3.3364, 114.5900],
+        'Kelayan Timur': [-3.3364, 114.5950],
+        'Pemurus Baru': [-3.3364, 114.6000],
+        // Banjarmasin Tengah
+        'Kertak Baru Ulu': [-3.3194, 114.5855],
+        'Teluk Dalam': [-3.3194, 114.5900],
+        'Seberang Mesjid': [-3.3194, 114.5950],
+        // Banjarmasin Timur
+        'Kuripan': [-3.3167, 114.6091],
+        'Banua Anyar': [-3.3167, 114.6150],
+        'Pengambangan': [-3.3167, 114.6200]
+    };
     
     $(document).ready(function() {
         // Initialize Select2 for wilayah kerja
@@ -312,7 +390,108 @@
         $('#latitude, #longitude').on('change', function() {
             updateMapFromInputs();
         });
+        
+        // Event listener untuk dropdown kecamatan
+        $('#kecamatan').on('change', function() {
+            const selectedKecamatan = $(this).val();
+            if (selectedKecamatan) {
+                // Tampilkan loading
+                $('#mapLoading').css('display', 'flex');
+                
+                // Pindahkan peta ke kecamatan yang dipilih
+                if (kecamatanCoordinates[selectedKecamatan]) {
+                    moveMapToLocation(kecamatanCoordinates[selectedKecamatan]);
+                    $('#mapLoading').css('display', 'none');
+                } else {
+                    // Jika tidak ada koordinat hardcoded, coba ambil dari API
+                    getLocationCoordinates(selectedKecamatan, '');
+                }
+                
+                // Filter kelurahan berdasarkan kecamatan yang dipilih
+                getKelurahans(selectedKecamatan);
+            }
+        });
+        
+        // Event listener untuk dropdown kelurahan
+        $('#kelurahan').on('change', function() {
+            const selectedKelurahan = $(this).val();
+            const selectedKecamatan = $('#kecamatan').val();
+            
+            if (selectedKelurahan) {
+                // Tampilkan loading
+                $('#mapLoading').css('display', 'flex');
+                
+                // Pindahkan peta ke kelurahan yang dipilih
+                if (kelurahanCoordinates[selectedKelurahan]) {
+                    moveMapToLocation(kelurahanCoordinates[selectedKelurahan]);
+                    $('#mapLoading').css('display', 'none');
+                } else {
+                    // Jika tidak ada koordinat hardcoded, coba ambil dari API
+                    getLocationCoordinates(selectedKecamatan, selectedKelurahan);
+                }
+            }
+        });
     });
+    
+    // Fungsi untuk memfilter kelurahan berdasarkan kecamatan
+    function getKelurahans(kecamatan) {
+        $.ajax({
+            url: '{{ route("admin.get-puskesmas-kelurahans") }}',
+            type: 'GET',
+            data: { kecamatan: kecamatan },
+            success: function(response) {
+                // Reset dropdown kelurahan
+                let options = '<option value="">Pilih Kelurahan</option>';
+                
+                if (response.success && response.kelurahans && response.kelurahans.length > 0) {
+                    response.kelurahans.forEach(function(kelurahan) {
+                        const selected = kelurahan === '{{ $puskesmas->kelurahan }}' ? 'selected' : '';
+                        options += `<option value="${kelurahan}" ${selected}>${kelurahan}</option>`;
+                    });
+                }
+                
+                $('#kelurahan').html(options);
+            },
+            error: function(xhr) {
+                console.error('Error loading kelurahans:', xhr.responseText);
+            }
+        });
+    }
+    
+    // Fungsi untuk mendapatkan koordinat lokasi dari API
+    function getLocationCoordinates(kecamatan, kelurahan) {
+        $.ajax({
+            url: '{{ route("admin.get-puskesmas-location-coordinates") }}',
+            type: 'GET',
+            data: { 
+                kecamatan: kecamatan,
+                kelurahan: kelurahan
+            },
+            success: function(response) {
+                // Sembunyikan loading
+                $('#mapLoading').css('display', 'none');
+                
+                if (response.success && response.coordinates) {
+                    // Set view ke koordinat yang dipilih
+                    const lat = response.coordinates.lat;
+                    const lng = response.coordinates.lng;
+                    
+                    // Pindahkan peta ke lokasi
+                    map.setView([lat, lng], 15);
+                    
+                    // Update marker dan nilai input
+                    updateMarkerPosition(lat, lng);
+                } else {
+                    console.warn('Koordinat tidak ditemukan:', response.message);
+                }
+            },
+            error: function(xhr) {
+                // Sembunyikan loading
+                $('#mapLoading').css('display', 'none');
+                console.error('Error getting coordinates:', xhr.responseText);
+            }
+        });
+    }
     
     function initializeMap() {
         // Get existing coordinates or use default
@@ -364,6 +543,34 @@
         }
     }
     
+    // Fungsi untuk memindahkan peta ke lokasi tertentu
+    function moveMapToLocation(coordinates) {
+        if (!coordinates || !Array.isArray(coordinates) || coordinates.length !== 2) {
+            console.error('Invalid coordinates provided:', coordinates);
+            return;
+        }
+        
+        const [lat, lng] = coordinates;
+        
+        // Set view ke koordinat yang dipilih
+        map.setView([lat, lng], 15);
+        
+        // Update marker dan field input
+        updateMarkerPosition(lat, lng);
+    }
+    
+    // Fungsi untuk memperbarui posisi marker dan nilai input
+    function updateMarkerPosition(lat, lng) {
+        $('#latitude').val(lat);
+        $('#longitude').val(lng);
+        
+        // Update coordinate display
+        updateCoordinateDisplay(lat, lng);
+        
+        // Add or update marker
+        updateMarker(lat, lng);
+    }
+    
     function updateMarker(lat, lng) {
         // Add or update marker
         if (marker) {
@@ -396,7 +603,7 @@
         }).addTo(modalMap);
         
         L.marker([lat, lng]).addTo(modalMap)
-            .bindPopup('{{ $puskesmas->nama_puskesmas }}')
+            .bindPopup('{{ $puskesmas->nama }}')
             .openPopup();
             
         setTimeout(function() {

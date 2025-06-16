@@ -36,6 +36,22 @@ class Faskes extends Model
     ];
     
     /**
+     * Get the wilayah kerja for the puskesmas.
+     */
+    public function wilayahKerja()
+    {
+        return $this->hasMany(WilayahKerjaPuskesmas::class, 'id', 'id');
+    }
+    
+    /**
+     * Get the klaster for the puskesmas.
+     */
+    public function klaster()
+    {
+        return $this->hasMany(KlasterPuskesmas::class, 'id_puskesmas', 'id');
+    }
+    
+    /**
      * Scope a query to only include apoteks.
      *
      * @param  \Illuminate\Database\Eloquent\Builder  $query
