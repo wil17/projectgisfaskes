@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Faskes;
-use App\Models\Puskesmas;
 use App\Models\KlasterPuskesmas;
 use App\Models\LayananKlaster;
 use App\Models\WilayahKerjaPuskesmas;
@@ -192,17 +191,18 @@ class DataLayananController extends Controller
 
     /**
      * Menampilkan data puskesmas dengan filter dan pagination
+     * PERUBAHAN: Menggunakan tabel faskes dengan fasilitas 'Puskesmas'
      */
     public function puskesmas(Request $request)
     {
-        // Ambil data puskesmas
-        $query = Puskesmas::query();
+        // Ambil data puskesmas dari tabel faskes
+        $query = Faskes::where('fasilitas', 'Puskesmas');
         
         // Filter berdasarkan pencarian
         if ($request->has('search') && !empty($request->search)) {
             $search = $request->search;
             $query->where(function($q) use ($search) {
-                $q->where('nama_puskesmas', 'like', '%' . $search . '%')
+                $q->where('nama', 'like', '%' . $search . '%')
                   ->orWhere('alamat', 'like', '%' . $search . '%')
                   ->orWhere('kecamatan', 'like', '%' . $search . '%')
                   ->orWhere('kelurahan', 'like', '%' . $search . '%')
@@ -216,7 +216,10 @@ class DataLayananController extends Controller
         }
 
         // Sorting
-        $sortField = $request->get('sort', 'nama_puskesmas');
+        $sortField = $request->get('sort', 'nama');
+        if ($sortField == 'nama_puskesmas') {
+            $sortField = 'nama'; // Konversi field nama dari frontend ke backend
+        }
         $sortDirection = $request->get('direction', 'asc');
         $query->orderBy($sortField, $sortDirection);
 
@@ -224,7 +227,7 @@ class DataLayananController extends Controller
         $puskesmas = $query->paginate(10)->withQueryString();
 
         // Ambil daftar kecamatan untuk filter
-        $kecamatanList = DB::table('puskesmas')
+        $kecamatanList = Faskes::where('fasilitas', 'Puskesmas')
                         ->select('kecamatan')
                         ->distinct()
                         ->orderBy('kecamatan')
@@ -233,27 +236,31 @@ class DataLayananController extends Controller
         return view('data_layanan.puskesmas', compact('puskesmas', 'kecamatanList'));
     }
 
-    /**
-     * Menampilkan detail puskesmas
-     */
     public function detailPuskesmas($id)
     {
-        // Ambil data puskesmas
-        $puskesmas = Puskesmas::where('id_puskesmas', $id)->first();
-        
-        if (!$puskesmas) {
-            abort(404, 'Puskesmas tidak ditemukan');
-        }
-        
-        // Ambil data klaster puskesmas
-        $klaster = KlasterPuskesmas::where('id_puskesmas', $id)->get();
+        // Ambil data puskesmas dari tabel faskes
+        $puskesmas = Faskes::where('id', $id)
+                       ->where('fasilitas', 'Puskesmas')
+                       ->firstOrFail();
         
         // Ambil data wilayah kerja puskesmas
-        $wilayahKerja = WilayahKerjaPuskesmas::where('id_puskesmas', $id)->get();
+        $wilayahKerja = WilayahKerjaPuskesmas::where('id', $id)->get();
+        
+        // Ambil data klaster puskesmas dari tabel layanan_klaster
+        // dengan nama_layanan NULL (hanya klaster)
+        $klaster = LayananKlaster::where('id', $id)
+                    ->whereNull('nama_layanan')
+                    ->get();
+        
+        // Ambil semua ID klaster yang ada
+        $klasterIds = $klaster->pluck('id_klaster')->toArray();
         
         // Ambil data layanan untuk setiap klaster
-        $klasterIds = $klaster->pluck('id_klaster')->toArray();
-        $layanan = LayananKlaster::whereIn('id_klaster', $klasterIds)->get();
+        // dengan nama_layanan NOT NULL (hanya layanan)
+        $layanan = LayananKlaster::where('id', $id)
+                    ->whereNotNull('nama_layanan')
+                    ->whereIn('id_klaster', $klasterIds)
+                    ->get();
         
         // Kelompokkan layanan berdasarkan id_klaster
         $layananPerKlaster = $layanan->groupBy('id_klaster');

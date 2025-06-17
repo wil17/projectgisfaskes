@@ -43,12 +43,22 @@ class Faskes extends Model
         return $this->hasMany(WilayahKerjaPuskesmas::class, 'id', 'id');
     }
     
-    /**
+   /**
      * Get the klaster for the puskesmas.
      */
     public function klaster()
     {
-        return $this->hasMany(KlasterPuskesmas::class, 'id_puskesmas', 'id');
+        return $this->hasMany(LayananKlaster::class, 'id', 'id')
+                    ->whereNull('nama_layanan');
+    }
+    
+    /**
+     * Get the layanan for the puskesmas.
+     */
+    public function layanan()
+    {
+        return $this->hasMany(LayananKlaster::class, 'id', 'id')
+                    ->whereNotNull('nama_layanan');
     }
     
     /**

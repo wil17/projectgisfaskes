@@ -164,7 +164,7 @@
                         <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center">
                             <h5 class="mb-2 mb-sm-0 fw-bold text-danger">
                                 <i class="fas fa-hospital fa-1x text-danger"></i>
-                                {{ $item->nama_puskesmas ?? 'Puskesmas ' . $item->id_puskesmas }}
+                                {{ $item->nama ?? 'Puskesmas ' . $item->id }}
                             </h5>
                             <span class="badge bg-primary">{{ $item->kecamatan }}</span>
                         </div>
@@ -201,10 +201,10 @@
                         </div>
                         <div class="text-center">
                             <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-                                <a href="{{ route('data.layanan.puskesmas.detail', $item->id_puskesmas) }}" class="btn btn-info w-100 w-sm-auto">
+                                <a href="{{ route('data.layanan.puskesmas.detail', $item->id) }}" class="btn btn-info w-100 w-sm-auto">
                                     <i class="fas fa-eye me-1"></i> Lihat Detail
                                 </a>
-                                <a href="{{ route('map') }}?focus=puskesmas&id={{ $item->id_puskesmas }}" class="btn btn-outline-primary w-100 w-sm-auto">
+                                <a href="{{ route('map') }}?focus=puskesmas&id={{ $item->id }}" class="btn btn-outline-primary w-100 w-sm-auto">
                                     <i class="fas fa-map-marker-alt me-1"></i> Lihat di Peta
                                 </a>
                             </div>

@@ -1,4 +1,221 @@
-// map.js - Inisialisasi filter peta dan interaksi UI
+// Fungsi untuk update kelurahan pada tampilan mobile
+function updateMobileKelurahanCheckboxes() {
+    console.log('Memperbarui checkbox kelurahan mobile...');
+    
+    // Ambil container untuk checkbox kelurahan mobile
+    const mobileKelurahanContainer = document.getElementById('mobile-kelurahan-checkbox-container');
+    const mobileKelurahanInfo = document.querySelector('.mobile-kelurahan-info');
+    
+    if (!mobileKelurahanContainer) {
+        console.error('Container kelurahan mobile tidak ditemukan');
+        return;
+    }
+    
+    // Kosongkan container
+    mobileKelurahanContainer.innerHTML = '';
+    
+    // Dapatkan kecamatan yang dipilih pada tampilan mobile
+    const selectedMobileKecamatan = [];
+    const mobileKecamatanCheckboxes = document.querySelectorAll('.mobile-kecamatan-checkbox');
+    const mobileSelectAllKecamatan = document.getElementById('mobile-select-all-kecamatan');
+    const mobileSelectAllKelurahan = document.getElementById('mobile-select-all-kelurahan');
+    
+    // Cek jika "Semua Kecamatan" dipilih
+    let allKecamatanSelected = mobileSelectAllKecamatan && mobileSelectAllKecamatan.checked;
+    
+    // Jika tidak semua dipilih, dapatkan yang dipilih
+    if (!allKecamatanSelected) {
+        mobileKecamatanCheckboxes.forEach(checkbox => {
+            if (checkbox.checked) {
+                selectedMobileKecamatan.push(checkbox.value);
+            }
+        });
+    }
+    
+    // Tampilkan informasi jika tidak ada kecamatan yang dipilih
+    if (mobileKelurahanInfo) {
+        if (selectedMobileKecamatan.length === 0 && !allKecamatanSelected) {
+            mobileKelurahanInfo.style.display = 'block';
+        } else {
+            mobileKelurahanInfo.style.display = 'none';
+        }
+    }
+    
+    // Kelurahan yang akan ditampilkan
+    let kelurahanToShow = [];
+    
+    // Jika semua kecamatan dipilih
+    if (allKecamatanSelected) {
+        kelurahanToShow = window.allKelurahanNames || [];
+    } 
+    // Jika kecamatan tertentu dipilih
+    else if (selectedMobileKecamatan.length > 0) {
+        selectedMobileKecamatan.forEach(kecamatanName => {
+            // Handle case differences
+            const matchedKecamatan = Object.keys(window.kelurahanByKecamatan || {}).find(k => 
+                k.toUpperCase() === kecamatanName.toUpperCase());
+                
+            if (matchedKecamatan && window.kelurahanByKecamatan[matchedKecamatan]) {
+                kelurahanToShow = kelurahanToShow.concat(window.kelurahanByKecamatan[matchedKecamatan]);
+            }
+        });
+        
+        // Hapus duplikat
+        kelurahanToShow = [...new Set(kelurahanToShow)];
+        
+        // Urutkan
+        kelurahanToShow.sort();
+    }
+    
+    // Buat checkbox untuk setiap kelurahan
+    kelurahanToShow.forEach(kelurahan => {
+        const checkboxDiv = document.createElement('div');
+        checkboxDiv.className = 'filter-checkbox';
+        checkboxDiv.innerHTML = `
+            <input type="checkbox" id="mobile-kelurahan-${kelurahan.replace(/\s+/g, '-')}" 
+                   class="mobile-kelurahan-checkbox" value="${kelurahan}" ${mobileSelectAllKelurahan && mobileSelectAllKelurahan.checked ? 'checked' : ''}>
+            <label for="mobile-kelurahan-${kelurahan.replace(/\s+/g, '-')}">${kelurahan}</label>
+        `;
+        mobileKelurahanContainer.appendChild(checkboxDiv);
+    });
+    
+    console.log('Mobile kelurahan checkboxes updated with', kelurahanToShow.length, 'items');
+}
+
+// Fungsi untuk menyinkronkan pilihan kecamatan dari desktop ke mobile
+function syncDesktopToMobileKecamatan() {
+    const selectAllDesktop = document.getElementById('select-all-kecamatan');
+    const mobileSelectAllKecamatan = document.getElementById('mobile-select-all-kecamatan');
+    
+    if (selectAllDesktop && mobileSelectAllKecamatan) {
+        mobileSelectAllKecamatan.checked = selectAllDesktop.checked;
+    }
+    
+    const kecamatanCheckboxes = document.querySelectorAll('.kecamatan-checkbox');
+    kecamatanCheckboxes.forEach(checkbox => {
+        const mobileCheckbox = document.getElementById('mobile-' + checkbox.id);
+        if (mobileCheckbox) {
+            mobileCheckbox.checked = checkbox.checked;
+        }
+    });
+}
+
+// Fungsi untuk menyinkronkan pilihan kecamatan dari mobile ke desktop
+function syncMobileToDesktopKecamatan() {
+    const selectAllMobile = document.getElementById('mobile-select-all-kecamatan');
+    const selectAllDesktop = document.getElementById('select-all-kecamatan');
+    
+    if (selectAllMobile && selectAllDesktop) {
+        selectAllDesktop.checked = selectAllMobile.checked;
+    }
+    
+    const mobileKecamatanCheckboxes = document.querySelectorAll('.mobile-kecamatan-checkbox');
+    
+    // Reset dan update selectedKecamatanList
+    window.selectedKecamatanList = [];
+    
+    mobileKecamatanCheckboxes.forEach(mobileCheckbox => {
+        const desktopCheckboxId = mobileCheckbox.id.replace('mobile-', '');
+        const desktopCheckbox = document.getElementById(desktopCheckboxId);
+        
+        if (desktopCheckbox) {
+            desktopCheckbox.checked = mobileCheckbox.checked;
+            
+            // Update selectedKecamatanList jika checkbox dipilih
+            if (mobileCheckbox.checked && !(selectAllMobile && selectAllMobile.checked)) {
+                window.selectedKecamatanList.push(mobileCheckbox.value);
+            }
+        }
+    });
+    
+    // Jika semua dipilih, kosongkan list
+    if (selectAllMobile && selectAllMobile.checked) {
+        window.selectedKecamatanList = [];
+    }
+    
+    // Update kelurahan berdasarkan kecamatan yang dipilih
+    updateKelurahanCheckboxes();
+}
+
+// Fungsi untuk menyinkronkan pilihan kelurahan dari desktop ke mobile
+function syncDesktopToMobileKelurahan() {
+    const selectAllDesktop = document.getElementById('select-all-kelurahan');
+    const mobileSelectAllKelurahan = document.getElementById('mobile-select-all-kelurahan');
+    
+    if (selectAllDesktop && mobileSelectAllKelurahan) {
+        mobileSelectAllKelurahan.checked = selectAllDesktop.checked;
+    }
+    
+    const kelurahanCheckboxes = document.querySelectorAll('.kelurahan-checkbox');
+    kelurahanCheckboxes.forEach(checkbox => {
+        const mobileCheckbox = document.getElementById('mobile-' + checkbox.id);
+        if (mobileCheckbox) {
+            mobileCheckbox.checked = checkbox.checked;
+        }
+    });
+}
+
+// Fungsi untuk menyinkronkan pilihan kelurahan dari mobile ke desktop
+function syncMobileToDesktopKelurahan() {
+    const selectAllMobile = document.getElementById('mobile-select-all-kelurahan');
+    const selectAllDesktop = document.getElementById('select-all-kelurahan');
+    
+    if (selectAllMobile && selectAllDesktop) {
+        selectAllDesktop.checked = selectAllMobile.checked;
+    }
+    
+    const mobileKelurahanCheckboxes = document.querySelectorAll('.mobile-kelurahan-checkbox');
+    
+    // Reset dan update selectedKelurahanList
+    window.selectedKelurahanList = [];
+    
+    mobileKelurahanCheckboxes.forEach(mobileCheckbox => {
+        const desktopCheckboxId = mobileCheckbox.id.replace('mobile-', '');
+        const desktopCheckbox = document.getElementById(desktopCheckboxId);
+        
+        if (desktopCheckbox) {
+            desktopCheckbox.checked = mobileCheckbox.checked;
+            
+            // Update selectedKelurahanList jika checkbox dipilih
+            if (mobileCheckbox.checked && !(selectAllMobile && selectAllMobile.checked)) {
+                window.selectedKelurahanList.push(mobileCheckbox.value);
+            }
+        }
+    });
+    
+    // Jika semua dipilih, kosongkan list
+    if (selectAllMobile && selectAllMobile.checked) {
+        window.selectedKelurahanList = [];
+    }
+}
+
+// Fungsi untuk menyinkronkan pilihan fasilitas dari desktop ke mobile
+function syncDesktopToMobileFacilities() {
+    const facilityFilters = ['apotek-filter', 'klinik-filter', 'rumahsakit-filter', 'puskesmas-filter'];
+    
+    facilityFilters.forEach(filterId => {
+        const desktopFilter = document.getElementById(filterId);
+        const mobileFilter = document.getElementById('mobile-' + filterId);
+        
+        if (desktopFilter && mobileFilter) {
+            mobileFilter.checked = desktopFilter.checked;
+        }
+    });
+}
+
+// Fungsi untuk menyinkronkan pilihan fasilitas dari mobile ke desktop
+function syncMobileToDesktopFacilities() {
+    const facilityFilters = ['apotek-filter', 'klinik-filter', 'rumahsakit-filter', 'puskesmas-filter'];
+    
+    facilityFilters.forEach(filterId => {
+        const desktopFilter = document.getElementById(filterId);
+        const mobileFilter = document.getElementById('mobile-' + filterId);
+        
+        if (desktopFilter && mobileFilter) {
+            desktopFilter.checked = mobileFilter.checked;
+        }
+    });
+}// map.js - Inisialisasi filter peta dan interaksi UI
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Inisialisasi filter peta...');
     initializeMapFilters();
@@ -138,9 +355,15 @@ function zoomToSelectedAreas(kecamatanList, kelurahanList) {
         const bounds = [];
         
         kecamatanList.forEach(kecamatanName => {
-            if (window.kecamatanPolygons && window.kecamatanPolygons[kecamatanName]) {
-                const polygon = window.kecamatanPolygons[kecamatanName];
+            // Handle case differences for the official GeoJSON data
+            const matchedKecamatan = Object.keys(window.kecamatanPolygons || {}).find(k => 
+                k.toUpperCase() === kecamatanName.toUpperCase());
+                
+            if (matchedKecamatan && window.kecamatanPolygons[matchedKecamatan]) {
+                const polygon = window.kecamatanPolygons[matchedKecamatan];
                 bounds.push(polygon.getBounds());
+            } else {
+                console.warn(`Polygon tidak ditemukan untuk kecamatan: ${kecamatanName}`);
             }
         });
         
@@ -457,7 +680,7 @@ function initializeMapFilters() {
         });
     }
     
- // ========== POPULATE KELURAHAN CHECKBOXES ==========
+    // ========== POPULATE KELURAHAN CHECKBOXES ==========
     
     // Inisialisasi tampilan kelurahan
     updateKelurahanCheckboxes();

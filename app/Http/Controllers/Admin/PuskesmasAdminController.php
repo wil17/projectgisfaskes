@@ -323,16 +323,15 @@ class PuskesmasAdminController extends Controller
         }
     }
     
-    /**
-     * Display klaster for specific puskesmas
-     */
     public function klasterIndex($id_puskesmas)
     {
         $puskesmas = Faskes::where('id', $id_puskesmas)
                           ->where('fasilitas', 'Puskesmas')
                           ->firstOrFail();
         
-        $klaster = KlasterPuskesmas::where('id_puskesmas', $id_puskesmas)
+        // Ambil hanya record klaster (bukan layanan)
+        $klaster = LayananKlaster::where('id', $id_puskesmas)
+                    ->whereNull('nama_layanan')
                     ->orderBy('kode_klaster')
                     ->get();
         
@@ -359,12 +358,22 @@ class PuskesmasAdminController extends Controller
                 throw new \Exception('Puskesmas tidak ditemukan');
             }
             
-            KlasterPuskesmas::create([
-                'id_puskesmas' => $id_puskesmas,
+            // Cari ID klaster tertinggi dan tambahkan 1
+            $maxIdKlaster = DB::table('layanan_klaster')->max('id_klaster') ?? 68;
+            $id_klaster = $maxIdKlaster + 1;
+            
+            // Tambahkan klaster baru
+            LayananKlaster::create([
+                'id' => $id_puskesmas,
+                'id_klaster' => $id_klaster,
                 'nama_klaster' => $request->nama_klaster,
                 'kode_klaster' => $request->kode_klaster,
                 'penanggung_jawab' => $request->penanggung_jawab,
                 'nama_puskesmas' => $puskesmas->nama,
+                'jumlah_petugas' => 0,
+                // Pastikan kolom lain yang wajib diisi juga disertakan
+                'nama_layanan' => null, // Set null untuk membedakan klaster dan layanan
+                'deskripsi_layanan' => null
             ]);
             
             return redirect()->route('admin.puskesmas.klaster.index', $id_puskesmas)
@@ -388,7 +397,9 @@ class PuskesmasAdminController extends Controller
         ]);
         
         try {
-            $klaster = KlasterPuskesmas::findOrFail($id_klaster);
+            $klaster = LayananKlaster::where('id_klaster', $id_klaster)
+                                   ->whereNull('nama_layanan')
+                                   ->firstOrFail();
             
             $klaster->update([
                 'nama_klaster' => $request->nama_klaster,
@@ -396,7 +407,16 @@ class PuskesmasAdminController extends Controller
                 'penanggung_jawab' => $request->penanggung_jawab,
             ]);
             
-            return redirect()->route('admin.puskesmas.klaster.index', $klaster->id_puskesmas)
+            // Update semua layanan yang terhubung dengan klaster ini
+            LayananKlaster::where('id_klaster', $id_klaster)
+                        ->whereNotNull('nama_layanan')
+                        ->update([
+                            'nama_klaster' => $request->nama_klaster,
+                            'kode_klaster' => $request->kode_klaster,
+                            'penanggung_jawab' => $request->penanggung_jawab,
+                        ]);
+            
+            return redirect()->route('admin.puskesmas.klaster.index', $klaster->id)
                 ->with('success', 'Klaster berhasil diperbarui!');
         } catch (\Exception $e) {
             return redirect()->back()
@@ -411,11 +431,15 @@ class PuskesmasAdminController extends Controller
     public function klasterDestroy($id_klaster)
     {
         try {
-            $klaster = KlasterPuskesmas::findOrFail($id_klaster);
-            $id_puskesmas = $klaster->id_puskesmas;
+            $klaster = LayananKlaster::where('id_klaster', $id_klaster)
+                                    ->whereNull('nama_layanan')
+                                    ->firstOrFail();
+            $id_puskesmas = $klaster->id;
             
-            // Delete related layanan
-            LayananKlaster::where('id_klaster', $id_klaster)->delete();
+            // Delete semua layanan terkait
+            LayananKlaster::where('id_klaster', $id_klaster)
+                        ->whereNotNull('nama_layanan')
+                        ->delete();
             
             // Delete klaster
             $klaster->delete();
@@ -433,14 +457,17 @@ class PuskesmasAdminController extends Controller
      */
     public function layananIndex($id_klaster)
     {
-        $klaster = KlasterPuskesmas::findOrFail($id_klaster);
-        $puskesmas = Faskes::where('id', $klaster->id_puskesmas)
-                           ->where('fasilitas', 'Puskesmas')
-                           ->first();
+        $klaster = LayananKlaster::where('id_klaster', $id_klaster)
+                               ->whereNull('nama_layanan')
+                               ->firstOrFail();
+        
+        $puskesmas = Faskes::where('id', $klaster->id)
+                          ->where('fasilitas', 'Puskesmas')
+                          ->firstOrFail();
         
         $layanan = LayananKlaster::where('id_klaster', $id_klaster)
-                    ->where('id_puskesmas', $klaster->id_puskesmas)
-                    ->get();
+                               ->whereNotNull('nama_layanan')
+                               ->get();
         
         return view('admin.puskesmas.layanan.index', compact('klaster', 'puskesmas', 'layanan'));
     }
@@ -452,19 +479,35 @@ class PuskesmasAdminController extends Controller
     {
         $request->validate([
             'nama_layanan' => 'required|string|max:100',
-            'deskripsi' => 'nullable|string',
-            'jadwal_layanan' => 'nullable|string|max:255',
+            'deskripsi_layanan' => 'nullable|string',
+            'jumlah_petugas' => 'nullable|integer|min:1',
         ]);
         
         try {
-            $klaster = KlasterPuskesmas::findOrFail($id_klaster);
+            $klaster = LayananKlaster::where('id_klaster', $id_klaster)
+                                   ->whereNull('nama_layanan')
+                                   ->firstOrFail();
             
+            // Buat layanan baru
             LayananKlaster::create([
+                'id' => $klaster->id,
                 'id_klaster' => $id_klaster,
-                'id_puskesmas' => $klaster->id_puskesmas,
                 'nama_layanan' => $request->nama_layanan,
-                'deskripsi' => $request->deskripsi,
-                'jadwal_layanan' => $request->jadwal_layanan,
+                'deskripsi_layanan' => $request->deskripsi_layanan,
+                'jumlah_petugas' => $request->jumlah_petugas ?? 1,
+                'nama_puskesmas' => $klaster->nama_puskesmas,
+                'nama_klaster' => $klaster->nama_klaster,
+                'kode_klaster' => $klaster->kode_klaster,
+                'penanggung_jawab' => $klaster->penanggung_jawab,
+            ]);
+            
+            // Update jumlah petugas di klaster
+            $totalPetugas = LayananKlaster::where('id_klaster', $id_klaster)
+                                       ->whereNotNull('nama_layanan')
+                                       ->sum('jumlah_petugas');
+            
+            $klaster->update([
+                'jumlah_petugas' => $totalPetugas,
             ]);
             
             return redirect()->route('admin.puskesmas.layanan.index', $id_klaster)
@@ -483,20 +526,32 @@ class PuskesmasAdminController extends Controller
     {
         $request->validate([
             'nama_layanan' => 'required|string|max:100',
-            'deskripsi' => 'nullable|string',
-            'jadwal_layanan' => 'nullable|string|max:255',
+            'deskripsi_layanan' => 'nullable|string',
+            'jumlah_petugas' => 'nullable|integer|min:1',
         ]);
         
         try {
             $layanan = LayananKlaster::findOrFail($id_layanan);
+            $id_klaster = $layanan->id_klaster;
             
             $layanan->update([
                 'nama_layanan' => $request->nama_layanan,
-                'deskripsi' => $request->deskripsi,
-                'jadwal_layanan' => $request->jadwal_layanan,
+                'deskripsi_layanan' => $request->deskripsi_layanan,
+                'jumlah_petugas' => $request->jumlah_petugas ?? 1,
             ]);
             
-            return redirect()->route('admin.puskesmas.layanan.index', $layanan->id_klaster)
+            // Update jumlah petugas di klaster
+            $totalPetugas = LayananKlaster::where('id_klaster', $id_klaster)
+                                       ->whereNotNull('nama_layanan')
+                                       ->sum('jumlah_petugas');
+            
+            LayananKlaster::where('id_klaster', $id_klaster)
+                        ->whereNull('nama_layanan')
+                        ->update([
+                            'jumlah_petugas' => $totalPetugas,
+                        ]);
+            
+            return redirect()->route('admin.puskesmas.layanan.index', $id_klaster)
                 ->with('success', 'Layanan berhasil diperbarui!');
         } catch (\Exception $e) {
             return redirect()->back()
@@ -515,6 +570,17 @@ class PuskesmasAdminController extends Controller
             $id_klaster = $layanan->id_klaster;
             
             $layanan->delete();
+            
+            // Update jumlah petugas di klaster
+            $totalPetugas = LayananKlaster::where('id_klaster', $id_klaster)
+                                       ->whereNotNull('nama_layanan')
+                                       ->sum('jumlah_petugas');
+            
+            LayananKlaster::where('id_klaster', $id_klaster)
+                        ->whereNull('nama_layanan')
+                        ->update([
+                            'jumlah_petugas' => $totalPetugas,
+                        ]);
             
             return redirect()->route('admin.puskesmas.layanan.index', $id_klaster)
                 ->with('success', 'Layanan berhasil dihapus!');

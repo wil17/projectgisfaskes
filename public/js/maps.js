@@ -1,12 +1,14 @@
-//maps.js
+// maps.js - Updated with Official Boundary Data
 document.addEventListener('DOMContentLoaded', function() {
     // Variabel untuk menyimpan kecamatan dan kelurahan yang terpilih
     window.selectedKecamatanList = [];
     window.selectedKelurahanList = [];
-// Make sure clearAllMarkers is called during initialization
-if (typeof clearAllMarkers === 'function') {
-    clearAllMarkers();
-}
+
+    // Make sure clearAllMarkers is called during initialization
+    if (typeof clearAllMarkers === 'function') {
+        clearAllMarkers();
+    }
+
     // Initialize the map
     const map = L.map('map', {
         fullscreenControl: true,
@@ -22,7 +24,6 @@ if (typeof clearAllMarkers === 'function') {
         position: 'topleft'
     }).addTo(map);
 
-
     const openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 20,
         attribution: '&copy; OpenStreetMap contributors'
@@ -33,13 +34,12 @@ if (typeof clearAllMarkers === 'function') {
         attribution: 'Tiles &copy; Esri &mdash; Source: Esri'
     });
 
-    const googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}', {
+    const googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=p&x={y}&y={z}', {
         maxZoom: 20,
         subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
         attribution: '&copy; Google Maps'
     });
     
-
     // Add the base layers to the map
     openStreetMap.addTo(map);
 
@@ -70,40 +70,40 @@ if (typeof clearAllMarkers === 'function') {
         west: { lat: -3.31449, lng: 114.527778, label: 'BARAT<br>114°31\'40"' }
     };
 
-// Define marker icons for different facilities
-const icons = {
-    'Apotek': L.divIcon({
-        html: '<div style="background-color: #2196F3; color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"><i class="fas fa-pills" style="font-size: 16px;"></i></div>',
-        className: 'facility-marker',
-        iconSize: [32, 32],
-        iconAnchor: [16, 16],
-        popupAnchor: [0, -16]
-    }),
-    'Klinik': L.divIcon({
-        html: '<div style="background-color: #4CAF50; color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"><i class="fas fa-stethoscope" style="font-size: 16px;"></i></div>',
-        className: 'facility-marker',
-        iconSize: [32, 32],
-        iconAnchor: [16, 16],
-        popupAnchor: [0, -16]
-    }),
-    'Rumah Sakit': L.divIcon({
-        html: '<div style="background-color: #F44336; color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"><i class="fas fa-hospital" style="font-size: 16px;"></i></div>',
-        className: 'facility-marker',
-        iconSize: [32, 32],
-        iconAnchor: [16, 16],
-        popupAnchor: [0, -16]
-    }),
-    'Puskesmas': L.divIcon({
-        html: '<div style="background-color: #FF9800; color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"><i class="fas fa-first-aid" style="font-size: 16px;"></i></div>',
-        className: 'facility-marker',
-        iconSize: [32, 32],
-        iconAnchor: [16, 16],
-        popupAnchor: [0, -16]
-    })
-};
+    // Define marker icons for different facilities
+    const icons = {
+        'Apotek': L.divIcon({
+            html: '<div style="background-color: #2196F3; color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"><i class="fas fa-pills" style="font-size: 16px;"></i></div>',
+            className: 'facility-marker',
+            iconSize: [32, 32],
+            iconAnchor: [16, 16],
+            popupAnchor: [0, -16]
+        }),
+        'Klinik': L.divIcon({
+            html: '<div style="background-color: #4CAF50; color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"><i class="fas fa-stethoscope" style="font-size: 16px;"></i></div>',
+            className: 'facility-marker',
+            iconSize: [32, 32],
+            iconAnchor: [16, 16],
+            popupAnchor: [0, -16]
+        }),
+        'Rumah Sakit': L.divIcon({
+            html: '<div style="background-color: #F44336; color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"><i class="fas fa-hospital" style="font-size: 16px;"></i></div>',
+            className: 'facility-marker',
+            iconSize: [32, 32],
+            iconAnchor: [16, 16],
+            popupAnchor: [0, -16]
+        }),
+        'Puskesmas': L.divIcon({
+            html: '<div style="background-color: #FF9800; color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"><i class="fas fa-first-aid" style="font-size: 16px;"></i></div>',
+            className: 'facility-marker',
+            iconSize: [32, 32],
+            iconAnchor: [16, 16],
+            popupAnchor: [0, -16]
+        })
+    };
 
-// Membuat icons bisa diakses secara global
-window.icons = icons;
+    // Membuat icons bisa diakses secara global
+    window.icons = icons;
 
     // User location icon
     const userLocationIcon = L.divIcon({
@@ -129,79 +129,79 @@ window.icons = icons;
     let allMarkers = [];
     window.allMarkers = allMarkers;
 
-   // Fungsi untuk membuat dan menampilkan batas kota
-function createCityBoundary() {
-    // Buat array koordinat polygon untuk membentuk persegi panjang batas kota
-    const boundaryCoords = [
-        [cityBoundaries.north.lat, cityBoundaries.north.lng],
-        [cityBoundaries.north.lat, cityBoundaries.east.lng],
-        [cityBoundaries.south.lat, cityBoundaries.east.lng],
-        [cityBoundaries.south.lat, cityBoundaries.west.lng],
-        [cityBoundaries.north.lat, cityBoundaries.west.lng],
-        [cityBoundaries.north.lat, cityBoundaries.north.lng]
-    ];
+    // Fungsi untuk membuat dan menampilkan batas kota
+    function createCityBoundary() {
+        // Buat array koordinat polygon untuk membentuk persegi panjang batas kota
+        const boundaryCoords = [
+            [cityBoundaries.north.lat, cityBoundaries.north.lng],
+            [cityBoundaries.north.lat, cityBoundaries.east.lng],
+            [cityBoundaries.south.lat, cityBoundaries.east.lng],
+            [cityBoundaries.south.lat, cityBoundaries.west.lng],
+            [cityBoundaries.north.lat, cityBoundaries.west.lng],
+            [cityBoundaries.north.lat, cityBoundaries.north.lng]
+        ];
 
-    // Buat layer grup untuk batas kota
-    cityBoundaryLayer = L.layerGroup();
-    
-    // Buat polygon dengan pengaturan warna dan gaya
-    const boundaryPolygon = L.polygon(boundaryCoords, {
-        color: '#FF6B35',       // Warna garis
-        weight: 3,              // Ketebalan garis
-        opacity: 0.8,           // Transparansi garis
-        fillOpacity: 0.1,       // Transparansi isi polygon
-        dashArray: '10, 5'      // Garis putus-putus
-    }).addTo(cityBoundaryLayer);
+        // Buat layer grup untuk batas kota
+        cityBoundaryLayer = L.layerGroup();
+        
+        // Buat polygon dengan pengaturan warna dan gaya
+        const boundaryPolygon = L.polygon(boundaryCoords, {
+            color: '#FF6B35',       // Warna garis
+            weight: 3,              // Ketebalan garis
+            opacity: 0.8,           // Transparansi garis
+            fillOpacity: 0.1,       // Transparansi isi polygon
+            dashArray: '10, 5'      // Garis putus-putus
+        }).addTo(cityBoundaryLayer);
 
         // Tambahkan marker dengan label di setiap titik batas mata angin
-    Object.entries(cityBoundaries).forEach(([direction, coords]) => {
-        const marker = L.marker([coords.lat, coords.lng], {
-            icon: L.divIcon({
-                html: `<div style="background-color: #FF6B35; color: white; padding: 8px 12px; 
-                       border-radius: 20px; font-weight: bold; font-size: 12px; text-align: center; 
-                       border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3); 
-                       white-space: nowrap;">${coords.label}</div>`,
-                className: 'city-boundary-marker',
-                iconSize: [80, 40],
-                iconAnchor: [40, 20]
-            })
-        }).addTo(cityBoundaryLayer);
-        
-        cityBoundaryMarkers.push(marker);
-    });
+        Object.entries(cityBoundaries).forEach(([direction, coords]) => {
+            const marker = L.marker([coords.lat, coords.lng], {
+                icon: L.divIcon({
+                    html: `<div style="background-color: #FF6B35; color: white; padding: 8px 12px; 
+                        border-radius: 20px; font-weight: bold; font-size: 12px; text-align: center; 
+                        border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3); 
+                        white-space: nowrap;">${coords.label}</div>`,
+                    className: 'city-boundary-marker',
+                    iconSize: [80, 40],
+                    iconAnchor: [40, 20]
+                })
+            }).addTo(cityBoundaryLayer);
+            
+            cityBoundaryMarkers.push(marker);
+        });
 
-    // Tambahkan popup informasi saat polygon diklik
-    boundaryPolygon.bindPopup(`
-        <div style="text-align: center;">
-            <strong>🏙️ Batas Kota Banjarmasin</strong><br><br>
-            <small>
-                <strong>Utara:</strong> 3°16'46"<br>
-                <strong>Timur:</strong> 114°39'55"<br>
-                <strong>Selatan:</strong> 3°22'54"<br>
-                <strong>Barat:</strong> 114°31'40"
-            </small>
-        </div>
-    `);
-}
+        // Tambahkan popup informasi saat polygon diklik
+        boundaryPolygon.bindPopup(`
+            <div style="text-align: center;">
+                <strong>🏙️ Batas Kota Banjarmasin</strong><br><br>
+                <small>
+                    <strong>Utara:</strong> 3°16'46"<br>
+                    <strong>Timur:</strong> 114°39'55"<br>
+                    <strong>Selatan:</strong> 3°22'54"<br>
+                    <strong>Barat:</strong> 114°31'40"
+                </small>
+            </div>
+        `);
+    }
 
     // Make createCityBoundary globally accessible
     window.createCityBoundary = createCityBoundary;
 
-   // Fungsi untuk menampilkan atau menyembunyikan batas kota
-window.toggleCityBoundary = function(show) {
-    if (show) {
-        // Jika batas kota belum dibuat, buat terlebih dahulu
-        if (!cityBoundaryLayer) {
-            createCityBoundary();
+    // Fungsi untuk menampilkan atau menyembunyikan batas kota
+    window.toggleCityBoundary = function(show) {
+        if (show) {
+            // Jika batas kota belum dibuat, buat terlebih dahulu
+            if (!cityBoundaryLayer) {
+                createCityBoundary();
+            }
+            map.addLayer(cityBoundaryLayer);
+        } else {
+            // Sembunyikan batas kota jika ada
+            if (cityBoundaryLayer) {
+                map.removeLayer(cityBoundaryLayer);
+            }
         }
-        map.addLayer(cityBoundaryLayer);
-    } else {
-        // Sembunyikan batas kota jika ada
-        if (cityBoundaryLayer) {
-            map.removeLayer(cityBoundaryLayer);
-        }
-    }
-};
+    };
 
     // Notification system
     window.showNotification = function(message, type = 'info') {
@@ -290,135 +290,135 @@ window.toggleCityBoundary = function(show) {
         return distance;
     }
 
-// Fungsi untuk mendapatkan lokasi pengguna dengan akurasi maksimal
-function getCurrentLocation(zoomToLocation = false) {
-    if (navigator.geolocation) {
-        // Tampilkan indikator loading pada tombol GPS
-        const gpsControlElement = document.querySelector('.leaflet-control-gps');
-        if (gpsControlElement) {
-            gpsControlElement.classList.add('locating');
-        }
-
-        // Opsi untuk akurasi tinggi
-        const options = {
-            enableHighAccuracy: true,    // Aktifkan akurasi tinggi
-            timeout: 30000,              // Timeout 30 detik
-            maximumAge: 0                // Jangan gunakan cache lokasi
-        };
-
-        // Sistem percobaan bertingkat untuk meningkatkan akurasi
-        let attempts = 0;
-        const maxAttempts = 3;
-        let bestPosition = null;
-        let bestAccuracy = Infinity;
-
-        function tryGetLocation() {
-            attempts++;
-            
-            navigator.geolocation.getCurrentPosition(
-                function(position) {
-                    const lat = position.coords.latitude;
-                    const lng = position.coords.longitude;
-                    const accuracy = position.coords.accuracy;
-                    
-                    // Simpan posisi terbaik berdasarkan akurasi
-                    if (accuracy < bestAccuracy) {
-                        bestAccuracy = accuracy;
-                        bestPosition = position;
-                    }
-                    
-                    // Gunakan posisi jika akurasi sudah cukup baik atau sudah maksimal percobaan
-                    if (accuracy <= 20 || attempts >= maxAttempts) {
-                        usePosition(bestPosition);
-                    } else if (attempts < maxAttempts) {
-                        // Coba lagi untuk mendapatkan akurasi lebih baik
-                        setTimeout(tryGetLocation, 1000);
-                    } else {
-                        usePosition(bestPosition);
-                    }
-                },
-                function(error) {
-                    // Tangani error
-                    if (attempts < maxAttempts) {
-                        setTimeout(tryGetLocation, 1000);
-                    } else {
-                        handleLocationError(error);
-                    }
-                },
-                options
-            );
-        }
-
-        function usePosition(position) {
-            const lat = position.coords.latitude;
-            const lng = position.coords.longitude;
-            const accuracy = position.coords.accuracy;
-            
-            // Hapus marker dan lingkaran sebelumnya
-            if (userLocationMarker) map.removeLayer(userLocationMarker);
-            if (userLocationCircle) map.removeLayer(userLocationCircle);
-            if (accuracyCircle) map.removeLayer(accuracyCircle);
-            
-            // Tambahkan marker lokasi pengguna
-            userLocationMarker = L.marker([lat, lng], { icon: userLocationIcon })
-                .addTo(map)
-                .bindPopup(`
-                    <div style="text-align: center;">
-                        <strong>📍 Lokasi Anda</strong><br>
-                        <small>Lat: ${lat.toFixed(6)}<br>
-                        Lng: ${lng.toFixed(6)}<br>
-                        Akurasi: ±${Math.round(accuracy)}m</small>
-                    </div>
-                `);
-            
-            // Tambahkan lingkaran akurasi
-            accuracyCircle = L.circle([lat, lng], {
-                color: '#4285F4',
-                fillColor: '#4285F4',
-                fillOpacity: 0.05,
-                opacity: 0.7,
-                radius: accuracy,
-                className: 'accuracy-circle'
-            }).addTo(map);
-            
-            // Tambahkan lingkaran radius 3km untuk pencarian fasilitas
-            userLocationCircle = L.circle([lat, lng], {
-                color: '#FF1744',
-                fillColor: '#FF1744',
-                fillOpacity: 0.05,
-                radius: 3000,
-                dashArray: '5, 5'
-            }).addTo(map);
-            
-            // Zoom ke lokasi pengguna dengan level zoom berdasarkan akurasi
-            if (zoomToLocation) {
-                let zoomLevel = 15;
-                if (accuracy <= 10) zoomLevel = 17;       // Akurasi sangat tinggi
-                else if (accuracy <= 50) zoomLevel = 16;  // Akurasi tinggi
-                else if (accuracy <= 100) zoomLevel = 15; // Akurasi sedang
-                else zoomLevel = 14;                      // Akurasi rendah
-                
-                map.setView([lat, lng], zoomLevel);
-            }
-            
-            // Reset status tombol GPS
+    // Fungsi untuk mendapatkan lokasi pengguna dengan akurasi maksimal
+    function getCurrentLocation(zoomToLocation = false) {
+        if (navigator.geolocation) {
+            // Tampilkan indikator loading pada tombol GPS
             const gpsControlElement = document.querySelector('.leaflet-control-gps');
             if (gpsControlElement) {
-                gpsControlElement.classList.remove('locating');
+                gpsControlElement.classList.add('locating');
             }
-            
-            // Tampilkan notifikasi berdasarkan tingkat akurasi
-            let accuracyText = '';
-            if (accuracy <= 10) accuracyText = 'Akurasi Sangat Tinggi';
-            else if (accuracy <= 50) accuracyText = 'Akurasi Tinggi';
-            else if (accuracy <= 100) accuracyText = 'Akurasi Sedang';
-            else accuracyText = 'Akurasi Rendah';
-            
-            showNotification(`✅ Lokasi ditemukan! ${accuracyText} (±${Math.round(accuracy)}m)`, 'success');
-            
-            // Muat otomatis fasilitas kesehatan dalam radius 3km
-            loadNearbyFacilities(lat, lng);
-        }
+
+            // Opsi untuk akurasi tinggi
+            const options = {
+                enableHighAccuracy: true,    // Aktifkan akurasi tinggi
+                timeout: 30000,              // Timeout 30 detik
+                maximumAge: 0                // Jangan gunakan cache lokasi
+            };
+
+            // Sistem percobaan bertingkat untuk meningkatkan akurasi
+            let attempts = 0;
+            const maxAttempts = 3;
+            let bestPosition = null;
+            let bestAccuracy = Infinity;
+
+            function tryGetLocation() {
+                attempts++;
+                
+                navigator.geolocation.getCurrentPosition(
+                    function(position) {
+                        const lat = position.coords.latitude;
+                        const lng = position.coords.longitude;
+                        const accuracy = position.coords.accuracy;
+                        
+                        // Simpan posisi terbaik berdasarkan akurasi
+                        if (accuracy < bestAccuracy) {
+                            bestAccuracy = accuracy;
+                            bestPosition = position;
+                        }
+                        
+                        // Gunakan posisi jika akurasi sudah cukup baik atau sudah maksimal percobaan
+                        if (accuracy <= 20 || attempts >= maxAttempts) {
+                            usePosition(bestPosition);
+                        } else if (attempts < maxAttempts) {
+                            // Coba lagi untuk mendapatkan akurasi lebih baik
+                            setTimeout(tryGetLocation, 1000);
+                        } else {
+                            usePosition(bestPosition);
+                        }
+                    },
+                    function(error) {
+                        // Tangani error
+                        if (attempts < maxAttempts) {
+                            setTimeout(tryGetLocation, 1000);
+                        } else {
+                            handleLocationError(error);
+                        }
+                    },
+                    options
+                );
+            }
+
+            function usePosition(position) {
+                const lat = position.coords.latitude;
+                const lng = position.coords.longitude;
+                const accuracy = position.coords.accuracy;
+                
+                // Hapus marker dan lingkaran sebelumnya
+                if (userLocationMarker) map.removeLayer(userLocationMarker);
+                if (userLocationCircle) map.removeLayer(userLocationCircle);
+                if (accuracyCircle) map.removeLayer(accuracyCircle);
+                
+                // Tambahkan marker lokasi pengguna
+                userLocationMarker = L.marker([lat, lng], { icon: userLocationIcon })
+                    .addTo(map)
+                    .bindPopup(`
+                        <div style="text-align: center;">
+                            <strong>📍 Lokasi Anda</strong><br>
+                            <small>Lat: ${lat.toFixed(6)}<br>
+                            Lng: ${lng.toFixed(6)}<br>
+                            Akurasi: ±${Math.round(accuracy)}m</small>
+                        </div>
+                    `);
+                
+                // Tambahkan lingkaran akurasi
+                accuracyCircle = L.circle([lat, lng], {
+                    color: '#4285F4',
+                    fillColor: '#4285F4',
+                    fillOpacity: 0.05,
+                    opacity: 0.7,
+                    radius: accuracy,
+                    className: 'accuracy-circle'
+                }).addTo(map);
+                
+                // Tambahkan lingkaran radius 3km untuk pencarian fasilitas
+                userLocationCircle = L.circle([lat, lng], {
+                    color: '#FF1744',
+                    fillColor: '#FF1744',
+                    fillOpacity: 0.05,
+                    radius: 3000,
+                    dashArray: '5, 5'
+                }).addTo(map);
+                
+                // Zoom ke lokasi pengguna dengan level zoom berdasarkan akurasi
+                if (zoomToLocation) {
+                    let zoomLevel = 15;
+                    if (accuracy <= 10) zoomLevel = 17;       // Akurasi sangat tinggi
+                    else if (accuracy <= 50) zoomLevel = 16;  // Akurasi tinggi
+                    else if (accuracy <= 100) zoomLevel = 15; // Akurasi sedang
+                    else zoomLevel = 14;                      // Akurasi rendah
+                    
+                    map.setView([lat, lng], zoomLevel);
+                }
+                
+                // Reset status tombol GPS
+                const gpsControlElement = document.querySelector('.leaflet-control-gps');
+                if (gpsControlElement) {
+                    gpsControlElement.classList.remove('locating');
+                }
+                
+                // Tampilkan notifikasi berdasarkan tingkat akurasi
+                let accuracyText = '';
+                if (accuracy <= 10) accuracyText = 'Akurasi Sangat Tinggi';
+                else if (accuracy <= 50) accuracyText = 'Akurasi Tinggi';
+                else if (accuracy <= 100) accuracyText = 'Akurasi Sedang';
+                else accuracyText = 'Akurasi Rendah';
+                
+                showNotification(`✅ Lokasi ditemukan! ${accuracyText} (±${Math.round(accuracy)}m)`, 'success');
+                
+                // Muat otomatis fasilitas kesehatan dalam radius 3km
+                loadNearbyFacilities(lat, lng);
+            }
 
             function handleLocationError(error) {
                 let errorMessage = '';
@@ -447,257 +447,256 @@ function getCurrentLocation(zoomToLocation = false) {
             }
 
             // Tampilkan notifikasi pencarian lokasi
-        showNotification('🔍 Mencari lokasi GPS Anda...', 'info');
-        
-        // Mulai proses pencarian lokasi
-        tryGetLocation();
-        
-    } else {
-        showNotification('❌ Geolocation tidak didukung browser ini.', 'error');
-    }
-}
-
-// Fungsi untuk memuat fasilitas kesehatan dalam radius 3km
-async function loadNearbyFacilities(userLat, userLng) {
-    try {
-        // Bersihkan marker sebelumnya
-        nearbyMarkersLayer.clearLayers();
-        
-        // Ambil data fasilitas dari API
-        const response = await fetch('/api/faskes/nearby?lat=' + userLat + '&lng=' + userLng + '&radius=3');
-        const facilities = await response.json();
-        
-        // Bersihkan marker yang ada
-        allMarkers.forEach(marker => marker.remove());
-        allMarkers = [];
-        Object.values(facilityLayers).forEach(layer => layer.clearLayers());
-        
-        // Tambahkan marker untuk setiap fasilitas
-        facilities.forEach(facility => {
-            if (facility.longitude && facility.latitude) {
-                const icon = icons[facility.fasilitas] || icons['Apotek'];
-                
-                const marker = L.marker([facility.latitude, facility.longitude], { icon: icon })
-                    .bindPopup(`
-                        <strong>${facility.nama}</strong><br>
-                        <i class="fas fa-hospital"></i> ${facility.fasilitas}<br>
-                        <i class="fas fa-map-marker-alt"></i> ${facility.alamat}<br>
-                        <i class="fas fa-city"></i> Kec. ${facility.kecamatan}<br>
-                        <i class="fas fa-map-pin"></i> Kel. ${facility.kelurahan || 'N/A'}<br>
-                        <i class="fas fa-route"></i> Jarak: ${facility.distance} km
-                    `);
-                
-                // Tambahkan marker ke layer yang sesuai
-                if (facilityLayers[facility.fasilitas]) {
-                    facilityLayers[facility.fasilitas].addLayer(marker);
-                }
-                
-                allMarkers.push(marker);
-            }
-        });
-        
-        // Tampilkan notifikasi hasil pencarian
-        if (facilities.length === 0) {
-            showNotification('ℹ️ Tidak ada fasilitas kesehatan dalam radius 3km dari lokasi Anda.', 'warning');
+            showNotification('🔍 Mencari lokasi GPS Anda...', 'info');
+            
+            // Mulai proses pencarian lokasi
+            tryGetLocation();
+            
         } else {
-            showNotification(`✅ Ditemukan ${facilities.length} fasilitas kesehatan dalam radius 3km.`, 'success');
+            showNotification('❌ Geolocation tidak didukung browser ini.', 'error');
         }
-        
-    } catch (error) {
-        console.error('Error loading nearby facilities:', error);
-        showNotification('❌ Terjadi kesalahan saat memuat fasilitas kesehatan terdekat.', 'error');
     }
-}
+
+    // Fungsi untuk memuat fasilitas kesehatan dalam radius 3km
+    async function loadNearbyFacilities(userLat, userLng) {
+        try {
+            // Bersihkan marker sebelumnya
+            nearbyMarkersLayer.clearLayers();
+            
+            // Ambil data fasilitas dari API
+            const response = await fetch('/api/faskes/nearby?lat=' + userLat + '&lng=' + userLng + '&radius=3');
+            const facilities = await response.json();
+            
+            // Bersihkan marker yang ada
+            allMarkers.forEach(marker => marker.remove());
+            allMarkers = [];
+            Object.values(facilityLayers).forEach(layer => layer.clearLayers());
+            
+            // Tambahkan marker untuk setiap fasilitas
+            facilities.forEach(facility => {
+                if (facility.longitude && facility.latitude) {
+                    const icon = icons[facility.fasilitas] || icons['Apotek'];
+                    
+                    const marker = L.marker([facility.latitude, facility.longitude], { icon: icon })
+                        .bindPopup(`
+                            <strong>${facility.nama}</strong><br>
+                            <i class="fas fa-hospital"></i> ${facility.fasilitas}<br>
+                            <i class="fas fa-map-marker-alt"></i> ${facility.alamat}<br>
+                            <i class="fas fa-city"></i> Kec. ${facility.kecamatan}<br>
+                            <i class="fas fa-map-pin"></i> Kel. ${facility.kelurahan || 'N/A'}<br>
+                            <i class="fas fa-route"></i> Jarak: ${facility.distance} km
+                        `);
+                    
+                    // Tambahkan marker ke layer yang sesuai
+                    if (facilityLayers[facility.fasilitas]) {
+                        facilityLayers[facility.fasilitas].addLayer(marker);
+                    }
+                    
+                    allMarkers.push(marker);
+                }
+            });
+            
+            // Tampilkan notifikasi hasil pencarian
+            if (facilities.length === 0) {
+                showNotification('ℹ️ Tidak ada fasilitas kesehatan dalam radius 3km dari lokasi Anda.', 'warning');
+            } else {
+                showNotification(`✅ Ditemukan ${facilities.length} fasilitas kesehatan dalam radius 3km.`, 'success');
+            }
+            
+        } catch (error) {
+            console.error('Error loading nearby facilities:', error);
+            showNotification('❌ Terjadi kesalahan saat memuat fasilitas kesehatan terdekat.', 'error');
+        }
+    }
 
     // Expose loadNearbyFacilities to window
     window.loadNearbyFacilities = loadNearbyFacilities;
 
-window.loadFacilities = async function(filters = {}) {
-    try {
-        console.log('=== LOAD FACILITIES ===');
-        console.log('Memuat fasilitas dengan filter:', filters);
-        
-        // Check if any kecamatan is selected or "all kecamatan" is selected
-        const selectAllKecamatan = document.getElementById('select-all-kecamatan');
-        const anyKecamatanSelected = (filters.kecamatan && filters.kecamatan.length > 0) || 
-                                     (selectAllKecamatan && selectAllKecamatan.checked);
-        
-        // If no kecamatan is selected, clear all markers and return without loading data
-        if (!anyKecamatanSelected) {
-            console.log('No kecamatan selected, clearing all markers');
-            clearAllMarkers();
-            return;
-        }
-        
-        // Bersihkan marker yang ada
-        clearAllMarkers();
-
-        // Pastikan icons tersedia
-        if (!window.icons) {
-            console.error('Error: window.icons tidak tersedia');
-            return;
-        }
-
-        // Buat parameter query dengan benar
-        const queryParams = new URLSearchParams();
-        
-        // Tangani multiple kecamatan - PENTING: hanya kirim jika ada yang dipilih secara spesifik
-        if (filters.kecamatan && Array.isArray(filters.kecamatan) && filters.kecamatan.length > 0) {
-            console.log('Menambahkan filter kecamatan:', filters.kecamatan);
-            filters.kecamatan.forEach(kec => {
-                queryParams.append('kecamatan[]', kec);
-            });
-        }
-        
-        // Tangani multiple kelurahan - PENTING: hanya kirim jika ada yang dipilih secara spesifik
-        if (filters.kelurahan && Array.isArray(filters.kelurahan) && filters.kelurahan.length > 0) {
-            console.log('Menambahkan filter kelurahan:', filters.kelurahan);
-            filters.kelurahan.forEach(kel => {
-                queryParams.append('kelurahan[]', kel);
-            });
-        }
-        
-        // Tangani pencarian
-        if (filters.search && filters.search.trim() !== '') {
-            queryParams.append('search', filters.search.trim());
-            console.log('Menambahkan filter pencarian:', filters.search.trim());
-        }
-        
-        // Tangani jenis fasilitas
-        if (filters.fasilitas && Array.isArray(filters.fasilitas) && filters.fasilitas.length > 0) {
-            console.log('Menambahkan filter fasilitas:', filters.fasilitas);
-            filters.fasilitas.forEach(facility => {
-                queryParams.append('fasilitas[]', facility);
-            });
-        }
-
-        // Debug: Tampilkan URL API yang digunakan
-        const apiUrl = `/api/faskes?${queryParams.toString()}`;
-        console.log('Mengambil data dari API:', apiUrl);
-        console.log('Query parameters:', queryParams.toString());
-
-        // Ambil data dari API dengan error handling yang lebih baik
-        const response = await fetch(apiUrl, {
-            method: 'GET',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
+    window.loadFacilities = async function(filters = {}) {
+        try {
+            console.log('=== LOAD FACILITIES ===');
+            console.log('Memuat fasilitas dengan filter:', filters);
+            
+            // Check if any kecamatan is selected or "all kecamatan" is selected
+            const selectAllKecamatan = document.getElementById('select-all-kecamatan');
+            const anyKecamatanSelected = (filters.kecamatan && filters.kecamatan.length > 0) || 
+                                        (selectAllKecamatan && selectAllKecamatan.checked);
+            
+            // If no kecamatan is selected, clear all markers and return without loading data
+            if (!anyKecamatanSelected) {
+                console.log('No kecamatan selected, clearing all markers');
+                clearAllMarkers();
+                return;
             }
-        });
-        
-        if (!response.ok) {
-            const errorText = await response.text();
-            console.error('HTTP Error:', response.status, response.statusText, errorText);
-            throw new Error(`HTTP error ${response.status}: ${response.statusText}`);
-        }
-        
-        const data = await response.json();
-        console.log(`Ditemukan ${data.length} fasilitas dari API`);
+            
+            // Bersihkan marker yang ada
+            clearAllMarkers();
 
-        // Proses data dan tambahkan marker
-        let addedMarkers = 0;
-        data.forEach(item => {
-            if (item.longitude && item.latitude) {
-                // Pastikan koordinat valid
-                const lat = parseFloat(item.latitude);
-                const lng = parseFloat(item.longitude);
-                
-                if (!isNaN(lat) && !isNaN(lng) && lat !== 0 && lng !== 0) {
-                    // Pastikan icons tersedia dan tipe fasilitas valid
-                    if (!window.icons[item.fasilitas]) {
-                        console.warn(`Icon untuk tipe fasilitas "${item.fasilitas}" tidak ditemukan, menggunakan default`);
-                    }
+            // Pastikan icons tersedia
+            if (!window.icons) {
+                console.error('Error: window.icons tidak tersedia');
+                return;
+            }
+
+            // Buat parameter query dengan benar
+            const queryParams = new URLSearchParams();
+            
+            // Tangani multiple kecamatan - PENTING: hanya kirim jika ada yang dipilih secara spesifik
+            if (filters.kecamatan && Array.isArray(filters.kecamatan) && filters.kecamatan.length > 0) {
+                console.log('Menambahkan filter kecamatan:', filters.kecamatan);
+                filters.kecamatan.forEach(kec => {
+                    queryParams.append('kecamatan[]', kec);
+                });
+            }
+            
+            // Tangani multiple kelurahan - PENTING: hanya kirim jika ada yang dipilih secara spesifik
+            if (filters.kelurahan && Array.isArray(filters.kelurahan) && filters.kelurahan.length > 0) {
+                console.log('Menambahkan filter kelurahan:', filters.kelurahan);
+                filters.kelurahan.forEach(kel => {
+                    queryParams.append('kelurahan[]', kel);
+                });
+            }
+            
+            // Tangani pencarian
+            if (filters.search && filters.search.trim() !== '') {
+                queryParams.append('search', filters.search.trim());
+                console.log('Menambahkan filter pencarian:', filters.search.trim());
+            }
+            
+            // Tangani jenis fasilitas
+            if (filters.fasilitas && Array.isArray(filters.fasilitas) && filters.fasilitas.length > 0) {
+                console.log('Menambahkan filter fasilitas:', filters.fasilitas);
+                filters.fasilitas.forEach(facility => {
+                    queryParams.append('fasilitas[]', facility);
+                });
+            }
+
+            // Debug: Tampilkan URL API yang digunakan
+            const apiUrl = `/api/faskes?${queryParams.toString()}`;
+            console.log('Mengambil data dari API:', apiUrl);
+            console.log('Query parameters:', queryParams.toString());
+
+            // Ambil data dari API dengan error handling yang lebih baik
+            const response = await fetch(apiUrl, {
+                method: 'GET',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                }
+            });
+            
+            if (!response.ok) {
+                const errorText = await response.text();
+                console.error('HTTP Error:', response.status, response.statusText, errorText);
+                throw new Error(`HTTP error ${response.status}: ${response.statusText}`);
+            }
+            
+            const data = await response.json();
+            console.log(`Ditemukan ${data.length} fasilitas dari API`);
+
+            // Proses data dan tambahkan marker
+            let addedMarkers = 0;
+            data.forEach(item => {
+                if (item.longitude && item.latitude) {
+                    // Pastikan koordinat valid
+                    const lat = parseFloat(item.latitude);
+                    const lng = parseFloat(item.longitude);
                     
-                    const icon = window.icons[item.fasilitas] || window.icons['Apotek']; // Default ke ikon Apotek
-                    
-                    const marker = L.marker([lat, lng], { icon: icon })
-                        .bindPopup(`
-                            <div style="min-width: 200px;">
-                                <strong style="color: #2c3e50; font-size: 14px;">${item.nama}</strong><br><br>
-                                <div style="margin: 5px 0;">
-                                    <i class="fas fa-hospital" style="color: #3498db; width: 16px;"></i> 
-                                    <span style="color: #34495e;">${item.fasilitas}</span>
+                    if (!isNaN(lat) && !isNaN(lng) && lat !== 0 && lng !== 0) {
+                        // Pastikan icons tersedia dan tipe fasilitas valid
+                        if (!window.icons[item.fasilitas]) {
+                            console.warn(`Icon untuk tipe fasilitas "${item.fasilitas}" tidak ditemukan, menggunakan default`);
+                        }
+                        
+                        const icon = window.icons[item.fasilitas] || window.icons['Apotek']; // Default ke ikon Apotek
+                        
+                        const marker = L.marker([lat, lng], { icon: icon })
+                            .bindPopup(`
+                                <div style="min-width: 200px;">
+                                    <strong style="color: #2c3e50; font-size: 14px;">${item.nama}</strong><br><br>
+                                    <div style="margin: 5px 0;">
+                                        <i class="fas fa-hospital" style="color: #3498db; width: 16px;"></i> 
+                                        <span style="color: #34495e;">${item.fasilitas}</span>
+                                    </div>
+                                    <div style="margin: 5px 0;">
+                                        <i class="fas fa-map-marker-alt" style="color: #e74c3c; width: 16px;"></i> 
+                                        <span style="color: #34495e;">${item.alamat}</span>
+                                    </div>
+                                    <div style="margin: 5px 0;">
+                                        <i class="fas fa-city" style="color: #f39c12; width: 16px;"></i> 
+                                        <span style="color: #34495e;">Kec. ${item.kecamatan}</span>
+                                    </div>
+                                    <div style="margin: 5px 0;">
+                                        <i class="fas fa-map-pin" style="color: #27ae60; width: 16px;"></i> 
+                                        <span style="color: #34495e;">Kel. ${item.kelurahan || 'N/A'}</span>
+                                    </div>
                                 </div>
-                                <div style="margin: 5px 0;">
-                                    <i class="fas fa-map-marker-alt" style="color: #e74c3c; width: 16px;"></i> 
-                                    <span style="color: #34495e;">${item.alamat}</span>
-                                </div>
-                                <div style="margin: 5px 0;">
-                                    <i class="fas fa-city" style="color: #f39c12; width: 16px;"></i> 
-                                    <span style="color: #34495e;">Kec. ${item.kecamatan}</span>
-                                </div>
-                                <div style="margin: 5px 0;">
-                                    <i class="fas fa-map-pin" style="color: #27ae60; width: 16px;"></i> 
-                                    <span style="color: #34495e;">Kel. ${item.kelurahan || 'N/A'}</span>
-                                </div>
-                            </div>
-                        `);
-                    
-                    // Tambahkan marker ke layer yang sesuai
-                    if (window.facilityLayers && window.facilityLayers[item.fasilitas]) {
-                        window.facilityLayers[item.fasilitas].addLayer(marker);
-                        addedMarkers++;
+                            `);
+                        
+                        // Tambahkan marker ke layer yang sesuai
+                        if (window.facilityLayers && window.facilityLayers[item.fasilitas]) {
+                            window.facilityLayers[item.fasilitas].addLayer(marker);
+                            addedMarkers++;
+                        } else {
+                            console.warn(`Layer untuk fasilitas "${item.fasilitas}" tidak ditemukan`);
+                        }
+                        
+                        if (window.allMarkers) {
+                            window.allMarkers.push(marker);
+                        }
                     } else {
-                        console.warn(`Layer untuk fasilitas "${item.fasilitas}" tidak ditemukan`);
-                    }
-                    
-                    if (window.allMarkers) {
-                        window.allMarkers.push(marker);
+                        console.warn('Koordinat tidak valid untuk:', item.nama, lat, lng);
                     }
                 } else {
-                    console.warn('Koordinat tidak valid untuk:', item.nama, lat, lng);
+                    console.warn('Data tidak memiliki koordinat:', item.nama);
+                }
+            });
+            
+            console.log(`Berhasil menambahkan ${addedMarkers} marker ke peta`);
+            
+            // Tampilkan notifikasi
+            if (window.allMarkers && window.allMarkers.length === 0) {
+                if (window.showNotification) {
+                    window.showNotification('ℹ️ Tidak ada fasilitas kesehatan yang ditemukan dengan filter yang diterapkan.', 'warning');
                 }
             } else {
-                console.warn('Data tidak memiliki koordinat:', item.nama);
+                if (window.showNotification) {
+                    window.showNotification(`✅ Menampilkan ${window.allMarkers.length} fasilitas kesehatan.`, 'success');
+                }
             }
-        });
-        
-        console.log(`Berhasil menambahkan ${addedMarkers} marker ke peta`);
-        
-        // Tampilkan notifikasi
-        if (window.allMarkers && window.allMarkers.length === 0) {
+            
+            console.log('=== END LOAD FACILITIES ===');
+
+        } catch (error) {
+            console.error('Error loading facilities:', error);
             if (window.showNotification) {
-                window.showNotification('ℹ️ Tidak ada fasilitas kesehatan yang ditemukan dengan filter yang diterapkan.', 'warning');
-            }
-        } else {
-            if (window.showNotification) {
-                window.showNotification(`✅ Menampilkan ${window.allMarkers.length} fasilitas kesehatan.`, 'success');
+                window.showNotification('❌ Terjadi kesalahan saat memuat data fasilitas kesehatan.', 'error');
             }
         }
-        
-        console.log('=== END LOAD FACILITIES ===');
+    };
 
-    } catch (error) {
-        console.error('Error loading facilities:', error);
-        if (window.showNotification) {
-            window.showNotification('❌ Terjadi kesalahan saat memuat data fasilitas kesehatan.', 'error');
+    // Add this function to clear all markers
+    function clearAllMarkers() {
+        if (window.allMarkers && Array.isArray(window.allMarkers)) {
+            window.allMarkers.forEach(marker => {
+                if (marker && marker.remove) {
+                    marker.remove();
+                }
+            });
+        }
+        window.allMarkers = [];
+        
+        if (window.facilityLayers) {
+            Object.values(window.facilityLayers).forEach(layer => {
+                if (layer) {
+                    layer.clearLayers();
+                }
+            });
         }
     }
-};
 
-// Add this function to clear all markers
-function clearAllMarkers() {
-    if (window.allMarkers && Array.isArray(window.allMarkers)) {
-        window.allMarkers.forEach(marker => {
-            if (marker && marker.remove) {
-                marker.remove();
-            }
-        });
-    }
-    window.allMarkers = [];
-    
-    if (window.facilityLayers) {
-        Object.values(window.facilityLayers).forEach(layer => {
-            if (layer) {
-                layer.clearLayers();
-            }
-        });
-    }
-}
-
-// Make the function globally available
-window.clearAllMarkers = clearAllMarkers;
-
+    // Make the function globally available
+    window.clearAllMarkers = clearAllMarkers;
 
     // GeoJSON style functions with more distinct colors
     function getKecamatanColor(kecamatan) {

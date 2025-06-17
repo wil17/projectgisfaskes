@@ -15,26 +15,38 @@ class LayananKlaster extends Model
     
     protected $fillable = [
         'id_layanan',
+        'id',
         'id_klaster',
-        'id_puskesmas',
         'nama_layanan',
         'deskripsi_layanan',
-        'jumlah_petugas'
+        'jumlah_petugas',
+        'nama_puskesmas',
+        'nama_klaster',
+        'kode_klaster',
+        'penanggung_jawab'
     ];
-    
-    /**
-     * Get the klaster that owns the layanan.
-     */
-    public function klaster()
-    {
-        return $this->belongsTo(KlasterPuskesmas::class, 'id_klaster', 'id_klaster');
-    }
     
     /**
      * Get the puskesmas associated with the layanan.
      */
     public function puskesmas()
     {
-        return $this->belongsTo(Puskesmas::class, 'id_puskesmas', 'id_puskesmas');
+        return $this->belongsTo(Faskes::class, 'id', 'id');
+    }
+    
+    /**
+     * Scope a query untuk mendapatkan hanya klaster.
+     */
+    public function scopeKlasterOnly($query)
+    {
+        return $query->whereNull('nama_layanan');
+    }
+    
+    /**
+     * Scope a query untuk mendapatkan hanya layanan.
+     */
+    public function scopeLayananOnly($query)
+    {
+        return $query->whereNotNull('nama_layanan');
     }
 }
