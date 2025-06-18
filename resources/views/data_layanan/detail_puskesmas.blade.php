@@ -226,70 +226,84 @@
                 </div>
                 <div class="card-body">
 @if($klaster->count() > 0)
-        <div class="accordion" id="accordionKlaster">
-            @foreach($klaster as $k)
-                <div class="accordion-item mb-3 border">
-                    <h2 class="accordion-header" id="heading{{ $k->id_klaster }}">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                                data-bs-target="#collapse{{ $k->id_klaster }}" aria-expanded="false" 
-                                aria-controls="collapse{{ $k->id_klaster }}">
-                            <div class="d-flex align-items-center w-100">
-                                <span class="badge bg-primary rounded-pill me-3">{{ $k->kode_klaster }}</span>
-                                <span class="fw-bold">{{ $k->nama_klaster }}</span>
-                                <span class="ms-auto badge bg-info">
-                                    <i class="fas fa-user-md me-1"></i> {{ $k->jumlah_petugas }} Petugas
-                                </span>
-                            </div>
-                        </button>
-                    </h2>
-                    <div id="collapse{{ $k->id_klaster }}" class="accordion-collapse collapse" 
-                         aria-labelledby="heading{{ $k->id_klaster }}" data-bs-parent="#accordionKlaster">
-                        <div class="accordion-body">
-                            <div class="klaster-info mb-3">
-                                <p class="mb-1"><strong>Penanggung Jawab:</strong> {{ $k->penanggung_jawab }}</p>
-                            </div>
+    <div class="accordion" id="accordionKlaster">
+        @foreach($klaster as $k)
+            <div class="accordion-item mb-3 border">
+                <h2 class="accordion-header" id="heading{{ $k->id_klaster }}">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                            data-bs-target="#collapse{{ $k->id_klaster }}" aria-expanded="false" 
+                            aria-controls="collapse{{ $k->id_klaster }}">
+                        <div class="d-flex align-items-center w-100">
+                            <span class="badge bg-primary rounded-pill me-3">{{ $k->kode_klaster ?? 0 }}</span>
+                            <span class="fw-bold">
+                                @if(isset($k->is_from_layanan) && $k->is_from_layanan)
+                                    {{ $k->nama_klaster ?? ($k->nama_layanan ?? 'Klaster '.$k->id_klaster) }}
+                                @else
+                                    {{ $k->nama_klaster ?? 'Klaster '.$k->id_klaster }}
+                                @endif
+                            </span>
+                            <span class="ms-auto badge bg-info">
+                                <i class="fas fa-user-md me-1"></i> {{ $k->jumlah_petugas ?? 0 }} Petugas
+                            </span>
+                        </div>
+                    </button>
+                </h2>
+                <div id="collapse{{ $k->id_klaster }}" class="accordion-collapse collapse" 
+                     aria-labelledby="heading{{ $k->id_klaster }}" data-bs-parent="#accordionKlaster">
+                    <div class="accordion-body">
+                        <div class="klaster-info mb-3">
+                            <p class="mb-1"><strong>Penanggung Jawab:</strong> {{ $k->penanggung_jawab ?? 'Tidak tersedia' }}</p>
                             
-                            @if(isset($layananPerKlaster[$k->id_klaster]) && $layananPerKlaster[$k->id_klaster]->count() > 0)
-                                <h6 class="border-bottom pb-2 mb-3">Layanan yang tersedia:</h6>
-                                <div class="table-responsive">
-                                    <table class="table table-hover table-striped">
-                                        <thead class="table-light">
-                                            <tr>
-                                                <th>Nama Layanan</th>
-                                                <th>Deskripsi</th>
-                                                <th class="text-center">Jumlah Petugas</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            @foreach($layananPerKlaster[$k->id_klaster] as $layanan)
-                                                <tr>
-                                                    <td><strong>{{ $layanan->nama_layanan }}</strong></td>
-                                                    <td>{{ $layanan->deskripsi_layanan ?? 'Tidak ada deskripsi' }}</td>
-                                                    <td class="text-center">{{ $layanan->jumlah_petugas }}</td>
-                                                </tr>
-                                            @endforeach
-                                        </tbody>
-                                    </table>
-                                </div>
-                            @else
-                                <div class="alert alert-info mb-0">
-                                    <i class="fas fa-info-circle me-2"></i> Belum ada layanan yang terdaftar pada klaster ini.
+                            @if(isset($k->is_from_layanan) && $k->is_from_layanan)
+                                <div class="alert alert-info mt-2">
+                                    <i class="fas fa-info-circle me-2"></i> Informasi klaster dibuat dari data layanan.
                                 </div>
                             @endif
                         </div>
+                        
+                        @if(isset($layananPerKlaster[$k->id_klaster]) && count($layananPerKlaster[$k->id_klaster]) > 0)
+                            <h6 class="border-bottom pb-2 mb-3">Layanan yang tersedia:</h6>
+                            <div class="table-responsive">
+                                <table class="table table-hover table-striped">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Nama Layanan</th>
+                                            <th>Deskripsi</th>
+                                            <th class="text-center">Jumlah Petugas</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach($layananPerKlaster[$k->id_klaster] as $layanan)
+                                            @if(!(isset($k->is_from_layanan) && $k->is_from_layanan && $layanan->id_layanan == $k->id_layanan))
+                                                <tr>
+                                                    <td><strong>{{ $layanan->nama_layanan }}</strong></td>
+                                                    <td>{{ $layanan->deskripsi_layanan ?? 'Tidak ada deskripsi' }}</td>
+                                                    <td class="text-center">{{ $layanan->jumlah_petugas ?? 0 }}</td>
+                                                </tr>
+                                            @endif
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                        @else
+                            <div class="alert alert-info mb-0">
+                                <i class="fas fa-info-circle me-2"></i> Belum ada layanan yang terdaftar pada klaster ini.
+                            </div>
+                        @endif
                     </div>
                 </div>
-            @endforeach
-        </div>
-    @else
-        <div class="text-center py-5">
-            <div class="mb-3">
-                <i class="fas fa-layer-group text-muted" style="font-size: 4rem;"></i>
             </div>
-            <h5 class="text-muted">Tidak ada data klaster yang tersedia</h5>
-            <p class="text-muted">Silakan hubungi Puskesmas untuk informasi lebih lanjut</p>
+        @endforeach
+    </div>
+@else
+    <div class="text-center py-5">
+        <div class="mb-3">
+            <i class="fas fa-layer-group text-muted" style="font-size: 4rem;"></i>
         </div>
-    @endif
+        <h5 class="text-muted">Tidak ada data klaster yang tersedia</h5>
+        <p class="text-muted">Silakan hubungi Puskesmas untuk informasi lebih lanjut</p>
+    </div>
+@endif
                 </div>
             </div>
         </div>

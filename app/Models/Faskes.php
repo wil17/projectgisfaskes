@@ -46,21 +46,21 @@ class Faskes extends Model
    /**
      * Get the klaster for the puskesmas.
      */
-    public function klaster()
+   public function klaster()
     {
         return $this->hasMany(LayananKlaster::class, 'id', 'id')
-                    ->whereNull('nama_layanan');
+                    ->klasterOnly();
     }
     
     /**
      * Get the layanan for the puskesmas.
+     * Mencakup data dari struktur baru dan lama
      */
     public function layanan()
     {
         return $this->hasMany(LayananKlaster::class, 'id', 'id')
-                    ->whereNotNull('nama_layanan');
+                    ->layananOnly();
     }
-    
     /**
      * Scope a query to only include apoteks.
      *

@@ -64,10 +64,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Variabel untuk menyimpan koordinat batas kota dalam format desimal
     const cityBoundaries = {
-        north: { lat: -3.279444, lng: 114.59275, label: 'UTARA<br>3°16\'46"' },
-        east: { lat: -3.31449, lng: 114.665278, label: 'TIMUR<br>114°39\'55"' },
-        south: { lat: -3.381667, lng: 114.59275, label: 'SELATAN<br>3°22\'54"' },
-        west: { lat: -3.31449, lng: 114.527778, label: 'BARAT<br>114°31\'40"' }
+        north: { lat: -3.279444, lng: 114.59275, label: 'UTARA<br>Kabupaten <br>Barito Kuala<br>3°16\'46"' },
+        east: { lat: -3.31449, lng: 114.665278, label: 'TIMUR<br>Kabupaten <br>Banjar<br>114°39\'55"' },
+        south: { lat: -3.381667, lng: 114.59275, label: 'SELATAN<br>Kabupaten <br>Banjar<br>3°22\'54"' },
+        west: { lat: -3.31449, lng: 114.527778, label: 'BARAT<br>Kabupaten <br>Barito Kuala<br>114°31\'40"' }
     };
 
     // Define marker icons for different facilities

@@ -246,24 +246,69 @@ class DataLayananController extends Controller
         // Ambil data wilayah kerja puskesmas
         $wilayahKerja = WilayahKerjaPuskesmas::where('id', $id)->get();
         
-        // Ambil data klaster puskesmas dari tabel layanan_klaster
-        // dengan nama_layanan NULL (hanya klaster)
-        $klaster = LayananKlaster::where('id', $id)
-                    ->whereNull('nama_layanan')
-                    ->get();
+        // Identifikasi semua record klaster (yang memiliki nama_layanan NULL)
+        $klaster = DB::table('layanan_klaster')
+                  ->where('id', $id)
+                  ->whereNull('nama_layanan')
+                  ->orderBy('kode_klaster')
+                  ->get();
+                  
+        // Jika tidak ada klaster dengan nama_layanan NULL, coba identifikasi klaster dengan pendekatan lain
+        if ($klaster->isEmpty()) {
+            // Ambil data klaster berdasarkan id_klaster yang unik
+            $distinctKlasterIds = DB::table('layanan_klaster')
+                                 ->where('id', $id)
+                                 ->select('id_klaster')
+                                 ->distinct()
+                                 ->pluck('id_klaster');
+            
+            // Cari klaster dengan layanan untuk setiap id_klaster unik
+            $klasterData = [];
+            
+            foreach ($distinctKlasterIds as $klasterId) {
+                // Cari data yang bisa dijadikan klaster (prioritas: record dengan nama_layanan NULL)
+                $klasterRecord = DB::table('layanan_klaster')
+                                ->where('id', $id)
+                                ->where('id_klaster', $klasterId)
+                                ->whereNull('nama_layanan')
+                                ->first();
+                
+                // Jika tidak ada record dengan nama_layanan NULL, ambil record pertama dari id_klaster tersebut
+                if (!$klasterRecord) {
+                    $klasterRecord = DB::table('layanan_klaster')
+                                   ->where('id', $id)
+                                   ->where('id_klaster', $klasterId)
+                                   ->first();
+                                   
+                    if ($klasterRecord) {
+                        // Buat "representasi klaster" dari record layanan
+                        $klasterRecord->is_from_layanan = true;
+                    }
+                }
+                
+                if ($klasterRecord) {
+                    $klasterData[] = $klasterRecord;
+                }
+            }
+            
+            $klaster = collect($klasterData);
+        }
         
-        // Ambil semua ID klaster yang ada
-        $klasterIds = $klaster->pluck('id_klaster')->toArray();
+        // Persiapkan array untuk menyimpan layanan per klaster
+        $layananPerKlaster = [];
         
         // Ambil data layanan untuk setiap klaster
-        // dengan nama_layanan NOT NULL (hanya layanan)
-        $layanan = LayananKlaster::where('id', $id)
-                    ->whereNotNull('nama_layanan')
-                    ->whereIn('id_klaster', $klasterIds)
-                    ->get();
-        
-        // Kelompokkan layanan berdasarkan id_klaster
-        $layananPerKlaster = $layanan->groupBy('id_klaster');
+        foreach ($klaster as $k) {
+            $layanan = DB::table('layanan_klaster')
+                      ->where('id', $id)
+                      ->where('id_klaster', $k->id_klaster)
+                      ->whereNotNull('nama_layanan')
+                      ->get();
+                      
+            if ($layanan->isNotEmpty()) {
+                $layananPerKlaster[$k->id_klaster] = $layanan;
+            }
+        }
         
         return view('data_layanan.detail_puskesmas', compact('puskesmas', 'klaster', 'wilayahKerja', 'layananPerKlaster'));
     }

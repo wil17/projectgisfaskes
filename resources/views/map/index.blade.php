@@ -228,7 +228,7 @@
                                             </div>
                                         </div>
                                         
-                                        <div class="mt-3 border-top pt-2">
+                                        <div class="mt-5 border-top pt-2">
                                             <div class="facility-checkbox">
                                                 <input type="checkbox" id="mobile-city-boundary-filter">
                                                 <label for="mobile-city-boundary-filter">
